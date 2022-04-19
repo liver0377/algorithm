@@ -110,3 +110,60 @@ int main() {
   ```
 
   
+
+
+
+
+
+
+
+### 区间DP
+
+**题干**
+
+![image-20220419222542216](https://cdn.jsdelivr.net/gh/liver0377/images@main/img/image-20220419222542216.png)
+
+
+
+**基本思路**
+
+![image-20220419222654648](https://cdn.jsdelivr.net/gh/liver0377/images@main/img/image-20220419222654648.png)
+
+**题解**
+
+
+
+```cpp
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+const int N = 310;
+int n;
+int a[N], s[N], f[N][N];
+
+int main() {
+    cin >> n;
+    
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+        s[i] = s[i - 1] + a[i];
+    }
+    
+    for (int len = 2; len <= n; len ++) {         // 枚举len
+        for (int i = 1; i + len - 1 <= n; i++) {
+            int l = i, r = i + len - 1;
+            f[l][r] = 1e8;                        // 初始化为一个较大值，以避免后面f[l][r]一直为0
+            for (int k = l; k < r; k++) {
+                f[l][r] = min(f[l][r], f[l][k] + f[k + 1][r] + s[r] - s[l - 1]);
+            }
+        }
+    }
+    cout << f[1][n] << endl;
+    return 0;
+}
+```
+
+- 这里的s是前缀和，因为不管怎样进行合并i\~j区间内的石子，最后一步的代价一定是区间i\~j石子的总质量之和
+

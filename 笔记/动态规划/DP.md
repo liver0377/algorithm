@@ -352,3 +352,74 @@ DP问题通常有着两种空间优化策略：**双变量**以及**滚动数组
 
 - [leetcode509](斐波那契数)
 
+
+
+
+
+### 树形DP
+
+**题干**
+
+![image-20220506210437074](https://cdn.jsdelivr.net/gh/liver0377/images@main/img/image-20220506210437074.png)
+
+
+
+**题解**
+
+![image-20220506210528671](https://cdn.jsdelivr.net/gh/liver0377/images@main/img/image-20220506210528671.png)
+
+- 树形DP理解起来比较简单，因为主要是使用递归
+
+
+
+**核心代码**
+
+```cpp
+int n;
+int h[N], e[N], ne[N], idx;     
+int happy[N];
+int f[N][2];
+bool has_fa[N];         // 标记是否存在父节点
+
+void add(int a, int b)
+{
+    e[idx] = b, ne[idx] = h[a], h[a] = idx ++ ;
+}
+
+void dfs(int u)
+{
+    f[u][1] = happy[u];     // 选取根节点的初值为自身的幸福度
+
+    // 遍历子树
+    for (int i = h[u]; ~i; i = ne[i])
+    {
+        int j = e[i];       // 子结点
+        dfs(j);             // 递归子结点
+
+        // 状态转移
+        f[u][1] += f[j][0]; 
+        f[u][0] += max(f[j][0], f[j][1]);
+    }
+}
+
+// 核心
+memset(h, -1, sizeof h);            // 初始化邻接表头指针
+
+// 读入树结构
+for (int i = 0; i < n - 1; i ++ )
+{
+    int a, b;
+    scanf("%d%d", &a, &b);
+    add(b, a);                      // 尽管是无向图，但只需要保留一条边（上司指向下属）
+    has_fa[a] = true;               // 标记存在父节点
+}
+
+// 找树根，不存在父节点的就是树根
+int root = 1;
+while (has_fa[root]) root ++ ;
+
+dfs(root);      // 从根节点开始遍历
+
+printf("%d\n", max(f[root][0], f[root][1]));
+```
+

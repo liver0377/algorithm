@@ -23,5 +23,5 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [3746.牛的学术圈 II](https://www.acwing.com/problem/content/3749/) | [牛的学术圈II](https://github.com/liver0377/algorithm/blob/main/acwing/3746.%E7%89%9B%E7%9A%84%E5%AD%A6%E6%9C%AF%E5%9C%88II.md) |
-| [4330.非传递骰子](https://www.acwing.com/activity/content/problem/content/6923/) |                                                              |
+| [4330.非传递骰子](https://www.acwing.com/activity/content/problem/content/6923/) | [非传递骰子](https://github.com/liver0377/algorithm/blob/main/acwing/4330.%E9%9D%9E%E4%BC%A0%E9%80%92%E9%AA%B0%E5%AD%90.md) |
 

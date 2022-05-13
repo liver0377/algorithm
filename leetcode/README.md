@@ -45,6 +45,7 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [162.寻找峰值](https://leetcode.cn/problems/find-peak-element/) | [寻找峰值](https://github.com/liver0377/algorithm/blob/main/leetcode/162.%E5%AF%BB%E6%89%BE%E5%B3%B0%E5%80%BC%5B%E4%BA%8C%E5%88%86%5D.md) |
+| [33.搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) |                                                              |
 
 
 

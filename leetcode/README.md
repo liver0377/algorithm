@@ -17,10 +17,11 @@
 
 ### DP
 
-| 原题链接                                                     | 题解                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [300.最长增长子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | [最长增长子序列](https://github.com/liver0377/algorithm/blob/main/leetcode/300.%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%5BDP%5D.md) |
-| [322.零钱兑换](https://leetcode.cn/problems/coin-change/)    | [零钱兑换](https://github.com/liver0377/algorithm/blob/main/leetcode/322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%5B%E5%8A%A8%E8%A7%84%5D.md) |
+| 原题链接                                                     | 题解                                                         | 类型     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [300.最长增长子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | [最长增长子序列](https://github.com/liver0377/algorithm/blob/main/leetcode/300.%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%5BDP%5D.md) |          |
+| [322.零钱兑换](https://leetcode.cn/problems/coin-change/)    | [零钱兑换](https://github.com/liver0377/algorithm/blob/main/leetcode/322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%5B%E5%8A%A8%E8%A7%84%5D.md) |          |
+| [691.贴纸拼词](https://leetcode.cn/problems/stickers-to-spell-word/) | [贴纸拼词](https://github.com/liver0377/algorithm/blob/main/leetcode/691.%E8%B4%B4%E7%BA%B8%E6%8B%BC%E8%AF%8D.md) | 状态压缩 |
 
 
 

@@ -121,3 +121,11 @@
 | [剑指Offer 04. 二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 矩阵性质 | [二维数组中的查找](https://github.com/liver0377/algorithm/blob/main/leetcode/%E5%89%91%E6%8C%87offer04.%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9F%A5%E6%89%BE%5B%E6%8A%80%E5%B7%A7%5D.md) |
 | [442.数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) | 原地哈希 | [数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) |
 
+
+
+### 位运算
+
+| 原题链接                                                     | 题解 |
+| ------------------------------------------------------------ | ---- |
+| [6065.按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) |      |
+

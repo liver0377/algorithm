@@ -47,6 +47,7 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [162.寻找峰值](https://leetcode.cn/problems/find-peak-element/) | [寻找峰值](https://github.com/liver0377/algorithm/blob/main/leetcode/162.%E5%AF%BB%E6%89%BE%E5%B3%B0%E5%80%BC%5B%E4%BA%8C%E5%88%86%5D.md) |
 | [33.搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | [搜索旋转排序数组](https://github.com/liver0377/algorithm/blob/main/leetcode/33.%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84.md) |
+| [0406.后继者](https://leetcode.cn/problems/successor-lcci/submissions/) | [后继者](https://github.com/liver0377/algorithm/blob/main/leetcode/04.06%E5%90%8E%E7%BB%A7%E8%80%85.md) |
 
 
 

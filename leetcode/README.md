@@ -125,7 +125,7 @@
 
 ### 位运算
 
-| 原题链接                                                     | 题解 |
-| ------------------------------------------------------------ | ---- |
-| [6065.按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) |      |
+| 原题链接                                                     | 题解                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [6065.按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [按位与结果大于0的最长组合](https://github.com/liver0377/algorithm/blob/main/leetcode/6065.%E6%8C%89%E4%BD%8D%E4%BA%8E%E7%BB%93%E6%9E%9C%E5%A4%A7%E4%BA%8E0%E7%9A%84%E6%9C%80%E9%95%BF%E7%BB%93%E6%9E%9C%E7%BB%84%E5%90%88.md) |
 

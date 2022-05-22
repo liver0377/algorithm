@@ -22,6 +22,7 @@
 | [300.最长增长子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | [最长增长子序列](https://github.com/liver0377/algorithm/blob/main/leetcode/300.%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%5BDP%5D.md) |          |
 | [322.零钱兑换](https://leetcode.cn/problems/coin-change/)    | [零钱兑换](https://github.com/liver0377/algorithm/blob/main/leetcode/322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%5B%E5%8A%A8%E8%A7%84%5D.md) |          |
 | [691.贴纸拼词](https://leetcode.cn/problems/stickers-to-spell-word/) | [贴纸拼词](https://github.com/liver0377/algorithm/blob/main/leetcode/691.%E8%B4%B4%E7%BA%B8%E6%8B%BC%E8%AF%8D.md) | 状态压缩 |
+| [464.我能赢吗](https://leetcode.cn/problems/can-i-win/)      | []                                                           |          |
 
 
 
@@ -49,6 +50,7 @@
 | [33.搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) | [搜索旋转排序数组](https://github.com/liver0377/algorithm/blob/main/leetcode/33.%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84.md) |
 | [0406.后继者](https://leetcode.cn/problems/successor-lcci/submissions/) | [后继者](https://github.com/liver0377/algorithm/blob/main/leetcode/04.06%E5%90%8E%E7%BB%A7%E8%80%85.md) |
 | [668.乘法表中第k小的数](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/) | [乘法表中第K小的数](https://github.com/liver0377/algorithm/blob/main/leetcode/668.%E4%B9%98%E6%B3%95%E8%A1%A8%E4%B8%AD%E7%AC%ACK%E5%B0%8F%E7%9A%84%E6%95%B0.md) |
+| [436.寻找右区间](https://leetcode.cn/problems/find-right-interval) | [寻找右区间](https://github.com/liver0377/algorithm/blob/main/leetcode/436.%E5%AF%BB%E6%89%BE%E5%8F%B3%E5%8C%BA%E9%97%B4.md) |
 
 
 

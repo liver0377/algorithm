@@ -33,9 +33,7 @@
 
 - 证明
 
-  ![image-20220511205204252](https://cdn.jsdelivr.net/gh/liver0377/images@main/img/image-20220511205204252.png)
-
-
+  ![image-20220522083323033](https://cdn.jsdelivr.net/gh/liver0377/images@main/img/image-20220522083323033.png)
 
 **例题**
 

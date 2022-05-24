@@ -1,6 +1,6 @@
 **题干**
 
-![image-20220506195756150](https://cdn.jsdelivr.net/gh/liver0377/images@main/img/image-20220506195756150.png)
+![image-20220524193535822](http://www.cdn.liver0377.xyz/typora/202205241935895.png)
 
 - 解法1
 
@@ -48,18 +48,18 @@
 
   - q[i]图像
 
-    ![image-20220506194442752](https://cdn.jsdelivr.net/gh/liver0377/images@main/img/image-20220506194442752.png)
-  
+    ![image-20220524193604895](http://www.cdn.liver0377.xyz/typora/202205241936948.png)
+
   - 算法流程
-  
+
     - 遍历所有的nums[i]
-  
+
     - 使用二分尝试寻找q[]中小于nums[i]的最大值的下标k(**q[k] < nums[i] <= q[k + 1]**)
-  
+
       因为这里是想要找到最长的上升子序列，因此nums[i]肯定接在越长的子序列后面越好，而长度越长，末尾值肯定也就越大
-  
+
     - 当nums[i] == q[k + 1]时，nums[i]会直接更新原来的q[k + 1]
-  
+
   ```cpp
   int lengthOfLIS(vector<int>& nums) {
           int n = nums.size();
@@ -81,7 +81,7 @@
           return len;
   }
   ```
-  
+
   
 
 

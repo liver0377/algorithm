@@ -8,9 +8,10 @@
 
 ### 动态规划
 
-| 原题链接                                                     | 题解                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [902.最短编辑距离](https://www.acwing.com/problem/content/904/) | [最短编辑距离](https://github.com/liver0377/algorithm/blob/main/acwing/902.%E6%9C%80%E7%9F%AD%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.md) |
+| 原题链接                                                     | 题解                                                         | 模型       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- |
+| [902.最短编辑距离](https://www.acwing.com/problem/content/904/) | [最短编辑距离](https://github.com/liver0377/algorithm/blob/main/acwing/902.%E6%9C%80%E7%9F%AD%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.md) |            |
+| [1027.方格取数](https://www.acwing.com/problem/content/1029/) | [方格取数](https://github.com/liver0377/algorithm/blob/main/acwing/1027.%E6%96%B9%E6%A0%BC%E5%8F%96%E6%95%B0.md) | 数字三角形 |
 
 
 

@@ -8,14 +8,15 @@
 
 ### 动态规划
 
-| 原题链接                                                     | 题解                                                         | 模型       |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- |
-| [902.最短编辑距离](https://www.acwing.com/problem/content/904/) | [最短编辑距离](https://github.com/liver0377/algorithm/blob/main/acwing/902.%E6%9C%80%E7%9F%AD%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.md) |            |
-| [1027.方格取数](https://www.acwing.com/problem/content/1029/) | [方格取数](https://github.com/liver0377/algorithm/blob/main/acwing/1027.%E6%96%B9%E6%A0%BC%E5%8F%96%E6%95%B0.md) | 数字三角形 |
-| [1012.友好城市](https://www.acwing.com/problem/content/1014/) | [友好城市](https://github.com/liver0377/algorithm/blob/main/acwing/1012.%E5%8F%8B%E5%A5%BD%E5%9F%8E%E5%B8%82.md) | LIS        |
-| [110.拦截导弹](https://www.acwing.com/problem/content/1012/) | [拦截导弹](https://github.com/liver0377/algorithm/blob/main/acwing/110.%E6%8B%A6%E6%88%AA%E5%AF%BC%E5%BC%B9.md) | LIS        |
-| [272.最长公共上升子序列](https://www.acwing.com/problem/content/274/) | [最长公共上升子序列](https://github.com/liver0377/algorithm/blob/main/acwing/272.%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97.md) | LIS        |
-| [278.数字组合](https://www.acwing.com/problem/content/280/)  | [数字组合](https://github.com/liver0377/algorithm/blob/main/acwing/278.%E6%95%B0%E5%AD%97%E7%BB%84%E5%90%88.md) | 01背包     |
+| 原题链接                                                     | 题解                                                         | 模型                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------- |
+| [902.最短编辑距离](https://www.acwing.com/problem/content/904/) | [最短编辑距离](https://github.com/liver0377/algorithm/blob/main/acwing/902.%E6%9C%80%E7%9F%AD%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB.md) |                            |
+| [1027.方格取数](https://www.acwing.com/problem/content/1029/) | [方格取数](https://github.com/liver0377/algorithm/blob/main/acwing/1027.%E6%96%B9%E6%A0%BC%E5%8F%96%E6%95%B0.md) | 数字三角形                 |
+| [1012.友好城市](https://www.acwing.com/problem/content/1014/) | [友好城市](https://github.com/liver0377/algorithm/blob/main/acwing/1012.%E5%8F%8B%E5%A5%BD%E5%9F%8E%E5%B8%82.md) | LIS                        |
+| [110.拦截导弹](https://www.acwing.com/problem/content/1012/) | [拦截导弹](https://github.com/liver0377/algorithm/blob/main/acwing/110.%E6%8B%A6%E6%88%AA%E5%AF%BC%E5%BC%B9.md) | LIS                        |
+| [272.最长公共上升子序列](https://www.acwing.com/problem/content/274/) | [最长公共上升子序列](https://github.com/liver0377/algorithm/blob/main/acwing/272.%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97.md) | LIS                        |
+| [278.数字组合](https://www.acwing.com/problem/content/280/)  | [数字组合](https://github.com/liver0377/algorithm/blob/main/acwing/278.%E6%95%B0%E5%AD%97%E7%BB%84%E5%90%88.md) | 01背包                     |
+| [1020.潜水员](https://www.acwing.com/problem/content/1022/)  | [潜水员](https://github.com/liver0377/algorithm/blob/main/acwing/1020.%E6%BD%9C%E6%B0%B4%E5%91%98.md) | 二维费用 01背包 “至少”模型 |
 
 
 

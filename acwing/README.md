@@ -17,6 +17,7 @@
 | [272.最长公共上升子序列](https://www.acwing.com/problem/content/274/) | [最长公共上升子序列](https://github.com/liver0377/algorithm/blob/main/acwing/272.%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97.md) | LIS                        |
 | [278.数字组合](https://www.acwing.com/problem/content/280/)  | [数字组合](https://github.com/liver0377/algorithm/blob/main/acwing/278.%E6%95%B0%E5%AD%97%E7%BB%84%E5%90%88.md) | 01背包                     |
 | [1020.潜水员](https://www.acwing.com/problem/content/1022/)  | [潜水员](https://github.com/liver0377/algorithm/blob/main/acwing/1020.%E6%BD%9C%E6%B0%B4%E5%91%98.md) | 二维费用 01背包 “至少”模型 |
+| [532.货币系统](https://www.acwing.com/problem/content/534/)  |                                                              |                            |
 
 
 

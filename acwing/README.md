@@ -19,6 +19,7 @@
 | [1020.潜水员](https://www.acwing.com/problem/content/1022/)  | [潜水员](https://github.com/liver0377/algorithm/blob/main/acwing/1020.%E6%BD%9C%E6%B0%B4%E5%91%98.md) | 二维费用 01背包 “至少”模型 |
 | [532.货币系统](https://www.acwing.com/problem/content/534/)  | [货币系统](https://github.com/liver0377/algorithm/blob/main/acwing/532.%E8%B4%A7%E5%B8%81%E7%B3%BB%E7%BB%9F.md) | 完全背包                   |
 | [487.金明的预算方案](https://www.acwing.com/problem/content/489/) | [金明的预算方案](https://github.com/liver0377/algorithm/blob/main/acwing/487.%E9%87%91%E6%98%8E%E7%9A%84%E9%A2%84%E7%AE%97%E6%96%B9%E6%A1%88.md) | 多重背包                   |
+| [734.能量石](https://www.acwing.com/problem/content/736/)    | [能量石](https://github.com/liver0377/algorithm/blob/main/acwing/734.%E8%83%BD%E9%87%8F%E7%9F%B3.md) | 01背包 + 贪心              |
 
 
 

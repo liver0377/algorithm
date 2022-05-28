@@ -20,8 +20,8 @@
 | [532.货币系统](https://www.acwing.com/problem/content/534/)  | [货币系统](https://github.com/liver0377/algorithm/blob/main/acwing/532.%E8%B4%A7%E5%B8%81%E7%B3%BB%E7%BB%9F.md) | 完全背包                   |
 | [487.金明的预算方案](https://www.acwing.com/problem/content/489/) | [金明的预算方案](https://github.com/liver0377/algorithm/blob/main/acwing/487.%E9%87%91%E6%98%8E%E7%9A%84%E9%A2%84%E7%AE%97%E6%96%B9%E6%A1%88.md) | 多重背包                   |
 | [734.能量石](https://www.acwing.com/problem/content/736/)    | [能量石](https://github.com/liver0377/algorithm/blob/main/acwing/734.%E8%83%BD%E9%87%8F%E7%9F%B3.md) | 01背包 + 贪心              |
-| [1047.股票买卖4](https://www.acwing.com/problem/content/description/1059/) | [股票买卖](https://github.com/liver0377/algorithm/blob/main/acwing/1057.%E8%82%A1%E7%A5%A8%E4%B9%B0%E5%8D%96.md) | 状态机                     |
-| [1048.股票买卖5](https://www.acwing.com/problem/content/1060/) |                                                              | 状态机                     |
+| [1047.股票买卖4](https://www.acwing.com/problem/content/description/1059/) | [股票买卖4](https://github.com/liver0377/algorithm/blob/main/acwing/1057.%E8%82%A1%E7%A5%A8%E4%B9%B0%E5%8D%96.md) | 状态机                     |
+| [1048.股票买卖5](https://www.acwing.com/problem/content/1060/) | [股票买卖5](https://github.com/liver0377/algorithm/blob/main/acwing/1058.%E8%82%A1%E7%A5%A8%E4%B9%B0%E5%8D%965.md) | 状态机                     |
 
 
 

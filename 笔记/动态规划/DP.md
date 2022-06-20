@@ -159,7 +159,7 @@ int main() {
         for (int i = 1; i + len - 1 <= n; i++) {
             int l = i, r = i + len - 1;
             f[l][r] = 1e8;                        // 初始化为一个较大值，以避免后面f[l][r]一直为0
-            for (int k = l; k < r; k++) {
+            for (int k = l; k < r; k++) {         // f[i][i]默认为0,将一堆合并成一堆并不需要代价
                 f[l][r] = min(f[l][r], f[l][k] + f[k + 1][r] + s[r] - s[l - 1]);
             }
         }

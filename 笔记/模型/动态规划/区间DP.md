@@ -207,7 +207,11 @@ int main() {
 
     该状态方程与之前的能量项链完全相同，因此可以采用完全相同的做法进行求解
 
+- 这里为什么没有使用环？
 
+  无论以哪两个相邻的顶点为起始边，最终都会穷举出所有的三角形划分方案
+
+  所以只需要以任意一个边开始就行了
 
 **代码实现**
 
@@ -297,3 +301,199 @@ int main() {
 ```
 
 - 由于每个点的权值为10^9, 因此三个点相乘之后会爆long long, 因此必须使用高精度
+
+
+
+### 加分二叉树
+
+![image-20220621152531263](http://www.cdn.liver0377.xyz/typora/202206211525325.png)
+
+
+
+**解题思路**
+
+- 此题看似是一个树的问题，其实是一个区间dp问题
+
+- 已知二叉树的中序遍历的节点序列为1, 2, 3, ..., n
+
+- 设其根节点为k, 则
+
+  - 其左子树的中序遍历序列为1, 2, 3, .., k
+  - 其右子树的中序遍历序列为k + 1, k + 2, ..., n
+
+- 根据左右子树是否为空，可以判断出整颗树的加值满足下列关系
+  设w为根节点权值，A为左子树的加值，B为右子树的加值
+
+  - 左右子树均为空：w
+  - 左子树为空: w + B
+  - 右子树为空: w + A
+  - 左右子树均不为空: w + A * B
+
+- 若想要整颗树的加值最大，就要满足左右两颗子树的加值分别最大，而左右两棵子树的加值求解就是两个子问题的求解，
+
+  它们完全独立
+
+- 状态表示
+  ![image-20220621153154232](http://www.cdn.liver0377.xyz/typora/202206211531323.png)
+
+  
+
+
+
+**代码实现**
+
+```cc
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+const int N = 35;
+
+int f[N][N]; // f[i][j]: 表示从第i个点到第j个点构成的子树的加值
+int g[N][N]; // 在范围i ~ j内，取得最大价值的方案的根节点
+int w[N];    // w[i]: 点i的权重
+int n;
+
+void dfs(int l, int r) {
+    if (l > r) return;
+    int root = g[l][r];
+    cout << root << ' ';
+    dfs(l, root - 1), dfs(root + 1, r);
+}
+
+int main() {
+    cin >> n;
+    for (int i = 1; i <= n; i++) cin >> w[i];
+    
+    for (int len = 1; len <= n; len++) {   // 这里len从1开始，是因为f[i][i], g[i][i]都需要初始化
+        for (int i = 1; i + len - 1 <= n; i++) {
+            int j = i + len - 1;
+            if (len == 1) {     // 仅在左右子树均为空的情况下需要特判, 加值为w
+                f[i][j] = w[i];
+                g[i][j] = i;
+            } else {
+                for (int k = i; k <= j; k++) {
+                    int left = (k == i) ? 1 : f[i][k - 1];   // 左子树的加值
+                    int right = (k == j) ? 1 : f[k + 1][j];  // 右子树的加值
+                    int score = left * right + w[k];
+                    if (score > f[i][j]) {
+                        f[i][j] = score;
+                        g[i][j] = k;
+                    }
+                }
+            }
+        }
+    }
+    
+    cout << f[1][n] << endl;
+    dfs(1, n);
+    return 0;
+}
+```
+
+
+
+### 棋盘分割
+
+![image-20220621170555477](http://www.cdn.liver0377.xyz/typora/202206211705542.png)
+
+
+
+**解题思路**
+
+- 本题的目标是将一个8 * 8的矩阵切割成n个块，共切割n - 1刀，得到每一块的总权值x1, x2..., xn
+
+- 使得
+  ![image-20220621170821144](http://www.cdn.liver0377.xyz/typora/202206211708189.png)
+
+  最小, 这里对上述公式进行转化, 要使得$\sigma$最小，**只需要对于给定的n, 使得$\Sigma_{i = 1}^n(x_i - \bar{x})$最小即可**
+
+**状态表示**
+
+![image-20220621171530373](http://www.cdn.liver0377.xyz/typora/202206211715439.png)
+
+- 注意，每一对一个矩阵进行切割，有横切和竖切两种方式，并且切一刀得到两块矩阵之后，要选择一块继续进行切割
+- 因此，只需要穷举所有的切割方案即可, 这里使用递归 + 记忆化搜索来做, 属于二维区间dp问题
+
+
+
+**状态计算**
+
+直接看代码
+
+**代码实现**
+
+```cpp
+#include <iostream>
+#include <cmath>
+#include <algorithm>
+#include <cstring>
+
+using namespace std;
+
+const int N = 16;
+const int M = 9;
+
+double f[N][M][M][M][M];  // f[k][x1][y1][x2][y2]: 对(x1, y1, x2, y2)构成的矩阵，
+                          // 切下n - k刀后，得到的n - k + 1个矩阵的(xi - X)^2最小和
+int s[M][M];              // 二维前缀和
+double X;  // X拔
+int n;
+
+double get(int x1, int y1, int x2, int y2) {
+    double t = s[x2][y2] - s[x2][y1 - 1] - s[x1 - 1][y2] + s[x1 - 1][y1 - 1];
+    t -= X;
+    return t * t;
+}
+
+double dp(int k, int x1, int y1, int x2, int y2) {
+    // 记忆化搜索
+    if (f[k][x1][y1][x2][y2] >= 0) return f[k][x1][y1][x2][y2];
+    if (k == n) {
+        // 已经切完了最后一刀, 即对该矩阵不用操作了，直接返回其对应的(xi - x)^2
+        return f[k][x1][y1][x2][y2] = get(x1, y1, x2, y2);
+    }
+    
+    // 1. 横着切
+    double t = 0x3f3f3f3f;
+    for (int i = x1; i < x2; i++) {
+        // 1.1 选择上面一块
+        t = min(t, dp(k + 1, x1, y1, i, y2) + get(i + 1, y1, x2, y2));
+        // 1.2 选择下面一块
+        t = min(t, dp(k + 1, i + 1, y1, x2, y2) + get(x1, y1, i, y2));
+    }
+    
+    // 2. 竖着切
+    for (int i = y1; i < y2; i++) {
+        // 2.1 选择左边一块
+        t = min(t, dp(k + 1, x1, y1, x2, i) + get(x1, i + 1, x2, y2));
+        // 2.2 选择右边一块
+        t = min(t, dp(k + 1, x1 ,i + 1, x2, y2) + get(x1, y1, x2, i));
+    }
+    // t是最小的一种方案
+    return f[k][x1][y1][x2][y2] = t;
+}
+
+int main() {
+    cin >> n;
+    // 1.获取二维前缀和
+    for (int x = 1; x <= 8; x++) {
+        for (int y = 1; y <= 8; y++) {
+            cin >> s[x][y];
+            s[x][y] = s[x][y] + s[x][y - 1] + s[x - 1][y] - s[x - 1][y - 1];
+        }
+    }
+    
+    // 2.初始化
+    memset(f, -1, sizeof f);  // 对于double, 将每个字节初始化为-1即为负无穷
+    
+    // 3. dp
+    X = (double) s[8][8] / n;
+    printf("%.3lf\n", sqrt(dp(1, 1, 1, 8, 8) / n));
+    return 0;
+}
+```
+
+
+

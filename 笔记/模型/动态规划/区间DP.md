@@ -441,6 +441,7 @@ int s[M][M];              // 二维前缀和
 double X;  // X拔
 int n;
 
+// 返回矩形对应的(xi - X)^2
 double get(int x1, int y1, int x2, int y2) {
     double t = s[x2][y2] - s[x2][y1 - 1] - s[x1 - 1][y2] + s[x1 - 1][y1 - 1];
     t -= X;

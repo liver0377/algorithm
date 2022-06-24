@@ -386,51 +386,60 @@ DP问题通常有着两种空间优化策略：**双变量**以及**滚动数组
 **核心代码**
 
 ```cpp
+#include <iostream>
+#include <algorithm>
+#include <cstring>
+
+using namespace std;
+
+const int N = 6010;
+const int M = N;
+
+int h[N], ne[M], e[M], idx;
+int f[N][2]; // f[u][0]: 在以u为根节点的子树中，选择上司的最大快乐值
+             // f[u][1]: 在以u为根节点的子树中， 不选择上司的最大快乐值
+int happy[N];// happy[i]: 员工i的快乐值
 int n;
-int h[N], e[N], ne[N], idx;     
-int happy[N];
-int f[N][2];
-bool has_fa[N];         // 标记是否存在父节点
+int st[N];
 
-void add(int a, int b)
-{
-    e[idx] = b, ne[idx] = h[a], h[a] = idx ++ ;
+void add(int a, int b) {
+    e[idx] = b, ne[idx] = h[a], h[a] = idx ++;
 }
 
-void dfs(int u)
-{
-    f[u][1] = happy[u];     // 选取根节点的初值为自身的幸福度
+int dfs(int u) {
+    f[u][0] = happy[u];
+    
+    for (int i = h[u]; i != -1; i = ne[i]) {
+        int son = e[i];
+        dfs(son);
+        
+        f[u][0] += f[son][1];
+        f[u][1] += max(f[son][0], f[son][1]);
+    }    
+   
+}
 
-    // 遍历子树
-    for (int i = h[u]; ~i; i = ne[i])
-    {
-        int j = e[i];       // 子结点
-        dfs(j);             // 递归子结点
-
-        // 状态转移
-        f[u][1] += f[j][0]; 
-        f[u][0] += max(f[j][0], f[j][1]);
+int main() {
+    cin >> n;
+    for (int i = 1; i <= n; i++) cin >> happy[i];
+    
+    memset(h, -1, sizeof h);
+    for (int i = 0; i < n - 1; i++) {
+        int a, p;
+        cin >> a >> p;
+        st[a] = true;
+        add(p, a);
     }
+    
+    int root;
+    for (int i = 1; i <= n; i++) {
+        if (!st[i]) root = i;
+    }
+    
+    dfs(root);
+    
+    cout << max(f[root][0], f[root][1]) << endl;
+    return 0;
 }
-
-// 核心
-memset(h, -1, sizeof h);            // 初始化邻接表头指针
-
-// 读入树结构
-for (int i = 0; i < n - 1; i ++ )
-{
-    int a, b;
-    scanf("%d%d", &a, &b);
-    add(b, a);                      // 尽管是无向图，但只需要保留一条边（上司指向下属）
-    has_fa[a] = true;               // 标记存在父节点
-}
-
-// 找树根，不存在父节点的就是树根
-int root = 1;
-while (has_fa[root]) root ++ ;
-
-dfs(root);      // 从根节点开始遍历
-
-printf("%d\n", max(f[root][0], f[root][1]));
 ```
 

@@ -48,7 +48,7 @@ void add(int a, int b, int c) {
 // dfs会返回以u为根节点，经过u的最长路径
 int dfs(int u, int father) {
     // 叶子节点的最长路径长度为0
-    int dist = 0;       // 在以u为根节点的子树中，经过u的最长路径
+    
     int d1 = 0, d2 = 0; // d1: 对于以u为根节点的树的所有子树，以u为根节点的最长路径
                         // d2: 对于以u为根节点的树的所有子树，以u为根节点的最长路径
                         // 注意，这里的d1, d2不能够在一棵子树上
@@ -56,13 +56,12 @@ int dfs(int u, int father) {
         int j = e[i];
         if (j == father) continue; // 不能够沿着父节点向上走
         int d = dfs(j, u) + w[i];
-        dist = max(dist, d);
         if (d >= d1) d2 = d1, d1 = d;
         else if (d > d2) d2 = d;
     }
     
     ans = max(ans, d1 + d2);       // 在dfs过程中，这里的ans会遍历每一个节点
-    return dist;
+    return d1;
 }
 
 int main() {
@@ -161,6 +160,7 @@ void dfs1(int u, int father) {
 // 从u节点开始的子树向下遍历，利用父节点来更新子节点j的up[j]
 void dfs2(int u, int father)
 {
+    // 若u为根节点，那么up[u] = 0
     for (int i = h[u]; i != -1; i = ne[i])
     {
         int j = e[i];
@@ -296,4 +296,299 @@ int main() {
 ```
 
 - 这里采用算倍数的方式来间接求出了每个数的约数和
+- 如果采用试除法，那么对于每个数`i`求它的约数和，需要进行$\sqrt{i}$次计算, 时间复杂度为$O(n\sqrt{n})$
+- 采用算倍数的方式时，求每个数`i`的约数和的计算次数为$i + i / 2 + i / 3 + ... = O(nlog(n))$ 
+
+
+
+
+
+### 二叉苹果树
+
+![image-20220624163705244](http://www.cdn.liver0377.xyz/typora/202206241637321.png)
+
+**解题思路**
+
+- 题意转换： 给定一棵树，树的每一个边都有权值(苹果), 选择一条经过根节点的路径，路径长度限制为m, 求路径最大苹果数目
+
+- 每当选定一个节点，就必须要选择其父节点，因为路径必须经过根节点，所以这题可以转化成一个**有依赖的背包问题**
+
+- 对于以`u`为根节点的树，设其最大能够使用的边的数目为`m`, 即背包容积为`m`
+
+- 对于其每棵子树，就是一个分组，分组的体积为0, 1, 2, 3, ...
+
+  > 注意边数问题，对于子树`son`, 如果其能够使用的最大边数为`m`, 那么`u`分配给子树的边数应该为`m + 1`
+
+**代码实现**
+
+```cc
+#include <iostream>
+#include <algorithm>
+#include <string.h>
+
+using namespace std;
+
+const int N = 110;
+const int M = N * 2;
+
+int h[N], ne[M], e[M], w[M], idx;
+int f[N][N];
+int n, m;
+
+void add(int a, int b, int c) {
+    e[idx] = b, w[idx] = c, ne[idx] = h[a], h[a] = idx ++;
+}
+
+void dfs(int u, int father) {
+    // 叶子节点的苹果树为0
+    for (int i = h[u]; i != -1; i = ne[i]) {
+        int son = e[i];
+        if (son == father) continue;
+        dfs(son, u);
+        for (int j = m; j >= 0; j --) {
+            for (int k = 0; k < j; k++) { // 给子树son的边数为k, k不能取到j
+                f[u][j] = max(f[u][j], f[son][k] + f[u][j - k - 1] + w[i]);
+            }
+        }
+    }
+}
+
+int main() {
+    cin >> n >> m;
+    
+    memset(h, -1, sizeof h);
+    for (int i = 1; i <= n - 1; i++) {
+        int a, b, c;
+        cin >> a >> b >> c;
+        add(a, b, c), add(b, a, c);  // 题干中没有给定父子关系，因此建立无向图
+    }
+    
+     dfs(1, -1);                     // 题干指定根节点为1，只能从1开始遍历
+    
+     cout << f[1][m] << endl;
+     return 0;
+}
+```
+
+
+
+### 战略游戏
+
+![image-20220624174429065](http://www.cdn.liver0377.xyz/typora/202206241744124.png)
+
+![image-20220624174444401](http://www.cdn.liver0377.xyz/typora/202206241744461.png)
+
+
+
+**解题思路**
+
+- 此题和**没有上司的舞会**十分类似
+- 对于每条边，应该至少有一个士兵位于某个端点
+
+
+
+- 状态表示
+  ![image-20220624174925182](http://www.cdn.liver0377.xyz/typora/202206241749234.png)
+- 状态计算
+  - $f[i][0] = \Sigma{f[son_k][1]}$
+  - $f[i][1] = \Sigma{min(f[son_k][0], f[son_k][1])}$
+
+
+
+**代码实现**
+
+```cc
+#include <iostream>
+#include <algorithm>
+#include <cstring>
+
+using namespace std;
+
+const int N = 1510;
+const int M = 1510;
+
+int h[N], e[M], ne[M], idx;
+int f[N][2]; // f[u][0]: 不选择根节点u的最小士兵数
+             // f[u][1]: 选择根节点u的最小士兵数目
+int st[N];
+int n;
+
+void add(int a, int b) {
+    e[idx] = b, ne[idx] = h[a], h[a] = idx ++;
+}
+
+void dfs(int u) {
+    f[u][0] = 0;
+    f[u][1] = 1;
+    
+    for (int i = h[u]; i != -1; i = ne[i]) {
+        int j = e[i];
+        
+        dfs(j);
+        f[u][0] += f[j][1];
+        f[u][1] += min(f[j][0], f[j][1]);
+    }
+}
+
+int main() {
+    while (scanf("%d", &n) == 1) {
+        // 1. 初始化
+        memset(h, -1, sizeof h);
+        memset(e, 0, sizeof e);
+        memset(ne, 0, sizeof ne);
+        idx = 0;
+        memset(f, 0, sizeof f);
+        memset(st, 0, sizeof st);
+        
+        // 2. 建图
+        int a, cnt;
+        for (int i = 0; i < n; i++) {
+            scanf("%d:(%d) ", &a, &cnt);  // 格式化输入
+            for (int j = 0; j < cnt; j++) {
+                int b;
+                cin >> b;
+                add(a, b);
+                st[b] = true;
+            }
+        }
+        
+        int root = 0;  // 节点编号从0开始
+        while (st[root]) root ++;
+        
+        dfs(root);
+        
+        cout << min(f[root][0], f[root][1]) << endl;
+    }
+    
+    return 0;
+}
+```
+
+
+
+
+
+### 皇宫看守
+
+![image-20220624193259980](http://www.cdn.liver0377.xyz/typora/202206241933066.png)
+
+
+
+**解题思路**
+
+- 题意转换
+
+  给定一棵树，每个节点有对应的权值，在每个节点上安排守卫，守卫可以观察到与其相连的所有节点
+
+  求保证所有节点都被观察到，并且总守卫权值和最小的经费
+
+- 这题与**战略游戏**很类似，但是这题需要保证点的覆盖，而不是边的覆盖
+
+  > 存在所有点都被覆盖但是所有边没有被覆盖完全的情况，因此这两种覆盖方式不是等价的
+
+- 借助状态机模型，建立三种状态
+
+  - $f[i][0]$: 在以i为根的子树中，根节点不放置，被父节点看到的方案
+  - $f[i][1]$: 在以i为根的子树中，根节点不放置，被子节点看到的方案数
+  - $f[i][2]$: 在以i为根的子树中，根节点放置，被自己看到的方案数
+
+  > 注意这里状态0与状态1是有**重叠**的，即根节点既可以被父节点看到，也可以被子节点看到
+  >
+  > 但是在后面的状态转移过程中，并没有发生$f[i][0]$ + $f[i][1]$的情况，因此
+  >
+  > 这种重叠并不会影响最终的答案
+
+- 状态转移方程
+
+  - $f[i][0]$
+
+    如果根节点`i`位于状态0，那么其所有的子节点`j`可以处于状态1或者状态2，但是不能处于状态0
+
+    $f[i][0] = \Sigma_{son} {min(f[son][1], f[son][2])}$
+
+  - $f[i][1]$
+
+    如果根节点`i`位于状态1，那么其所有子节点要么位于状态1，要么位于状态2，并且一定有**一个或多个**子节点一定位于状态2
+
+    $f[i][1] = min(f[son][2] + \Sigma_{son} {min(f[other\_son][1], f[other\_son][2])})$
+
+    这里的$other\_son$表示除了当前的子节点`son`之外的其它所有节点
+
+  - $f[i][2]$
+
+    如果根节点`i`位于状态2, 那么其子节点可以处于任意一种状态
+
+    $f[i][2] = min(f[son][0], f[son][1], f[son][2]) + w[son]$
+
+     
+
+**代码实现**
+
+```cc
+#include <iostream>
+#include <algorithm>
+#include <cstring>
+
+using namespace std;
+
+const int N = 1510;
+const int M = 1510;
+
+int h[N], e[M], ne[M], idx;
+int f[N][3];  // f[i][0]: 在以i为根的子树中，根节点不放置，被父节点看到的方案数
+              // f[i][1]: 在以i为根的子树中，根节点不放置，被子节点看到的方案数
+              // f[i][2]: 在以i为根的子树中，根节点放置，被自己看到的方案数
+              
+int w[N];     // w[i]: 点i的权值
+bool st[N];    // st[i]: 点i是否为内部节点或者叶子节点
+int n;
+
+void add(int a, int b) {
+    e[idx] = b, ne[idx] = h[a], h[a] = idx ++;
+}
+
+void dfs(int u) {
+    f[u][0] = 0;
+    f[u][1] = 0x3f3f3f3f;
+    f[u][2] = w[u];
+    
+    for (int i = h[u]; i != -1; i = ne[i]) {
+        int j = e[i];
+        dfs(j);
+        f[u][0] += min(f[j][1], f[j][2]);
+        f[u][2] += min({f[j][0], f[j][1], f[j][2]});
+    }
+    
+    for (int i = h[u]; i != -1; i = ne[i]) {
+        int j = e[i];
+        // 这里采用了间接方式, f[u][0] - min(f[j][1], f[j][2]) 即代表其它所有节点
+        f[u][1] = min(f[u][1], f[j][2] + f[u][0] - min(f[j][1], f[j][2]));
+         
+    }
+}
+
+int main() {
+    cin >> n;
+    
+    memset(h, -1, sizeof h);
+    for (int i = 0; i < n; i++) {
+        int id, cnt;
+        cin >> id >> w[id] >> cnt;
+        for (int j = 0; j < cnt; j++) {
+            int a;
+            cin >> a;
+            add(id, a);
+            st[a] = true;
+        }
+    }
+    
+    int root = 1;
+    while (st[root]) root ++;
+    
+    dfs(root);
+    
+    cout << min(f[root][1], f[root][2]) << endl;
+    return 0;
+}
+```
 

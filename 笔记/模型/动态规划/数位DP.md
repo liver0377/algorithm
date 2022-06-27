@@ -1,27 +1,119 @@
-**模板**
+### 计数问题
+
+![image-20220627151538845](http://www.cdn.liver0377.xyz/typora/202206271515917.png)
+
+**解题思路**
+
+![image-20220627155753950](http://www.cdn.liver0377.xyz/typora/202206271557016.png)
+
+- 所有处于0 ~ n的数字均位于上面的树中
+
+- 设函数`cnt(int n, int i)`的功能为返回1~n之间数字i出现的次数，注意，这里**不包括前导0**
+
+- 设如下一般情况
+
+  - n = abcdefg
+
+  - 求数字`k`在第4位(自左向右位数增大)上出现的次数
+
+    - 设树$m = {m_7}{m_6}{m_5}{m_4}{m_3}{m_2}{m_1}$
+
+    - 先求左节点, 即$0 <= m4 <= d - 1$ 
+
+      - 若`k`不为0，则$m_7m_6m_4$可以取`0~abc - 1`之间的任意一个数, 即`abc`个数, $m_3m_2m_1$可以随便取，取值范围为0~999, 即1000个数
+
+        所以0 ~ n之间第4位取`k`的数的个数为 **abc * 1000**
+
+      - 若`k`为0，则$m_7m_6m_5$可以取1~abc - 1之间的任意一个数, 即`abc - 1`个数，$m_3m_2m_1$可以随便取, 有1000个数
+
+        所以0 ~ n 之间第4位取`k`的数的个数为**(abc - 1) * 1000**
+
+        > - 当abc == 0时, 此时意味着正在求第1位，左节点是不存在的，直接跳过
+
+    - 再求右节点
+
+      根据`k`与`d`的大小关系进行讨论
+
+      - `k` > `d`, 那么右节点不存在，跳过
+      - `k` = `d`, 那么$m_3m_2m_1$的取值范围为`0~efg`, 数的个数为`efg + 1`
+      - `k` < `d`, 那么当$m_4$取`k`之后，$m_3m_2m_1$仍然可以随便取，取值个数为1000
+
+  - 将各种状态的次数全部加起来即可
+  
+  > 注意，这里计算的是每一位取数字`k`的所有可能数，但一个数可能在不同的位同时出现了该数字，因此会发生重复
+  >
+  > 但是这种重复是正确的，比如数字11，会在第1位以及第2位在求`1`出现的次数时时分别被算一次，这是正确的
+
+**代码实现**
 
 ```cc
-int dfs(int pos, int pre, int lead, int limit) {
-    if (!pos) {
-        边界条件
-    }
-    if (!limit && !lead && dp[pos][pre] != -1) return dp[pos][pre];
-    int res = 0, up = limit ? a[pos] : 无限制位;
-    for (int i = 0; i <= up; i ++) {
-        if (不合法条件) continue;
-        res += dfs(pos - 1, 未定参数, lead && !i, limit && i == up);
-    }
-    return limit ? res : (lead ? res : dp[pos][sum] = res);
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
+
+// 计算n的数字位数
+int dgt(int n) {
+    int res = 0;
+    while (n) res++, n /= 10;
+    
+    return res;
 }
-int cal(int x) {
-    memset(dp, -1, sizeof dp);
-    len = 0;
-    while (x) a[++ len] = x % 进制, x /= 进制;
-    return dfs(len, 未定参数, 1, 1);
+
+int cnt(int n, int i) {
+    if (!n) return 0;
+    
+    int res = 0, sz = dgt(n);
+    
+    // n = 1234
+    for (int j = 1; j <= sz; j++) { // j = 2， 这里是从右向左计数
+        int p = pow(10, j - 1);     // p = 10
+        int l = n / p / 10;         // l = 12  
+        int r= n % p;               // r = 4
+        int x = n / p % 10;         // x = 3
+        // 1. 左节点
+        // 1.1 i非0
+        if (i > 0 && j != sz) { 
+            res += l * p;
+        }
+        // 1.2 i为0
+        if (!i && j != sz) {      // 当x == 0时，左边的高位不能够全部为0
+            res += (l - 1) * p;  
+        }
+        
+        // 2. 右节点
+        // 2.1 右节点不存在
+        if (i > x) {
+            continue;
+        }
+        
+        // 2.2 当在首位放置i时，i不能为0  
+        if ((i < x) && (i || j != sz)) {
+            res += p;
+        }
+        
+        // 2.3 
+        if ((i == x) && (i || j != sz)) {
+            res += r + 1;
+        }
+    }
+    
+    return res;
 }
-signed main() {
-    cin >> l >> r;
-    cout << cal(r) - cal(l - 1) << endl;
+
+int main() {
+    int a, b;
+    while (cin >> a >> b, a || b) {
+        if (b < a) swap(a, b);
+        
+        for (int i = 0; i <= 9; i++) {
+            cout << cnt(b, i) - cnt(a - 1, i) << " ";
+        }
+        cout << endl;
+    }
+    
+    return 0;
 }
 ```
 
@@ -128,8 +220,8 @@ int dp(int n){
                 res += f[i][K - last];  // 第i为取0
                 if (last < K) {         // 第i位取1的方案数
                     res += f[i][K - last - 1];
-                    break;             // 当前位置不能够放置非0非1数x，结束遍历
                 }
+                break;             // 当前位置不能够放置非0非1数x，结束遍历
             } else { // x == 1
                 res += f[i][K - last]; // 第i位为0
                                        
@@ -254,4 +346,286 @@ int main() {
     return 0;
 }
 ```
+
+
+
+
+
+### Windy数
+
+![image-20220627190812542](http://www.cdn.liver0377.xyz/typora/202206271908614.png)
+
+
+
+**解题思路**
+
+- 依旧是套用之前的模板，不过这里要考虑前导0的问题，之前的题目中，前导0都是包含在内的
+
+- 这里在枚举`n`的每一位时，会特判前导0，具体就是当在首位置数时，不能够置0
+
+  ![image-20220627191037202](http://www.cdn.liver0377.xyz/typora/202206271910259.png)
+
+  - 例: 013这个数，在计算时就不会被算作`windy`数，因为| 1 - 0 | < 2
+
+    然而实际上，13确实是一个`windy`数，所以要分开来考虑
+
+**代码实现**
+
+```cc
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
+
+const int N = 10;
+
+int f[N][10];
+
+void init() {
+    for (int i = 0; i <= 9; i++) f[1][i] = 1;
+    
+    for (int i = 2; i <= N; i++) {
+        for (int j = 0; j <= 9; j++) {         // 注意这里可以以0开头
+            for (int k = 0; k <= 9; k++) {
+                if (abs(j - k) >= 2) {
+                    f[i][j] += f[i - 1][k];
+                }
+            }
+        }
+    }
+}
+
+long long dp(int n) {
+    if (!n) return 1;
+    
+    long long res = 0, last = -2;
+    vector<int> nums;
+    
+    while (n) nums.push_back(n % 10), n /= 10;
+    
+    for (int i = nums.size() - 1; i >= 0; i--) {
+        int x = nums[i];
+        
+        // 1. 左分支
+        for (int j = i == nums.size() - 1; j < x; j++) {
+            if (abs(j - last) >= 2)
+                 res += f[i + 1][j];
+        }
+        
+        if (abs(x - last) >= 2) 
+            last = x;
+        else 
+            break;
+            
+        // 2. 右分支
+        if (!i) res ++;
+    }
+    
+    // 枚举长度在1~ size - 1范围内的所有windy数
+    for (int i = 1; i < nums.size(); i++) {
+        for (int j = 1; j <= 9; j++) {    // 这里没有从0开始，主要是因为可能会包含0, 00, 000等数
+                                          // 并且1, 01等数会被认为是不同的数而累加多次
+            res += f[i][j];
+        }
+    }
+     
+    res ++; // 算上0
+    return res;
+}
+
+int main() {
+    int a, b;
+    
+    init();
+    cin >> a >> b;
+    
+    cout << dp(b) - dp(a - 1) << endl;
+    
+    return 0;
+}
+```
+
+- 设`n`的位数为`sz`,在`dp()`函数的主循环中，只会考虑`sz`位数，并且这些数的首位均不为0
+- 但是显然还有一些小于`sz`位的数，他们也是`windy`数，如1, 13等等
+- 因此，单独的使用循环将他们包含进来
+
+
+
+### 数字游戏II
+
+![image-20220627200738036](http://www.cdn.liver0377.xyz/typora/202206272007107.png)
+
+
+
+**解题思路**
+
+- 此题的难点在于预处理过程
+- 状态表示
+  - $f[i][j][k]$: 长度为`i`，首位为`j`, 所有位之和模N之后的值为`k`的数的个数
+- 状态计算
+  - ![image-20220627201100837](http://www.cdn.liver0377.xyz/typora/202206272011884.png)
+
+
+
+**代码实现**
+
+```cc
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <cstring>
+
+using namespace std;
+
+const int N = 12;
+const int M = 102;
+
+int f[N][10][M];
+int P;
+
+int mod(int a, int b) {
+    return (a % b + b) % b;
+}
+
+void init() {
+    memset(f, 0, sizeof f);
+    
+    for (int i = 0; i <= 9; i++) f[1][i][i % P] = 1;
+    
+    for (int i = 2; i < N; i++) {
+        for (int j = 0; j <= 9; j++) {
+            for (int k = 0; k < P; k++) {
+                for (int x = 0; x <= 9; x++) {
+                    f[i][j][k] += f[i - 1][x][mod(k - j, P)];
+                }
+            }
+        }
+    }
+}
+
+int dp(int n) {
+    if (!n) return 1;
+    
+    // memset(f, 0, sizeof f);
+    int res = 0, last = 0; // last表示枚举到第i位时，i + 1 ~ sz - 1位的数字总和
+    vector<int> nums;
+    
+    while (n) nums.push_back(n % 10), n /= 10;
+    
+    for (int i = nums.size() - 1; i >= 0; i--) {
+        int x = nums[i];
+        
+        for (int j = 0; j < x; j++) {
+            res += f[i + 1][j][mod(-last, P)];  // 需要保证0~i位的总和m满足(m + last) % P == 0
+        }
+        
+        last += x;
+        
+        if (!i && last % P == 0) {
+            res ++;
+        }
+    }
+    
+    return res;
+}
+
+int main() {
+    int a, b;
+    
+    while (cin >> a >> b >> P) {
+        init();
+        cout << dp(b) - dp(a - 1) << endl;
+    }
+    
+    return 0;
+}
+```
+
+
+
+### 不要62
+
+
+
+**解题思路**
+
+- 写出状态表示即可
+
+- 状态表示
+
+  $f[i][j]:$ 长度为`i`位，首位为`j`的数中，不包含4， 62的数的个数
+
+- 状态计算
+
+  - $f[i][j] = \Sigma{_k}{f[i - 1][k]}$, j, k 满足以下限制
+    - `k`为2时，前面的`j`不能是6
+    - `j`, `k`不能为4
+
+**代码实现**
+
+```cc
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+const int N = 11;
+
+int f[N][10];
+
+void init() {
+    for (int i = 0; i <= 9; i++) f[1][i] = 1;
+    f[1][4] = 0;
+    
+    for (int i = 2; i < N; i++) {
+        for (int j = 0; j <= 9; j++) {
+            for (int k = 0; k <= 9; k++) {
+                if (j == 6 && k == 2) continue;
+                if (j == 4 || k == 4) continue;
+                f[i][j] += f[i - 1][k];
+            }
+        }
+    }
+}
+
+int dp(int n) {
+    if (!n) return 1;
+    
+    int res = 0, last = 0;
+    vector<int> nums;
+    
+    while (n) nums.push_back(n % 10), n /= 10;
+    
+    for (int i = nums.size() - 1; i >= 0; i--) {
+        int x = nums[i];
+        
+        for (int j = 0; j < x; j++) {
+            if (j == 2 && last == 6) continue;
+            if (j == 4) continue;
+            res += f[i + 1][j];
+        }
+        
+        if (x == 4 || (last == 6 && x == 2)) break;
+        if (!i) res ++;
+        
+        last = x;
+    }
+    
+    return res;
+}
+
+int main() {
+    int a, b;
+    init();
+    
+    while (cin >> a >> b, a || b) {
+        cout << dp(b) - dp(a - 1) << endl;    
+    }
+    
+    return 0;
+}
+```
+
+
 

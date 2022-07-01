@@ -639,6 +639,8 @@ int main() {
 
 **代码实现**
 
+![](http://www.cdn.liver0377.xyz/typora/202206281644857.jpeg)
+
 ```cc
 #include <iostream>
 #include <vector>

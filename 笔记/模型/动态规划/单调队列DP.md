@@ -367,15 +367,13 @@ int main() {
 ![image-20220701200120391](http://www.cdn.liver0377.xyz/typora/202207012001448.png)
 
 - 状态计算
-  $f[i]=max(f[i-1],f[i - j - 1] - s[i - j] +s[i]) （1<=j<=k）$
+  $f[i]=max(f[i-1],f[i - j - 1] - s[i - j] +s[i]) （1<=j<=K）$
 
-  因此需要维护一个单调减的单调队列
+  ​        = $max(f[i - 1], s[i] + max(f[i -j - 1] - s[i - j]))$
 
-- $0 <= i - j <= m$
+- 令$x = i -j, x \in [i - K, i - 1]$
 
-  => $i - m <= j <= i$
-
-  
+  因此， 需要维护一个从$[i - K, i - 1]$的大小为$K$的窗口
 
 **代码实现**
 
@@ -423,3 +421,113 @@ int main() {
 - 维护的窗口中的数其实是$f[i - K - 1] - s[i - K], f[i - K] - s[i - K + 1], ..., f[i - 1] - s[i]$
 
   每次将新的$g[i]$与队尾元素进行比较
+
+
+
+### 理想正方形
+
+![image-20220702150442794](http://www.cdn.liver0377.xyz/typora/202207021504887.png)
+
+**解题思路**
+
+- 这题的重点在于如何求解一个矩阵内部的最大值以及最小值
+
+- 这里采用两遍预处理的方式
+
+  - 逐行扫描，采用一个长度为`k`的滑动窗口，记下窗口内部的最大值以及最小值，将其放在窗口的最右侧
+
+    ![image-20220702152506856](http://www.cdn.liver0377.xyz/typora/202207021525928.png)
+
+  - 逐列扫描，同样采用一个大小为`k`的滑动窗口，记下窗口内部的最大值以及最小值
+
+    由于之前已经进行过一次扫描，每个点存放的都已经是窗口内行的最大值了，因此，这里对**列求最值，本质上就是对矩阵求最值**
+    ![image-20220702152740399](http://www.cdn.liver0377.xyz/typora/202207021527472.png)
+
+  - 最后，枚举所有矩阵的最大值以及最小值的差，选出最小的结果作为答案
+
+**代码实现**
+
+```cc
+#include<iostream>
+#include<algorithm>
+
+using namespace std;
+const int N = 1010,INF = 1e9;
+int row_min[N][N],row_max[N][N];
+//row_min[i][j]表示当前第i行，第[j - m + 1,j]这个区间的最小值，row_max同理
+int n,m,k;  //表示n * m的矩阵，选出k * k矩阵的最大整数和最小整数的差值”的最小值
+int w[N][N]; 
+int q[N]; //优先队列
+
+// 获取a数组的滑动窗口大小为k的最小值，将其存储在b数组的对应位置
+void get_min(int a[], int b[], int tot)
+{
+    int hh = 0, tt = -1;
+    for (int i = 1; i <= tot; i ++ )
+    {
+        if (hh <= tt && q[hh] < i - k + 1) hh ++ ;
+        while (hh <= tt && a[q[tt]] >= a[i]) tt -- ;
+        q[ ++ tt] = i;
+        b[i] = a[q[hh]];
+    }
+}
+
+// 获取b数组的滑动窗口大小为k的最大值，将其存储在b数组的对应的位置
+void get_max(int a[], int b[], int tot)
+{
+    int hh = 0, tt = -1;
+    for (int i = 1; i <= tot; i ++ )
+    {
+        if (hh <= tt && q[hh] <= i - k) hh ++ ;
+        while (hh <= tt && a[q[tt]] <= a[i]) tt -- ;
+
+        q[ ++ tt] = i;
+        //因为第i个元素也可能包含，所以最后再处理
+        b[i] = a[q[hh]];
+    }
+}
+
+
+int main(){
+    cin >> n >> m >> k;
+    for(int i = 1;i <= n;++i){
+        for(int j = 1;j <= m;++j){
+            scanf("%d",&w[i][j]);
+        }
+    }
+
+    // 分别找到每一行的每个[j - n - 1,j]区间的最小值和最大值
+    for(int i = 1;i <= n;++i){
+        get_min(w[i],row_min[i],m);
+        get_max(w[i],row_max[i],m);
+    }
+
+    int res = INF;
+
+    //ans是一个临时数组
+    int ans[N],col_min[N],col_max[N]; //col_max,col_min分别表示竖直长度是n的区间的最小值和最大值
+
+    //接着找到每列的最大值和最小值（直接从第n列开始,即表示第一个n * n的矩阵的每行内的最大元素）
+    for(int j = k;j <= m;++j){  
+        //枚举列，由于最值存放在右边，因此从矩阵的最小右边界k开始枚举
+
+        //枚举行，计算当前这一列中最值复制给ans
+        for(int i = 1;i <= n;++i) ans[i] = row_min[i][j];
+        get_min(ans,col_min,n);   // col_min记录第j列的滑动窗口最小值
+
+
+        for(int i = 1;i <= n;++i) ans[i] = row_max[i][j];
+        get_max(ans,col_max,n);   // col_max记录第j列的滑动窗口的最大值
+
+
+
+        // 枚举当前这一列区间的所有最大值和最小值的差值，（也是从第k行开始）
+        for(int i = k;i <= n;++i){  // 
+            res = min(res,col_max[i] - col_min[i]);
+        }
+    }
+
+    cout << res << endl;
+    return 0;
+}
+```

@@ -24,6 +24,7 @@
 | [322.零钱兑换](https://leetcode.cn/problems/coin-change/)    | [零钱兑换](https://github.com/liver0377/algorithm/blob/main/leetcode/322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%5B%E5%8A%A8%E8%A7%84%5D.md) |          |
 | [691.贴纸拼词](https://leetcode.cn/problems/stickers-to-spell-word/) | [贴纸拼词](https://github.com/liver0377/algorithm/blob/main/leetcode/691.%E8%B4%B4%E7%BA%B8%E6%8B%BC%E8%AF%8D.md) | 状态压缩 |
 | [464.我能赢吗](https://leetcode.cn/problems/can-i-win/)      | [我能赢吗](https://github.com/liver0377/algorithm/blob/main/leetcode/464.%E6%88%91%E8%83%BD%E8%B5%A2%E5%90%97.md) | 状态压缩 |
+| [871.最低加油次数](https://leetcode.cn/problems/minimum-number-of-refueling-stops) | [最低加油次数](https://github.com/liver0377/algorithm/blob/main/leetcode/871.%E6%9C%80%E4%BD%8E%E5%8A%A0%E6%B2%B9%E6%AC%A1%E6%95%B0.md) |          |
 
 
 

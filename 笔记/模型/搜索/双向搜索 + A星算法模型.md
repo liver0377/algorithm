@@ -6,7 +6,7 @@
 
 **解题思路**
 
-- 此题由于字符串长度上限为20, 最多有6中转换规则
+- 此题由于字符串长度上限为20, 最多有6种转换规则
 
 - 在最坏情况下，如果从每个位置开始都能够应用所有的转换规则，那么一个状态就可以拓展出120种状态
 
@@ -136,6 +136,17 @@ int main() {
   - 每个点到终点的估计距离`f`必须要小于它到终点的实际距离
 
   - 当终点出队时，其与起点的距离`dist`最小，即最优解，而中间节点则不一定
+
+    - 证明
+
+           假设终点第一次出队列时不是最优 
+            则说明当前队列中存在点u
+               有 d[估计]< d[真实]
+            d[u] + f[u] <= d[u] + g[u] = d[队头终点]
+            即队列中存在比d[终点]小的值,
+           但我们维护的是一个小根堆,没有比d[队头终点]小的d[u],矛盾
+          
+          证毕
 
   - **A*算法**仅适用于有解的情况，如果无解的话，其仍然会搜索所有的节点，并且由于使用优先级队列来代替普通队列，一次拓展操
 
@@ -269,3 +280,149 @@ int main() {
   - 如果给定的状态序列中，逆序对的个数为奇数，则一定无解
 
     
+
+
+
+### 第K短路
+
+![image-20220711143757950](http://www.cdn.liver0377.xyz/typora/202207111437018.png)
+
+
+
+**解题思路**
+
+- 采用**A*算法**解决这个问题
+
+- 如果求解第K短路?
+
+  - 不考虑节点是否被访问过，每次拿出堆顶元素时，将其连通的所有点全部加入小根堆，这样做可以使得一个点被访问多次
+
+    也就是被不同的路径所到达
+
+  - 当终点第一次出队时，这条路径与起点的距离最小，当终点第二次出队时，这条路径与起点的路径第二小，当终点第K次出队时，这条路径就是第K短路径
+
+- 如何选取估价函数?
+
+  这里使用每个点到终点的最短距离作为估价函数`f`,`f`满足**h(x) < h*(x)**的条件
+
+  可以首先建立一个反向的图，也就是从终点开始建立单向图，然后使用`Dijkstra`算法预处理出每个点到终点的最短距离
+
+
+
+**代码实现**
+
+```cc
+#include <cstring>
+#include <iostream>
+#include <algorithm>
+#include <queue>
+
+#define x first
+#define y second
+
+using namespace std;
+
+typedef pair<int, int> PII;
+typedef pair<int, PII> PIII;
+const int N = 1010, M = 200010;
+
+int n, m, S, T, K;
+int h[N], rh[N], e[M], w[M], ne[M], idx;
+int dist[N], cnt[N];
+bool st[N];
+
+void add(int h[],int a,int b,int c)
+{
+    e[idx] = b;
+    w[idx] = c;
+    ne[idx] = h[a];
+    h[a] = idx++;
+}
+
+void dijkstra()
+{
+    priority_queue<PII,vector<PII>,greater<PII>> heap;
+    heap.push({0,T});//终点
+    memset(dist, 0x3f, sizeof dist);
+    dist[T] = 0;
+
+    while(heap.size())
+    {
+        auto t = heap.top();
+        heap.pop();
+
+        int ver = t.y;
+        if(st[ver]) continue;
+        st[ver] = true;
+
+        for(int i=rh[ver];i!=-1;i=ne[i])
+        {
+            int j = e[i];
+            if(dist[j]>dist[ver]+w[i])
+            {
+                dist[j] = dist[ver] + w[i];
+                heap.push({dist[j],j});
+            }
+        }
+    }
+}
+
+int astar()
+{
+    // heap {i, {j, k}}
+    // k : 点的编号
+    // i : 点k到起点的实际距离 + 点k到终点的估价距离
+    // j : 点k到起点的实际距离
+    priority_queue<PIII, vector<PIII>, greater<PIII>> heap;
+    // 谁的d[u]+f[u]更小 谁先出队列
+    heap.push({dist[S], {0, S}});
+    while(heap.size())
+    {
+        auto t = heap.top();
+        heap.pop();
+        int ver = t.y.y,distance = t.y.x;
+        cnt[ver]++;
+        //如果终点已经被访问过k次了 则此时的ver就是终点T 返回答案
+
+        if(cnt[T]==K) return distance;
+
+        for(int i=h[ver];i!=-1;i=ne[i])
+        {
+            int j = e[i];
+            /* 
+            如果走到一个中间点都cnt[j]>=K，则说明j已经出队k次了，且astar()并没有return distance,
+            说明从j出发找不到第k短路(让终点出队k次)，
+            即继续让j入队的话依然无解，
+            那么就没必要让j继续入队了
+            */
+            
+                heap.push({distance+w[i]+dist[j],{distance+w[i],j}});
+            }
+        }
+    }
+    // 终点没有被访问k次
+    return -1;
+}
+
+int main() {
+    int n, m;
+    cin >> n >> m;
+    memset(h, -1, sizeof h);
+    memset(rh, -1, sizeof rh);
+    for (int i = 0; i < m; i++) {
+        int a, b, c;
+        cin >> a >> b >> c;
+        add(h, a, b, c);
+        add(rh, b, a, c);
+    }
+    cin >> S >> T >> K;
+    if (S == T) K ++;   // 由于边数最小是1，所以自环不考虑，需要多出队一次
+    // 1. 预处理每个点到终点的最短距离, 用于估价函数
+    dijkstra();
+    
+    // 2. A*算法求解
+    cout << astar();
+    return 0;
+} 
+```
+

@@ -1,6 +1,21 @@
 - `dfs`的基本结构
 
   ```cc
+  dfs(int u, int acc, ...) {    // u表示当前正在访问底第几层 acc为自上向下累计的值，仅当到达给定层数才会返回
+      if (u == 给定层数) 返回acc
+      for u in v 的相邻节点
+      if visited[u] == false then
+        visited[u] = true;
+        DFS(u + 1, acc + cost);
+        visited[u] = true; // 恢复现场
+      
+      return ...
+  }
+  ```
+  
+  
+  
+  ```cc
   DFS(v) // v 可以是图中的一个顶点，也可以是抽象的概念，如 dp 状态等。
     在 v 上打访问标记
     for u in v 的相邻节点

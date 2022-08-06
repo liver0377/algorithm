@@ -71,11 +71,11 @@ const int dy[] = {-1, 1, 1, -1};
 const int ix[] = {-1, -1, 0, 0};
 const int iy[] = {-1, 0, 0, -1};
 const char cs[] = "\\/\\/";   // cs[i]: 从当前点出发，到达格点i所应该经过的边的形状
-    
+    1
 int n, m;
 
 int bfs() {
-    deque<PII> q;
+    deque<PII> q;            // (x, y)
     
     memset(st, 0, sizeof st);
     memset(dist, 0x3f, sizeof dist);
@@ -86,8 +86,9 @@ int bfs() {
         auto t = q.front();
         q.pop_front();
         
-        if (t.x == n && t.y == m) return dist[t.x][t.y];  // 当一个格点出队时，其dist已经是最小了
-        if (st[t.x][t.y]) continue;   // 一个点可能会被多次放入队列，只需利用该点拓展一次即可
+        if (t.x == n && t.y == m) return dist[t.x][t.y];  // 当一个格点出队时，其dist最小
+        if (st[t.x][t.y]) continue;   // 因为一个点可能会被多次放入队列，当它第一次出队时，其dist已经是最小了
+                                      // 不用再管了
         st[t.x][t.y] = true;
         for (int i = 0; i < 4; i++) {
             int nx = t.x + dx[i];
@@ -97,7 +98,7 @@ int bfs() {
             if (nx < 0 || ny < 0 || nx > n || ny > m) continue;
             int w = g[gx][gy] != cs[i];
             
-            if (dist[t.x][t.y] + w <= dist[nx][ny]) {
+            if (dist[t.x][t.y] + w <= dist[nx][ny]) {   // 只要有新点出队，就用它尝试更新与它相连的点
                 dist[nx][ny] = dist[t.x][t.y] + w;
             
             }

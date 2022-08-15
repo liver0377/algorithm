@@ -173,7 +173,21 @@ int main() {
 
 **解题思路**
 
-- 这是一个01分数规划问题，可以看
+- 这是一个[01分数规划](https://github.com/liver0377/algorithm/blob/main/%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/01%E5%88%86%E6%95%B0%E8%A7%84%E5%88%92.md)问题, 采用二分最大值的方式来解决
+
+- ${\sum f[i] \over {\sum t[i]}} > mid$ => $\sum {t[i] * mid - f[i]} < 0$
+
+- 根据上述公式，在一个环上，只要有$\sum {t[i] * mid - f[i]} < 0$成立，那么就表明最大值应该大于`mid`, 此时将左边界设置为`mid`,
+
+  反之将右边界设置为`mid`
+
+- 可以采用一个Trick, 将边权设置为$t[i] * mid - f[x]$, 具体来说，如下图所示
+
+  ![image-20220815170343157](http://www.cdn.liver0377.xyz/typora/202208151703200.png)
+
+  将点的权值加到边上(入点或者出点都可以), 这样做的话，当判断$\sum {t[i] * mid - f[i]} < 0$是否成立时，其实就变成了判断整个图是否有负环
+
+- 接下来使用`spfa`判断负环即可
 
 
 
@@ -254,3 +268,140 @@ int main() {
 
 
 
+
+
+
+
+
+
+### 单词环
+
+![image-20220815182440282](http://www.cdn.liver0377.xyz/typora/202208151824367.png)
+
+![image-20220815182454915](http://www.cdn.liver0377.xyz/typora/202208151824966.png)
+
+
+
+**解题思路**
+
+- 此题的关键在于建图的方式，直觉上会将字符串当做节点，如果两个字符串之间可以相连，那么就连接一条单向边
+
+  但这样做会导致复杂度太大
+
+  点的数目为`n`, 边的数目最大可以到$n ^ 2$, 也就是$10^{10}$,毫无疑问会超时，因此需要考虑新的建图方式
+
+- 对于一个字符串ab...xy, 可以建立一条(ab , xy，w)的边，`w`为字符串长度，这样每个字符串最多只能建立一条边
+
+  点的数目则缩减到了26 * 26个，每一个点由两个字母构成
+
+- 同时，原来的字符串环恰好可以和现在所建立的图中的环一一对应
+
+- 这里要求最大平均长度，同样是一个01分数规划问题， 求的是$\sum {w[i]} \over {\sum{1}}$
+
+  上面是环的长度，下面是环中节点的数目
+
+- ${\sum {w[i]} \over {\sum{1}}} >mid$ ==>
+
+  $\sum {mid - w[i]} < 0 $
+
+  也就是将$mid - w[i]$作为新边权，求负环，和上一题一样
+
+
+
+
+**代码实现**
+
+```cc
+#include<iostream>
+#include<cstring>
+#include<algorithm>
+#include<queue>
+
+using namespace std;
+
+const int N = 28 * 26 + 10, M = 100010;
+const double eps = 1e-4;
+
+int h[N], ne[M], e[M], w[M], idx;
+double dist[N];
+bool st[N];
+int cnt[N];  //记录当前的路径条数
+int n;
+
+bool check(double mid) {
+    memset(dist, 0, sizeof dist);
+    memset(cnt, 0, sizeof cnt);
+    memset(st, 0, sizeof st);
+    
+    queue<int> q;
+    for (int i = 0; i < 26 * 26; i++) {
+        q.push(i);
+        st[i] = true;
+    }
+    
+    int count = 0;    
+    while (q.size()) {
+        int t = q.front(); q.pop();
+        st[t] = false;
+        
+
+        for (int i = h[t]; ~i; i = ne[i]) {
+            int j = e[i];
+            if (dist[j] > dist[t] + mid - w[i]) {
+                dist[j] = dist[t] + mid - w[i];
+                cnt[j] = cnt[t] + 1;
+                if (++count >= 10000) return true;   // 优化
+                if (cnt[j] >= 26 * 26) return true;
+                if (!st[j]) {
+                    q.push(j);
+                    st[j] = true;
+                }
+            }
+        }
+    }
+
+    return false;
+}  
+
+void add(int a,int b,int c){
+    e[idx] = b;
+    w[idx] = c;
+    ne[idx] = h[a];
+    h[a] = idx++;
+}
+
+
+int main(){
+
+    while(cin >> n, n){
+        memset(h,-1,sizeof h);
+        idx = 0;
+        string ch;
+        for(int i = 0;i < n;++i){
+            cin >> ch;
+            int len = ch.size();
+            if(len >= 2){
+                //巧妙的建图：以字符串前后两个端点建图,最多只有26 * 26个节点
+                int a = (ch[0] - 'a') * 26 + (ch[1] - 'a');
+                int b = (ch[len - 2] - 'a') * 26 + (ch[len - 1] - 'a');
+                add(a,b,len);  //重复部分算两次,所以直接上冷
+
+            }
+        }
+        if (!check(0)) puts("No solution");  //mid取0的时候式子是最大的，说明没有解
+        else{
+            //二分平均长度
+            double l = 0, r = 1000;  
+            while(r - l >= eps){
+                double mid = (l + r) / 2;
+                if(check(mid)) l = mid;
+                else r = mid;
+            }
+            printf("%lf\n",r);
+        }
+    }
+    return 0;
+}
+```
+
+- 在第39行使用了优化，当节点被更新超过10000次时，提早退出

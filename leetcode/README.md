@@ -103,6 +103,7 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [942.增减字符串匹配](https://leetcode.cn/problems/di-string-match/) | [增减字符串匹配](https://github.com/liver0377/algorithm/blob/main/leetcode/942.%E5%A2%9E%E5%87%8F%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%5B%E8%B4%AA%E5%BF%83%5D.md) |
+| [6150.根据模式串构造最小数字](https://leetcode.cn/problems/construct-smallest-number-from-di-string/) | [根据模式串构造最小数字](https://github.com/liver0377/algorithm/blob/7dcb6211d2f42c58971c5c51f3bd6c9d09566da3/leetcode/6150.%E6%A0%B9%E6%8D%AE%E6%A8%A1%E5%BC%8F%E4%B8%B2%E6%9E%84%E9%80%A0%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97.md) |
 
 
 

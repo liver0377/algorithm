@@ -104,6 +104,7 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [942.增减字符串匹配](https://leetcode.cn/problems/di-string-match/) | [增减字符串匹配](https://github.com/liver0377/algorithm/blob/main/leetcode/942.%E5%A2%9E%E5%87%8F%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%5B%E8%B4%AA%E5%BF%83%5D.md) |
 | [6150.根据模式串构造最小数字](https://leetcode.cn/problems/construct-smallest-number-from-di-string/) | [根据模式串构造最小数字](https://github.com/liver0377/algorithm/blob/7dcb6211d2f42c58971c5c51f3bd6c9d09566da3/leetcode/6150.%E6%A0%B9%E6%8D%AE%E6%A8%A1%E5%BC%8F%E4%B8%B2%E6%9E%84%E9%80%A0%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97.md) |
+| [6166.最大回文数字](https://leetcode.cn/problems/largest-palindromic-number/) | [最大回文数字](https://github.com/liver0377/algorithm/blob/main/leetcode/6166.%E6%9C%80%E5%A4%A7%E5%9B%9E%E6%96%87%E6%95%B0%E5%AD%97.md) |
 
 
 
@@ -136,6 +137,7 @@
 | ------------------------------------------------------------ | -------- | ------------------------------------------------------------ |
 | [剑指Offer 04. 二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 矩阵性质 | [二维数组中的查找](https://github.com/liver0377/algorithm/blob/main/leetcode/%E5%89%91%E6%8C%87offer04.%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9F%A5%E6%89%BE%5B%E6%8A%80%E5%B7%A7%5D.md) |
 | [442.数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) | 原地哈希 | [数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) |
+| [6155.找出数组的第K大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) | 归并排序 | [找出数组的第K大和](https://github.com/liver0377/algorithm/blob/main/leetcode/6155.%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%92%8C.md) |
 
 
 
@@ -146,4 +148,10 @@
 | [6065.按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [按位与结果大于0的最长组合](https://github.com/liver0377/algorithm/blob/main/leetcode/6065.%E6%8C%89%E4%BD%8D%E4%BA%8E%E7%BB%93%E6%9E%9C%E5%A4%A7%E4%BA%8E0%E7%9A%84%E6%9C%80%E9%95%BF%E7%BB%93%E6%9E%9C%E7%BB%84%E5%90%88.md) |
 
 
+
+### 图论
+
+| 原题链接                                                     | 考点   | 题解                                                         |
+| ------------------------------------------------------------ | ------ | ------------------------------------------------------------ |
+| [6154.感染二叉树所需要的总时间](https://leetcode.cn/problems/amount-of-time-for-binary-tree-to-be-infected/) | 最短路 | [感染二叉树所需要的总时间](https://github.com/liver0377/algorithm/blob/main/leetcode/6154.%E6%84%9F%E6%9F%93%E4%BA%8C%E5%8F%89%E6%A0%91%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%80%BB%E6%97%B6%E9%97%B4.md) |
 

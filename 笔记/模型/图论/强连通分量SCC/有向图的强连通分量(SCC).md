@@ -67,14 +67,14 @@
   ```cc
   void tarjan(int u) {
       dfn[u] = low[u] = ++ timestamp ;
-      stk[++ top] = u, in_stack[u] = true;
+      stk[++ top] = u, in_stk[u] = true;
       
       for (int i = h[u]; ~i; i = ne[i]) {
           int j = e[i];
           if (!dfn[j]) {
               tarjan(j);
               low[u] = min(low[u], low[j]);
-          } else if (in_stack[j]) {
+          } else if (in_stk[j]) {
               low[u] = min(low[u], dfn[j]);
           }
       }
@@ -84,7 +84,7 @@
           int x;
           do {
               x = stk[top --];
-              in_stack[x] = false;
+              in_stk[x] = false;
               id[x] = scc_cnt;
               sz[scc_cnt] ++;
           } while (x != u);
@@ -360,150 +360,284 @@ int main() {
 
 ### 最大半连通子图
 
+![image-20220822170904381](http://www.cdn.liver0377.xyz/typora/202208221709455.png)
+
+![image-20220822170916366](http://www.cdn.liver0377.xyz/typora/202208221709406.png)
+
+
+
+**解题思路**
+
+- 一个连通图一定是一个半连通图，多个连接分量所形成的一条链也是一个半连通图
+
+  > 对于链上的任意两个点，他们之间一定有一条路径
+
+- 首先对原图进行缩点，**建立一张缩点之后的新图**, 这里真的建立新图是因为要遍历这张图
+
+- 接着按照拓扑序(逆scc序)遍历新图，设`f[i]`表示从起点到连通分量`i`的链上的最大节点数， `g[i]`表示取得最大节点数的路径条数(半联通子图数目)
+
+  每遍历一个节点，就用它更新其后面节点的`f`, `g`
+
+- 最终枚举最大的`f`以及对应的`g`即可
+
 
 
 ```cc
-#include <cstdio>
-#include <cstring>
 #include <iostream>
 #include <algorithm>
+#include <cstring>
 #include <unordered_set>
 
 using namespace std;
 
+const int N = 1e5 + 10;
+const int M = 2e6 + 10;
+
+
 typedef long long LL;
 
-const int N = 100010, M = 2000010;
-
-int n, m, mod;
-int h[N], hs[N], e[M], ne[M], idx;
-int dfn[N], low[N], timestamp;
-int stk[N], top;
+int n, m, top, timestamp, scc_cnt, mod;
+int h[N], e[M], ne[M], idx, hs[N];    // hs: 供DAG新图使用
+int dfn[N], low[N], id[N], sz[N], stk[N];
+int f[N], g[N];        // f[i]: 按照拓扑序访问，以强连通块i为终点的链上的最大节点总数
+                       // g[i]: 强连通块取最大节点总数的取法
 bool in_stk[N];
-int id[N], scc_cnt, scc_size[N];
-int f[N], g[N];
-// 有新图所以传h
-void add(int h[],int a,int b)
-{
-    e[idx] = b,ne[idx] = h[a],h[a] = idx++;
+
+
+void add(int h[], int a, int b) {
+    e[idx] = b, ne[idx] = h[a], h[a] = idx ++;
 }
 
-void tarjan(int u)
-{
-    dfn[u] = low[u] = ++timestamp;
-    stk[++top] = u,in_stk[u] = true;
-    for(int i =h[u];~i;i=ne[i])
-    {
+void tarjan(int u) {
+    dfn[u] = low[u] = ++ timestamp ;
+    stk[++ top] = u, in_stk[u] = true;
+    
+    for (int i = h[u]; ~i; i = ne[i]) {
         int j = e[i];
-        // 树枝边
-        if(!dfn[j])
-        {
+        if (!dfn[j]) {
             tarjan(j);
-            low[u] = min(low[u],low[j]);
+            low[u] = min(low[u], low[j]);
+        } else if (in_stk[j]) {
+            low[u] = min(low[u], dfn[j]);
         }
-        // 横向边
-        else if(in_stk[j])low[u] = min(low[u],dfn[j]);
     }
-    // 当前分量最高点 把当前点取出来作为一个强连通分量
-    // ⭐
-    // 解释一下为什么tarjan完是逆dfs序
-    // 假设这里是最高的根节点fa
-    // 上面几行中 fa的儿子节点j都已经在它们的递归中走完了下面9行代码
-    // 其中就包括 ++scc_cnt 
-    // 即递归回溯到高层节点的时候 子节点的scc都求完了
-    // 节点越高 scc_id越大
-    // 在我们后面想求链路dp的时候又得从更高层往下
-    // 所以得for(int i=scc_cnt(根节点所在的scc);i;i--)开始
-    if(dfn[u]==low[u])
-    {
-        ++scc_cnt;
-        int y;
-        do{//由于是dfs搜到一层stk.push 所以stk最先pop出来的是最深层的
-            y=stk[top--];
-            in_stk[y] = false;
-            // id[y] = scc_cnt 属于第scc_cnt个强连通分量
-            id[y] = scc_cnt;
-            scc_size[scc_cnt]++;
-        }while(y!=u);
+    
+    if (dfn[u] == low[u]) {
+        scc_cnt ++;
+        int x;
+        do {
+            x = stk[top --];
+            in_stk[x] = false;
+            id[x] = scc_cnt;
+            sz[scc_cnt] ++;
+        } while (x != u);
     }
-}
+ }
 
-int main()
-{
-    memset(h,-1,sizeof h);
-    memset(hs,-1,sizeof hs);
+int main() {
     cin >> n >> m >> mod;
-    while(m--)
-    {
-        int a,b;
+    memset(h, -1, sizeof h);
+    memset(hs, -1, sizeof hs);
+    for (int i = 0; i < m; i++) {
+        int a, b;
         cin >> a >> b;
-        add(h,a,b);
+        add(h, a, b);
     }
-    // tarjan算强连通分量
-    for(int i = 1;i<=n;i++)
-    {
-        if(!dfn[i])
-        {
+    
+    // 1. 缩点
+    for (int i = 1; i <= n; i++) {
+        if (!dfn[i]) {
             tarjan(i);
         }
     }
-    unordered_set<LL> S;// 边是(u,v) hash后 u*1000000+v
-    for(int i=1;i<=n;i++)
-    {
-        for(int j = h[i];~j;j=ne[j])
-        {
+    
+    // 2. 建立DAG新图
+    unordered_set<LL> st;
+    for (int i = 1; i <= n; i++) {
+        for (int j = h[i]; ~j; j = ne[j]) {
             int k = e[j];
-            int a = id[i],b= id[k];
-            // 边判重
-            LL hash = a*1000000ll+b;
-            // 如果a和b不在一个强连通分量 且 边(a,b)没被加过
-            if(a!=b && !S.count(hash))
-            {
-                add(hs,a,b);
-                S.insert(hash);
+            int a = id[i], b = id[k];
+            LL hash = a * 1000000ll + b;
+            if (a != b && !st.count(hash)) {   // 这里的hash为去重操作，避免两个连通块之间连接多条边
+                                               // 因为两个半连通子图之间如果只有边不同，而顶点相同，则算
+                                               // 同一个半连通子图
+                add(hs, a, b);
+                st.insert(hash);
             }
         }
     }
-    // 强连通分量算完后
-    // 拓扑序一定是按照节点编号递减的顺序->不需要重新拓扑排序了
-    // 在这个拓扑序上求最长路
-    for(int i=scc_cnt;i;i--)
-    {
-        // !f[i] i没被更新过 i为一条链的起点
-        if(!f[i])
-        {
-            f[i] = scc_size[i];
+    
+    // 3. 按照拓扑序递推f[], g[]
+    for (int i = scc_cnt; i >= 1; i--) {
+        if (!f[i]) {
+            f[i] = sz[i];
             g[i] = 1;
-        }
-        for(int j = hs[i];~j;j=ne[j])
-        {
-            int k = e[j];
-            if(f[k]<f[i]+scc_size[k])
-            {
-                f[k] = f[i]+scc_size[k];
-                g[k] = g[i];
+        } 
+            for (int j = hs[i]; ~j; j = ne[j]) {
+                int k = e[j];
+                int t = sz[k];
+                if (f[k] < f[i] + t) {
+                    f[k] = f[i] + t;
+                    g[k] = g[i];
+                } else if (f[k] == f[i] + t) {
+                    g[k] = (g[k] + g[i]) % mod;
+                }
             }
-            else if(f[k]==f[i]+scc_size[k])
-            {
-                g[k] = (g[k]+g[i])%mod;
-            }
-        }
+        
     }
-
-    int maxf = 0,sum = 0;
-    // 对比每一条路终点
-    for(int i = 1;i<=scc_cnt;i++)
-    {
-        if(f[i]>maxf)
-        {
+    
+    // 4. 求最大f[i]以及对应的g[i]
+    int maxf = 0, maxg = 0;
+    for (int i = 1; i <= scc_cnt; i ++) {
+        if (f[i] > maxf) {
             maxf = f[i];
-            sum = g[i];
+            maxg = g[i];
+        } else if (f[i] == maxf) {
+            maxg = (maxg + g[i]) % mod;
         }
-        else if(f[i] == maxf)sum=(sum+g[i])%mod;
     }
+    
     cout << maxf << endl;
-    cout << sum;
+    cout << maxg << endl;
     return 0;
 }
 ```
 
+
+
+
+
+
+
+### 银河
+
+![image-20220822184554441](http://www.cdn.liver0377.xyz/typora/202208221845520.png)
+
+
+
+**解题思路**
+
+- 此题与[糖果](https://www.acwing.com/problem/content/1171/)一模一样，但是会卡`spfa`， 这里使用`tarjan`算法求解
+- 思路是一样的，依旧是求最长路，首先使用`tarjan`算法进行缩点，
+- 在连通分量内部，所有的边都位于环上，因此只要有一条边的边权大于0，那么就表明整张图有正环，即无解
+- 如果有解的话，整个连通分量内部，任意两点之间的最长路应该都是相同的，因此可以直接将整个连通分量看做一个点
+- 建立新图之后，按照拓扑序对新图进行动态规划递推，求每个连通分量到超级源点的最长最长距离
+- 最终进行累加的时候，每个连通分量内部的亮度总和就是`dist[i] * sz[i]`
+
+
+
+**代码实现**
+
+```cc
+#include <iostream>
+#include <algorithm>
+#include <cstring>
+
+using namespace std;
+
+typedef long long LL;
+const int N = 1e5 + 10;
+const int M = 6e5 + 10;
+
+int dist[N];
+int h[N], hs[N], e[M], ne[M], w[M], idx;
+int dfn[N], low[N], timestamp;
+int stk[N], top;
+bool in_stk[N];
+int id[N], sz[N], scc_cnt;
+int n, m;
+
+void add(int h[], int a, int b, int c) {
+    w[idx] = c, e[idx] = b, ne[idx] = h[a], h[a] = idx ++;
+}
+
+void tarjan(int u) {
+    dfn[u] = low[u] = ++ timestamp ;
+    stk[++ top] = u, in_stk[u] = true;
+    
+    for (int i = h[u]; ~i; i = ne[i]) {
+        int j = e[i];
+        if (!dfn[j]) {
+            tarjan(j);
+            low[u] = min(low[u], low[j]);
+        } else if (in_stk[j]) {
+            low[u] = min(low[u], dfn[j]);
+        }
+    }
+    
+    if (dfn[u] == low[u]) {
+        scc_cnt ++;
+        int x;
+        do {
+            x = stk[top --];
+            in_stk[x] = false;
+            id[x] = scc_cnt;
+            sz[scc_cnt] ++;
+        } while (x != u);
+    }
+ }
+
+int main() {
+    cin >> n >> m;
+    memset(h, -1, sizeof h);
+    memset(hs, -1, sizeof hs);
+    // 1. 建图
+    for (int i = 1; i <= n; i++) add(h, 0, i, 1);  // 超级源点0
+    for (int i = 0; i < m; i++) {
+        int T, a, b;
+        cin >> T >> a >> b;
+        if (T == 1) {
+            add(h, a, b, 0);
+            add(h, b, a, 0);
+        } else if (T == 2) {
+            add(h, a, b, 1);
+        } else if (T == 3) {
+            add(h, b, a, 0);
+        } else if (T == 4) {
+            add(h, b, a, 1);
+        } else {
+            add(h, a, b, 0);
+        }
+    }
+    
+    
+    // 2. 缩点
+    tarjan(0);    // 从0点可以到达所有点
+    
+    // 3. 建新图, 顺便判断一下连通分量内部是否有边权为1的边
+    bool flag = false;
+    for (int i = 0; i <= n; i++) {
+        for (int j = h[i]; ~j; j = ne[j]) {
+            int k = e[j];
+            int a = id[i], b = id[k];
+            if (a != b) {
+                add(hs, a, b, w[j]);
+            } else if (w[j] > 0) {
+                flag = true;
+                goto FAIL;
+            }
+        }
+    }
+    
+FAIL:
+    // 4. 按照拓扑序递推
+    if (flag) {
+        cout << -1 << endl;
+    } else {
+        for (int i = scc_cnt; i; i --) {
+            for (int j = hs[i]; ~j; j = ne[j]) {
+                int k = e[j];
+                dist[k] = max(dist[i] + w[j], dist[k]);
+            }
+        }
+        LL res = 0;
+        for (int i = 1; i <= scc_cnt; i ++) {
+            res += (LL)sz[i] * dist[i];
+        }
+        cout << res << endl;
+    }
+    return 0;
+}
+```
+
+> 这里连通分量之间是可以有重边的，在求最长路时会自然地选择较长边，不需要去重

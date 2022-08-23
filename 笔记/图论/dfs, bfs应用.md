@@ -4,7 +4,7 @@
 
 ![image-20220807141133236](http://www.cdn.liver0377.xyz/typora/202208071426871.png)
 
-- 模板
+- 模板: 适用于所有图
 
   ```cc
   void dfs(int x) {
@@ -18,6 +18,20 @@
   ```
 
   - 这个模板会遍历每个点以及每一条边(双向边会访问两次), 时间复杂度为$O(m + n)$
+  
+- 模板2 : 只适用于树
+
+  ```cc
+  void dfs(int x, int fa) {   // fa为x的父亲节点
+      for (int i = h[x]; ~i; i = ne[i]) {
+          int j = e[i];
+          if (j == fa) continue;
+          dfs(j, x);
+      }
+  }
+  ```
+
+  
 
 
 

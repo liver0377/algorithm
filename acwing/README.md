@@ -55,3 +55,27 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [4507.子数组异或和](https://www.acwing.com/problem/content/4510/) | [子数组异或和](https://github.com/liver0377/algorithm/blob/main/acwing/4507.%E5%AD%90%E6%95%B0%E7%BB%84%E5%BC%82%E6%88%96%E5%92%8C.md) |
 
+
+
+### 并查集
+
+| 原题链接                                                     | 题解                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [1250.格子游戏](https://www.acwing.com/problem/content/1252/) | [格子游戏](https://github.com/liver0377/algorithm/blob/main/acwing/1250.%E6%A0%BC%E5%AD%90%E6%B8%B8%E6%88%8F.md) |
+| [1252.搭配购买](https://www.acwing.com/problem/content/1254/) | [搭配购买](https://github.com/liver0377/algorithm/blob/main/acwing/1252.%E6%90%AD%E9%85%8D%E8%B4%AD%E4%B9%B0.md) |
+| [237.程序自动分析](https://www.acwing.com/problem/content/239/) | [程序自动分析](https://github.com/liver0377/algorithm/blob/main/acwing/237.%E7%A8%8B%E5%BA%8F%E8%87%AA%E5%8A%A8%E5%88%86%E6%9E%90.md) |
+| [238.银河英雄传说](https://www.acwing.com/problem/content/240/) | [银河英雄传说](https://github.com/liver0377/algorithm/blob/main/acwing/238.%20%E9%93%B6%E6%B2%B3%E8%8B%B1%E9%9B%84%E4%BC%A0%E8%AF%B4.md) |
+
+
+
+
+
+### 图论
+
+| 原题链接                                                     | 模型       | 题解 |
+| ------------------------------------------------------------ | ---------- | ---- |
+| [1126.最小花费](https://www.acwing.com/problem/content/1128/) | 单源最长路 |      |
+|                                                              |            |      |
+|                                                              |            |      |
+|                                                              |            |      |
+

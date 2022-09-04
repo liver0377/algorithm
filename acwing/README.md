@@ -32,6 +32,7 @@
 | [125.耍杂技的牛](https://www.acwing.com/problem/content/127/) | [耍杂技的牛](https://github.com/liver0377/algorithm/blob/main/acwing/125.%E8%80%8D%E6%9D%82%E6%8A%80%E7%9A%84%E7%89%9B.md) |
 | [104.货仓选址](https://www.acwing.com/problem/content/106/)  | [货仓选址](https://github.com/liver0377/algorithm/blob/main/acwing/104.%E8%B4%A7%E4%BB%93%E9%80%89%E5%9D%80.md) |
 | [913.排队打水](https://www.acwing.com/problem/content/915/)  | [排队打水](https://github.com/liver0377/algorithm/blob/main/acwing/913.%E6%8E%92%E9%98%9F%E6%89%93%E6%B0%B4%5B%E8%B4%AA%E5%BF%83%5D.md) |
+| [acwing.4609火柴棍数字](https://www.acwing.com/problem/content/4612/) | [火柴棍数字](https://github.com/liver0377/algorithm/blob/main/acwing/4609.%E7%81%AB%E6%9F%B4%E6%A3%8D%E6%95%B0%E5%AD%97.md) |
 
 
 
@@ -79,4 +80,30 @@
 |                                                              |            |      |
 |                                                              |            |      |
 |                                                              |            |      |
+
+
+
+
+
+### 枚举
+
+| 原题链接                                                     | 题解                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [4610.列表排序](https://www.acwing.com/problem/content/description/4613/) | [列表排序](https://github.com/liver0377/algorithm/blob/main/acwing/4610.%E5%88%97%E8%A1%A8%E6%8E%92%E5%BA%8F.md) |
+|                                                              |                                                              |
+|                                                              |                                                              |
+
+
+
+
+
+
+
+### 数学
+
+| 原题链接                                                     | 题解 |
+| ------------------------------------------------------------ | ---- |
+| [4611. 串联数字](https://www.acwing.com/problem/content/description/4614/) |      |
+|                                                              |      |
+|                                                              |      |
 

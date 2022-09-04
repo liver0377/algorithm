@@ -25,6 +25,7 @@
 | [691.贴纸拼词](https://leetcode.cn/problems/stickers-to-spell-word/) | [贴纸拼词](https://github.com/liver0377/algorithm/blob/main/leetcode/691.%E8%B4%B4%E7%BA%B8%E6%8B%BC%E8%AF%8D.md) | 状态压缩 |
 | [464.我能赢吗](https://leetcode.cn/problems/can-i-win/)      | [我能赢吗](https://github.com/liver0377/algorithm/blob/main/leetcode/464.%E6%88%91%E8%83%BD%E8%B5%A2%E5%90%97.md) | 状态压缩 |
 | [871.最低加油次数](https://leetcode.cn/problems/minimum-number-of-refueling-stops) | [最低加油次数](https://github.com/liver0377/algorithm/blob/main/leetcode/871.%E6%9C%80%E4%BD%8E%E5%8A%A0%E6%B2%B9%E6%AC%A1%E6%95%B0.md) |          |
+| [6168.恰好移动K步到达某一位置](https://leetcode.cn/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) |                                                              |          |
 
 
 
@@ -147,6 +148,7 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [6065.按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [按位与结果大于0的最长组合](https://github.com/liver0377/algorithm/blob/main/leetcode/6065.%E6%8C%89%E4%BD%8D%E4%BA%8E%E7%BB%93%E6%9E%9C%E5%A4%A7%E4%BA%8E0%E7%9A%84%E6%9C%80%E9%95%BF%E7%BB%93%E6%9E%9C%E7%BB%84%E5%90%88.md) |
+| [6169.最长优雅子数组](https://leetcode.cn/problems/longest-nice-subarray/) |                                                              |
 
 
 

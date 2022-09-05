@@ -74,9 +74,19 @@
 
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [245.谜一样的牛](https://www.acwing.com/problem/content/245/) |                                                              |
+| [245.谜一样的牛](https://www.acwing.com/problem/content/245/) | [谜一样的牛](https://github.com/liver0377/algorithm/blob/main/acwing/244.%E8%B0%9C%E4%B8%80%E6%A0%B7%E7%9A%84%E7%89%9B.md) |
 | [241.楼兰图腾](https://www.acwing.com/problem/content/243/)  | [楼兰图腾](https://github.com/liver0377/algorithm/blob/main/acwing/241.%E6%A5%BC%E5%85%B0%E5%9B%BE%E8%85%BE.md) |
 |                                                              |                                                              |
+
+
+
+### 线段树
+
+| 原题链接                                                     | 题解 |
+| ------------------------------------------------------------ | ---- |
+| [1275.最大数](https://www.acwing.com/problem/content/description/1277/) |      |
+| [245.你能回答这些问题吗](https://www.acwing.com/problem/content/246/) |      |
+|                                                              |      |
 
 
 
@@ -111,7 +121,7 @@
 
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [4611. 串联数字](https://www.acwing.com/problem/content/description/4614/) | [串联数字(https://github.com/liver0377/algorithm/blob/main/acwing/4611.%E4%B8%B2%E8%81%94%E6%95%B0%E5%AD%97.md) |
+| [4611. 串联数字](https://www.acwing.com/problem/content/description/4614/) | [串联数字](https://github.com/liver0377/algorithm/blob/main/acwing/4611.%E4%B8%B2%E8%81%94%E6%95%B0%E5%AD%97.md) |
 |                                                              |                                                              |
 |                                                              |                                                              |
 

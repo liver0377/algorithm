@@ -86,7 +86,18 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [1275.最大数](https://www.acwing.com/problem/content/description/1277/) | [最大数](https://github.com/liver0377/algorithm/blob/main/acwing/1275.%E6%9C%80%E5%A4%A7%E6%95%B0.md) |
 | [245.你能回答这些问题吗](https://www.acwing.com/problem/content/246/) | [你能回答这些问题吗](https://github.com/liver0377/algorithm/blob/main/acwing/245.%E4%BD%A0%E8%83%BD%E5%9B%9E%E7%AD%94%E8%BF%99%E4%BA%9B%E9%97%AE%E9%A2%98%E5%90%97.md) |
-| [246.区间最大公约数](https://www.acwing.com/problem/content/description/247/) |                                                              |
+| [246.区间最大公约数](https://www.acwing.com/problem/content/description/247/) | [区间最大公约数](https://github.com/liver0377/algorithm/blob/main/acwing/246.%E5%8C%BA%E9%97%B4%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0.md) |
+| [243.一个简单的整数问题](https://www.acwing.com/problem/content/244/) |                                                              |
+
+
+
+### Trie树
+
+| 原题链接                                                     | 题解 |
+| ------------------------------------------------------------ | ---- |
+| [256.最大异或和](https://www.acwing.com/problem/content/258/) |      |
+|                                                              |      |
+|                                                              |      |
 
 
 

@@ -131,6 +131,14 @@
 
 
 
+### 线段树
+
+| 原题链接                                                     | 题解 | 模型       |
+| ------------------------------------------------------------ | ---- | ---------- |
+| [6206.最长递增子序列2](https://leetcode.cn/contest/weekly-contest-310/problems/longest-increasing-subsequence-ii/) |      | 普通线段树 |
+|                                                              |      |            |
+|                                                              |      |            |
+
 
 
 ### Tricks

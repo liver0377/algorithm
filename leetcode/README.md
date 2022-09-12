@@ -133,11 +133,11 @@
 
 ### 线段树
 
-| 原题链接                                                     | 题解 | 模型       |
-| ------------------------------------------------------------ | ---- | ---------- |
-| [6206.最长递增子序列2](https://leetcode.cn/contest/weekly-contest-310/problems/longest-increasing-subsequence-ii/) |      | 普通线段树 |
-|                                                              |      |            |
-|                                                              |      |            |
+| 原题链接                                                     | 题解                                                         | 模型       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- |
+| [6206.最长递增子序列2](https://leetcode.cn/contest/weekly-contest-310/problems/longest-increasing-subsequence-ii/) | [最长递增子序列2](https://github.com/liver0377/algorithm/blob/main/leetcode/6206.%20%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%972.md) | 普通线段树 |
+|                                                              |                                                              |            |
+|                                                              |                                                              |            |
 
 
 

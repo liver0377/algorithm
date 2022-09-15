@@ -157,8 +157,8 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [6065.按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [按位与结果大于0的最长组合](https://github.com/liver0377/algorithm/blob/main/leetcode/6065.%E6%8C%89%E4%BD%8D%E4%BA%8E%E7%BB%93%E6%9E%9C%E5%A4%A7%E4%BA%8E0%E7%9A%84%E6%9C%80%E9%95%BF%E7%BB%93%E6%9E%9C%E7%BB%84%E5%90%88.md) |
-| [6169.最长优雅子数组](https://leetcode.cn/problems/longest-nice-subarray/) |                                                              |
-| [672. 灯泡开关2](https://leetcode.cn/problems/bulb-switcher-ii/) |                                                              |
+| [6169.最长优雅子数组](https://leetcode.cn/problems/longest-nice-subarray/) | [最长优雅子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6169.%E6%9C%80%E9%95%BF%E4%BC%98%E9%9B%85%E5%AD%90%E6%95%B0%E7%BB%84.md) |
+| [672. 灯泡开关2](https://leetcode.cn/problems/bulb-switcher-ii/) | [灯泡开关2](https://github.com/liver0377/algorithm/blob/main/leetcode/672.%20%E7%81%AF%E6%B3%A1%E5%BC%80%E5%85%B3.md) |
 
 
 

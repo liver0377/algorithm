@@ -137,7 +137,7 @@
 | 原题链接                                                     | 题解                                                         | 模型       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- |
 | [6206.最长递增子序列2](https://leetcode.cn/contest/weekly-contest-310/problems/longest-increasing-subsequence-ii/) | [最长递增子序列2](https://github.com/liver0377/algorithm/blob/main/leetcode/6206.%20%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%972.md) | 普通线段树 |
-| [850.矩形面积2](https://leetcode.cn/problems/rectangle-area-ii/) |                                                              |            |
+| [850.矩形面积2](https://leetcode.cn/problems/rectangle-area-ii/) | [矩形面积2](https://github.com/liver0377/algorithm/blob/main/leetcode/850.%20%E7%9F%A9%E5%BD%A2%E9%9D%A2%E7%A7%AF2.md) | 扫描线     |
 |                                                              |                                                              |            |
 
 

@@ -33,8 +33,8 @@
 | [104.货仓选址](https://www.acwing.com/problem/content/106/)  | [货仓选址](https://github.com/liver0377/algorithm/blob/main/acwing/104.%E8%B4%A7%E4%BB%93%E9%80%89%E5%9D%80.md) |
 | [913.排队打水](https://www.acwing.com/problem/content/915/)  | [排队打水](https://github.com/liver0377/algorithm/blob/main/acwing/913.%E6%8E%92%E9%98%9F%E6%89%93%E6%B0%B4%5B%E8%B4%AA%E5%BF%83%5D.md) |
 | [4609火柴棍数字](https://www.acwing.com/problem/content/4612/) | [火柴棍数字](https://github.com/liver0377/algorithm/blob/main/acwing/4609.%E7%81%AB%E6%9F%B4%E6%A3%8D%E6%95%B0%E5%AD%97.md) |
-| [906.区间分组](https://www.acwing.com/problem/content/908/)  |                                                              |
-| [4616.击中战舰](https://www.acwing.com/problem/content/4619/) |                                                              |
+| [906.区间分组](https://www.acwing.com/problem/content/908/)  | [区间分组](https://github.com/liver0377/algorithm/blob/main/acwing/906.%20%E5%8C%BA%E9%97%B4%E5%88%86%E7%BB%84.md) |
+| [4616.击中战舰](https://www.acwing.com/problem/content/4619/) | [击中战舰](https://github.com/liver0377/algorithm/blob/main/acwing/4616.%E5%87%BB%E4%B8%AD%E6%88%98%E8%88%B0.md) |
 
 
 
@@ -155,7 +155,7 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [4611. 串联数字](https://www.acwing.com/problem/content/description/4614/) | [串联数字](https://github.com/liver0377/algorithm/blob/main/acwing/4611.%E4%B8%B2%E8%81%94%E6%95%B0%E5%AD%97.md) |
-|                                                              |                                                              |
+| [4617.解方程](https://www.acwing.com/problem/content/4620/)  |                                                              |
 |                                                              |                                                              |
 
 

@@ -155,7 +155,7 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [4611. 串联数字](https://www.acwing.com/problem/content/description/4614/) | [串联数字](https://github.com/liver0377/algorithm/blob/main/acwing/4611.%E4%B8%B2%E8%81%94%E6%95%B0%E5%AD%97.md) |
-| [4617.解方程](https://www.acwing.com/problem/content/4620/)  |                                                              |
+| [4617.解方程](https://www.acwing.com/problem/content/4620/)  | [解方程](https://github.com/liver0377/algorithm/blob/main/acwing/4617.%20%E8%A7%A3%E6%96%B9%E7%A8%8B.md) |
 |                                                              |                                                              |
 
 

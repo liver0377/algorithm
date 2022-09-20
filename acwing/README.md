@@ -22,6 +22,7 @@
 | [734.能量石](https://www.acwing.com/problem/content/736/)    | [能量石](https://github.com/liver0377/algorithm/blob/main/acwing/734.%E8%83%BD%E9%87%8F%E7%9F%B3.md) | 01背包 + 贪心              |
 | [1047.股票买卖4](https://www.acwing.com/problem/content/description/1059/) | [股票买卖4](https://github.com/liver0377/algorithm/blob/main/acwing/1057.%E8%82%A1%E7%A5%A8%E4%B9%B0%E5%8D%96.md) | 状态机                     |
 | [1048.股票买卖5](https://www.acwing.com/problem/content/1060/) | [股票买卖5](https://github.com/liver0377/algorithm/blob/main/acwing/1058.%E8%82%A1%E7%A5%A8%E4%B9%B0%E5%8D%965.md) | 状态机                     |
+| [275. 传纸条](https://www.acwing.com/problem/content/description/277/) |                                                              | 数字三角形                 |
 
 
 

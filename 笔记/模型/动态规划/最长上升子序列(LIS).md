@@ -1,3 +1,11 @@
+- 定义
+
+![image-20220920180704535](http://www.cdn.liver0377.xyz/typora/202209201807669.png)
+
+- 初始状态也可以将`f[i]`设置为1
+
+
+
 **题干**
 
 ![image-20220524193535822](http://www.cdn.liver0377.xyz/typora/202205241935895.png)

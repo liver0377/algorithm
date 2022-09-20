@@ -4,6 +4,7 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [417.太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow/) | [太平洋大西洋水流问题](https://github.com/liver0377/algorithm/blob/main/leetcode/417.%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%A4%A7%E8%A5%BF%E6%B4%8B%E6%B0%B4%E6%B5%81%E9%97%AE%E9%A2%98%5BDFS%5D.md) |
 | [2257.统计表格中没有被保卫的格子数](https://leetcode.cn/problems/count-unguarded-cells-in-the-grid) | [统计表格中没有被保卫的格子数](https://github.com/liver0377/algorithm/blob/main/leetcode/6053.%E7%BB%9F%E8%AE%A1%E7%BD%91%E6%A0%BC%E4%B8%AD%E6%B2%A1%E6%9C%89%E8%A2%AB%E4%BF%9D%E5%8D%AB%E7%9A%84%E6%A0%BC%E5%AD%90%E6%A0%91%5BDFS%5D.md) |
+| [698. 划分为K个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/) |                                                              |
 
 
 
@@ -135,11 +136,11 @@
 
 ### Trie
 
-| 原题链接                                                     | 题解 |      |
-| ------------------------------------------------------------ | ---- | ---- |
-| [6183.字符串的前缀分数和](https://leetcode.cn/problems/sum-of-prefix-scores-of-strings/) |      |      |
-|                                                              |      |      |
-|                                                              |      |      |
+| 原题链接                                                     | 题解                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [6183.字符串的前缀分数和](https://leetcode.cn/problems/sum-of-prefix-scores-of-strings/) | [字符串前缀分数和](https://github.com/liver0377/algorithm/blob/main/leetcode/6183.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%89%8D%E7%BC%80%E5%88%86%E6%95%B0%E5%92%8C.md) |
+|                                                              |                                                              |
+|                                                              |                                                              |
 
 
 

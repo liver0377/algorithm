@@ -1,10 +1,12 @@
+## 搜索
+
 ### DFS
 
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [417.太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow/) | [太平洋大西洋水流问题](https://github.com/liver0377/algorithm/blob/main/leetcode/417.%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%A4%A7%E8%A5%BF%E6%B4%8B%E6%B0%B4%E6%B5%81%E9%97%AE%E9%A2%98%5BDFS%5D.md) |
 | [2257.统计表格中没有被保卫的格子数](https://leetcode.cn/problems/count-unguarded-cells-in-the-grid) | [统计表格中没有被保卫的格子数](https://github.com/liver0377/algorithm/blob/main/leetcode/6053.%E7%BB%9F%E8%AE%A1%E7%BD%91%E6%A0%BC%E4%B8%AD%E6%B2%A1%E6%9C%89%E8%A2%AB%E4%BF%9D%E5%8D%AB%E7%9A%84%E6%A0%BC%E5%AD%90%E6%A0%91%5BDFS%5D.md) |
-| [698. 划分为K个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/) | [划分为K个相等的子集]https://github.com/liver0377/algorithm/blob/main/leetcode/698.%E5%88%92%E5%88%86%E4%B8%BAK%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86.md) |
+| [698. 划分为K个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/) | [划分为K个相等的子集](https://github.com/liver0377/algorithm/blob/main/leetcode/698.%E5%88%92%E5%88%86%E4%B8%BAK%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86.md) |
 
 
 
@@ -18,7 +20,17 @@
 
 
 
-### DP
+### A*
+
+| 原题链接                                                     | 题解 |
+| ------------------------------------------------------------ | ---- |
+| [854.相似度为K的字符串](https://leetcode.cn/problems/k-similar-strings/) |      |
+|                                                              |      |
+|                                                              |      |
+
+
+
+## DP
 
 | 原题链接                                                     | 题解                                                         | 类型     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
@@ -28,6 +40,54 @@
 | [464.我能赢吗](https://leetcode.cn/problems/can-i-win/)      | [我能赢吗](https://github.com/liver0377/algorithm/blob/main/leetcode/464.%E6%88%91%E8%83%BD%E8%B5%A2%E5%90%97.md) | 状态压缩 |
 | [871.最低加油次数](https://leetcode.cn/problems/minimum-number-of-refueling-stops) | [最低加油次数](https://github.com/liver0377/algorithm/blob/main/leetcode/871.%E6%9C%80%E4%BD%8E%E5%8A%A0%E6%B2%B9%E6%AC%A1%E6%95%B0.md) |          |
 | [6168.恰好移动K步到达某一位置](https://leetcode.cn/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) |                                                              |          |
+
+
+
+
+
+
+
+
+
+## 贪心
+
+| 原题链接                                                     | 题解                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [670. 最大交换](https://leetcode.cn/problems/maximum-swap/)  | [最大交换](https://github.com/liver0377/algorithm/blob/main/leetcode/670.%20%E6%9C%80%E5%A4%A7%E4%BA%A4%E6%8D%A2.md) |
+| [942.增减字符串匹配](https://leetcode.cn/problems/di-string-match/) | [增减字符串匹配](https://github.com/liver0377/algorithm/blob/main/leetcode/942.%E5%A2%9E%E5%87%8F%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%5B%E8%B4%AA%E5%BF%83%5D.md) |
+| [6150.根据模式串构造最小数字](https://leetcode.cn/problems/construct-smallest-number-from-di-string/) | [根据模式串构造最小数字](https://github.com/liver0377/algorithm/blob/7dcb6211d2f42c58971c5c51f3bd6c9d09566da3/leetcode/6150.%E6%A0%B9%E6%8D%AE%E6%A8%A1%E5%BC%8F%E4%B8%B2%E6%9E%84%E9%80%A0%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97.md) |
+| [6166.最大回文数字](https://leetcode.cn/problems/largest-palindromic-number/) | [最大回文数字](https://github.com/liver0377/algorithm/blob/main/leetcode/6166.%E6%9C%80%E5%A4%A7%E5%9B%9E%E6%96%87%E6%95%B0%E5%AD%97.md) |
+| [646.最长数对链](https://leetcode.cn/problems/maximum-length-of-pair-chain/) | [最长数对链](https://github.com/liver0377/algorithm/blob/main/leetcode/646.%E6%9C%80%E9%95%BF%E6%95%B0%E5%AF%B9%E9%93%BE.md) |
+
+
+
+## 字符串
+
+| 原题链接                                                     | 题解                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [165.比较版本号](https://leetcode.cn/problems/compare-version-numbers/) | [比较版本号](https://github.com/liver0377/algorithm/blob/main/leetcode/165.%E6%AF%94%E8%BE%83%E7%89%88%E6%9C%AC%E5%8F%B7.md%5B%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C%5D.md) |
+| [318.最大单词长度乘积](https://leetcode.cn/problems/maximum-product-of-word-lengths/) | [最大单词长度乘积](https://github.com/liver0377/algorithm/blob/main/leetcode/318.%E6%9C%80%E5%A4%A7%E5%8D%95%E8%AF%8D%E9%95%BF%E5%BA%A6%E4%B9%98%E7%A7%AF.md) |
+| [面试题0104. 一次编辑](https://leetcode.cn/problems/one-away-lcci/) | [一次编辑](https://github.com/liver0377/algorithm/blob/main/leetcode/%E9%9D%A2%E8%AF%9501.05.%E4%B8%80%E6%AC%A1%E7%BC%96%E8%BE%91.md) |
+| [467.环绕字符串中的最长子串](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [环绕子串中的最长子串](https://github.com/liver0377/algorithm/blob/main/leetcode/467.%E7%8E%AF%E7%BB%95%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%94%AF%E4%B8%80%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.md) |
+
+
+
+## 数据结构
+
+### 链表
+
+| 原题链接                                                     | 题解                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [25.K个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/) | [K个一组翻转链表](https://github.com/liver0377/algorithm/blob/main/leetcode/25.K%E4%B8%AA%E4%B8%80%E7%BB%84%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8%5B%E6%A0%88%5D.md) |
+| [剑指Offer II 78.合并排序链表](https://leetcode.cn/problems/vvXgSW/) | [合并排序链表](https://github.com/liver0377/algorithm/blob/main/leetcode/78.%E5%90%88%E5%B9%B6%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%5B%E5%A0%86%5D%5B%E5%88%86%E6%B2%BB%5D.md) |
+
+
+
+### 栈/堆
+
+| 原题链接                                                     | 题解                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [591.标签验证器](https://leetcode.cn/problems/tag-validator/) | [标签验证器](https://github.com/liver0377/algorithm/blob/main/leetcode/591.%E6%A0%87%E7%AD%BE%E9%AA%8C%E8%AF%81%E5%99%A8%5B%E6%A0%88%5D.md) |
 
 
 
@@ -47,6 +107,48 @@
 
 
 
+### Trie
+
+| 原题链接                                                     | 题解                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [6183.字符串的前缀分数和](https://leetcode.cn/problems/sum-of-prefix-scores-of-strings/) | [字符串前缀分数和](https://github.com/liver0377/algorithm/blob/main/leetcode/6183.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%89%8D%E7%BC%80%E5%88%86%E6%95%B0%E5%92%8C.md) |
+|                                                              |                                                              |
+|                                                              |                                                              |
+
+
+
+### 线段树
+
+| 原题链接                                                     | 题解                                                         | 模型       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- |
+| [6206.最长递增子序列2](https://leetcode.cn/contest/weekly-contest-310/problems/longest-increasing-subsequence-ii/) | [最长递增子序列2](https://github.com/liver0377/algorithm/blob/main/leetcode/6206.%20%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%972.md) | 普通线段树 |
+| [850.矩形面积2](https://leetcode.cn/problems/rectangle-area-ii/) | [矩形面积2](https://github.com/liver0377/algorithm/blob/main/leetcode/850.%20%E7%9F%A9%E5%BD%A2%E9%9D%A2%E7%A7%AF2.md) | 扫描线     |
+|                                                              |                                                              |            |
+
+
+
+
+
+### 位运算
+
+| 原题链接                                                     | 题解                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [6065.按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [按位与结果大于0的最长组合](https://github.com/liver0377/algorithm/blob/main/leetcode/6065.%E6%8C%89%E4%BD%8D%E4%BA%8E%E7%BB%93%E6%9E%9C%E5%A4%A7%E4%BA%8E0%E7%9A%84%E6%9C%80%E9%95%BF%E7%BB%93%E6%9E%9C%E7%BB%84%E5%90%88.md) |
+| [6169.最长优雅子数组](https://leetcode.cn/problems/longest-nice-subarray/) | [最长优雅子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6169.%E6%9C%80%E9%95%BF%E4%BC%98%E9%9B%85%E5%AD%90%E6%95%B0%E7%BB%84.md) |
+| [672. 灯泡开关2](https://leetcode.cn/problems/bulb-switcher-ii/) | [灯泡开关2](https://github.com/liver0377/algorithm/blob/main/leetcode/672.%20%E7%81%AF%E6%B3%A1%E5%BC%80%E5%85%B3.md) |
+
+
+
+## 图论
+
+| 原题链接                                                     | 考点   | 题解                                                         |
+| ------------------------------------------------------------ | ------ | ------------------------------------------------------------ |
+| [6154.感染二叉树所需要的总时间](https://leetcode.cn/problems/amount-of-time-for-binary-tree-to-be-infected/) | 最短路 | [感染二叉树所需要的总时间](https://github.com/liver0377/algorithm/blob/main/leetcode/6154.%E6%84%9F%E6%9F%93%E4%BA%8C%E5%8F%89%E6%A0%91%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%80%BB%E6%97%B6%E9%97%B4.md) |
+
+
+
+## 其它
+
 ### 二分
 
 | 原题链接                                                     | 题解                                                         |
@@ -64,15 +166,6 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [241.为运算表达式设置优先级](https://leetcode.cn/problems/different-ways-to-add-parentheses/) | [为运算表达式设置优先级](https://github.com/liver0377/algorithm/blob/main/leetcode/241.%E4%B8%BA%E8%BF%90%E7%AE%97%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AE%BE%E7%BD%AE%E4%BC%98%E5%85%88%E7%BA%A7.md) |
-
-
-
-### 链表
-
-| 原题链接                                                     | 题解                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [25.K个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/) | [K个一组翻转链表](https://github.com/liver0377/algorithm/blob/main/leetcode/25.K%E4%B8%AA%E4%B8%80%E7%BB%84%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8%5B%E6%A0%88%5D.md) |
-| [剑指Offer II 78.合并排序链表](https://leetcode.cn/problems/vvXgSW/) | [合并排序链表](https://github.com/liver0377/algorithm/blob/main/leetcode/78.%E5%90%88%E5%B9%B6%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%5B%E5%A0%86%5D%5B%E5%88%86%E6%B2%BB%5D.md) |
 
 
 
@@ -101,59 +194,6 @@
 
 
 
-### 贪心
-
-| 原题链接                                                     | 题解                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [670. 最大交换](https://leetcode.cn/problems/maximum-swap/)  | [最大交换](https://github.com/liver0377/algorithm/blob/main/leetcode/670.%20%E6%9C%80%E5%A4%A7%E4%BA%A4%E6%8D%A2.md) |
-| [942.增减字符串匹配](https://leetcode.cn/problems/di-string-match/) | [增减字符串匹配](https://github.com/liver0377/algorithm/blob/main/leetcode/942.%E5%A2%9E%E5%87%8F%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%5B%E8%B4%AA%E5%BF%83%5D.md) |
-| [6150.根据模式串构造最小数字](https://leetcode.cn/problems/construct-smallest-number-from-di-string/) | [根据模式串构造最小数字](https://github.com/liver0377/algorithm/blob/7dcb6211d2f42c58971c5c51f3bd6c9d09566da3/leetcode/6150.%E6%A0%B9%E6%8D%AE%E6%A8%A1%E5%BC%8F%E4%B8%B2%E6%9E%84%E9%80%A0%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97.md) |
-| [6166.最大回文数字](https://leetcode.cn/problems/largest-palindromic-number/) | [最大回文数字](https://github.com/liver0377/algorithm/blob/main/leetcode/6166.%E6%9C%80%E5%A4%A7%E5%9B%9E%E6%96%87%E6%95%B0%E5%AD%97.md) |
-| [646.最长数对链](https://leetcode.cn/problems/maximum-length-of-pair-chain/) | [最长数对链](https://github.com/liver0377/algorithm/blob/main/leetcode/646.%E6%9C%80%E9%95%BF%E6%95%B0%E5%AF%B9%E9%93%BE.md) |
-
-
-
-### 字符串
-
-| 原题链接                                                     | 题解                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [165.比较版本号](https://leetcode.cn/problems/compare-version-numbers/) | [比较版本号](https://github.com/liver0377/algorithm/blob/main/leetcode/165.%E6%AF%94%E8%BE%83%E7%89%88%E6%9C%AC%E5%8F%B7.md%5B%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C%5D.md) |
-| [318.最大单词长度乘积](https://leetcode.cn/problems/maximum-product-of-word-lengths/) | [最大单词长度乘积](https://github.com/liver0377/algorithm/blob/main/leetcode/318.%E6%9C%80%E5%A4%A7%E5%8D%95%E8%AF%8D%E9%95%BF%E5%BA%A6%E4%B9%98%E7%A7%AF.md) |
-| [面试题0104. 一次编辑](https://leetcode.cn/problems/one-away-lcci/) | [一次编辑](https://github.com/liver0377/algorithm/blob/main/leetcode/%E9%9D%A2%E8%AF%9501.05.%E4%B8%80%E6%AC%A1%E7%BC%96%E8%BE%91.md) |
-| [467.环绕字符串中的最长子串](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [环绕子串中的最长子串](https://github.com/liver0377/algorithm/blob/main/leetcode/467.%E7%8E%AF%E7%BB%95%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%94%AF%E4%B8%80%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.md) |
-
-
-
-
-
-### 栈/堆
-
-| 原题链接                                                     | 题解                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [591.标签验证器](https://leetcode.cn/problems/tag-validator/) | [标签验证器](https://github.com/liver0377/algorithm/blob/main/leetcode/591.%E6%A0%87%E7%AD%BE%E9%AA%8C%E8%AF%81%E5%99%A8%5B%E6%A0%88%5D.md) |
-
-
-
-### Trie
-
-| 原题链接                                                     | 题解                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [6183.字符串的前缀分数和](https://leetcode.cn/problems/sum-of-prefix-scores-of-strings/) | [字符串前缀分数和](https://github.com/liver0377/algorithm/blob/main/leetcode/6183.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%89%8D%E7%BC%80%E5%88%86%E6%95%B0%E5%92%8C.md) |
-|                                                              |                                                              |
-|                                                              |                                                              |
-
-
-
-### 线段树
-
-| 原题链接                                                     | 题解                                                         | 模型       |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- |
-| [6206.最长递增子序列2](https://leetcode.cn/contest/weekly-contest-310/problems/longest-increasing-subsequence-ii/) | [最长递增子序列2](https://github.com/liver0377/algorithm/blob/main/leetcode/6206.%20%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%972.md) | 普通线段树 |
-| [850.矩形面积2](https://leetcode.cn/problems/rectangle-area-ii/) | [矩形面积2](https://github.com/liver0377/algorithm/blob/main/leetcode/850.%20%E7%9F%A9%E5%BD%A2%E9%9D%A2%E7%A7%AF2.md) | 扫描线     |
-|                                                              |                                                              |            |
-
-
-
 ### Tricks
 
 | 原题链接                                                     | Trick    | 题解                                                         |
@@ -161,22 +201,4 @@
 | [剑指Offer 04. 二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 矩阵性质 | [二维数组中的查找](https://github.com/liver0377/algorithm/blob/main/leetcode/%E5%89%91%E6%8C%87offer04.%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9F%A5%E6%89%BE%5B%E6%8A%80%E5%B7%A7%5D.md) |
 | [442.数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) | 原地哈希 | [数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) |
 | [6155.找出数组的第K大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) | 归并排序 | [找出数组的第K大和](https://github.com/liver0377/algorithm/blob/main/leetcode/6155.%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%92%8C.md) |
-
-
-
-### 位运算
-
-| 原题链接                                                     | 题解                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [6065.按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [按位与结果大于0的最长组合](https://github.com/liver0377/algorithm/blob/main/leetcode/6065.%E6%8C%89%E4%BD%8D%E4%BA%8E%E7%BB%93%E6%9E%9C%E5%A4%A7%E4%BA%8E0%E7%9A%84%E6%9C%80%E9%95%BF%E7%BB%93%E6%9E%9C%E7%BB%84%E5%90%88.md) |
-| [6169.最长优雅子数组](https://leetcode.cn/problems/longest-nice-subarray/) | [最长优雅子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6169.%E6%9C%80%E9%95%BF%E4%BC%98%E9%9B%85%E5%AD%90%E6%95%B0%E7%BB%84.md) |
-| [672. 灯泡开关2](https://leetcode.cn/problems/bulb-switcher-ii/) | [灯泡开关2](https://github.com/liver0377/algorithm/blob/main/leetcode/672.%20%E7%81%AF%E6%B3%A1%E5%BC%80%E5%85%B3.md) |
-
-
-
-### 图论
-
-| 原题链接                                                     | 考点   | 题解                                                         |
-| ------------------------------------------------------------ | ------ | ------------------------------------------------------------ |
-| [6154.感染二叉树所需要的总时间](https://leetcode.cn/problems/amount-of-time-for-binary-tree-to-be-infected/) | 最短路 | [感染二叉树所需要的总时间](https://github.com/liver0377/algorithm/blob/main/leetcode/6154.%E6%84%9F%E6%9F%93%E4%BA%8C%E5%8F%89%E6%A0%91%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%80%BB%E6%97%B6%E9%97%B4.md) |
 

@@ -201,4 +201,5 @@
 | [剑指Offer 04. 二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 矩阵性质 | [二维数组中的查找](https://github.com/liver0377/algorithm/blob/main/leetcode/%E5%89%91%E6%8C%87offer04.%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9F%A5%E6%89%BE%5B%E6%8A%80%E5%B7%A7%5D.md) |
 | [442.数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) | 原地哈希 | [数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) |
 | [6155.找出数组的第K大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) | 归并排序 | [找出数组的第K大和](https://github.com/liver0377/algorithm/blob/main/leetcode/6155.%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%92%8C.md) |
+| [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/) | 哈希     | [能否连接形成数组](https://github.com/liver0377/algorithm/blob/main/leetcode/1640.%20%E8%83%BD%E5%90%A6%E8%BF%9E%E6%8E%A5%E5%BD%A2%E6%88%90%E6%95%B0%E7%BB%84.md) |
 

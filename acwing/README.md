@@ -35,6 +35,13 @@
 | [1047.股票买卖4](https://www.acwing.com/problem/content/description/1059/) | [股票买卖4](https://github.com/liver0377/algorithm/blob/main/acwing/1057.%E8%82%A1%E7%A5%A8%E4%B9%B0%E5%8D%96.md) | 状态机                     |
 | [1048.股票买卖5](https://www.acwing.com/problem/content/1060/) | [股票买卖5](https://github.com/liver0377/algorithm/blob/main/acwing/1058.%E8%82%A1%E7%A5%A8%E4%B9%B0%E5%8D%965.md) | 状态机                     |
 | [275. 传纸条](https://www.acwing.com/problem/content/description/277/) | [传纸条](https://github.com/liver0377/algorithm/blob/main/acwing/275.%20%E4%BC%A0%E7%BA%B8%E6%9D%A1.md) | 数字三角形                 |
+| [1072. 树的最长路径](https://www.acwing.com/problem/content/1074/) | [树的最长路径](https://github.com/liver0377/algorithm/blob/main/acwing/1072.%20%E6%A0%91%E7%9A%84%E6%9C%80%E9%95%BF%E8%B7%AF%E5%BE%84.md) | 树形DP                     |
+| [1073. 树的中心](https://www.acwing.com/problem/content/1075/) | [树的中心](https://github.com/liver0377/algorithm/blob/main/acwing/1073.%20%E6%A0%91%E7%9A%84%E4%B8%AD%E5%BF%83.md) | 树形DP                     |
+| [1075. 数字转换](https://www.acwing.com/problem/content/1077/) | [数字转换](https://github.com/liver0377/algorithm/blob/main/acwing/1072.%20%E6%95%B0%E5%AD%97%E8%BD%AC%E6%8D%A2.md) | 树形DP                     |
+| [1074. 二叉苹果树](https://www.acwing.com/problem/content/1076/) | [二叉苹果树](https://github.com/liver0377/algorithm/blob/main/acwing/1074.%20%E4%BA%8C%E5%8F%89%E8%8B%B9%E6%9E%9C%E6%A0%91.md) | 树形DP                     |
+| [323. 战略游戏](https://www.acwing.com/problem/content/325/) | [战略游戏](https://github.com/liver0377/algorithm/blob/main/acwing/323.%20%E6%88%98%E7%95%A5%E6%B8%B8%E6%88%8F.md) | 树形DP                     |
+| [1077. 皇宫看守](https://www.acwing.com/problem/content/1079/) | [皇宫看守](https://github.com/liver0377/algorithm/blob/main/acwing/1077.%20%E7%9A%87%E5%AE%AB%E7%9C%8B%E5%AE%88.md) | 树形DP                     |
+| [4620. 旅行](https://www.acwing.com/problem/content/description/4623/) |                                                              |                            |
 
 
 

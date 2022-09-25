@@ -91,6 +91,7 @@
 | [237.程序自动分析](https://www.acwing.com/problem/content/239/) | [程序自动分析](https://github.com/liver0377/algorithm/blob/main/acwing/237.%E7%A8%8B%E5%BA%8F%E8%87%AA%E5%8A%A8%E5%88%86%E6%9E%90.md) |
 | [238.银河英雄传说](https://www.acwing.com/problem/content/240/) | [银河英雄传说](https://github.com/liver0377/algorithm/blob/main/acwing/238.%20%E9%93%B6%E6%B2%B3%E8%8B%B1%E9%9B%84%E4%BC%A0%E8%AF%B4.md) |
 | [239.奇偶游戏](https://www.acwing.com/problem/content/241/)  | [奇偶游戏](https://github.com/liver0377/algorithm/blob/main/acwing/239.%E5%A5%87%E5%81%B6%E6%B8%B8%E6%88%8F.md) |
+| [6191. 好路径的数目](https://leetcode.cn/contest/weekly-contest-312/problems/number-of-good-paths/) |                                                              |
 
 
 

@@ -88,6 +88,7 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [591.标签验证器](https://leetcode.cn/problems/tag-validator/) | [标签验证器](https://github.com/liver0377/algorithm/blob/main/leetcode/591.%E6%A0%87%E7%AD%BE%E9%AA%8C%E8%AF%81%E5%99%A8%5B%E6%A0%88%5D.md) |
+| [面试17.09第K个数](https://leetcode.cn/problems/get-kth-magic-number-lcci/) |                                                              |
 
 
 
@@ -193,7 +194,7 @@
 | [6065.按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) | [按位与结果大于0的最长组合](https://github.com/liver0377/algorithm/blob/main/leetcode/6065.%E6%8C%89%E4%BD%8D%E4%BA%8E%E7%BB%93%E6%9E%9C%E5%A4%A7%E4%BA%8E0%E7%9A%84%E6%9C%80%E9%95%BF%E7%BB%93%E6%9E%9C%E7%BB%84%E5%90%88.md) |
 | [6169.最长优雅子数组](https://leetcode.cn/problems/longest-nice-subarray/) | [最长优雅子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6169.%E6%9C%80%E9%95%BF%E4%BC%98%E9%9B%85%E5%AD%90%E6%95%B0%E7%BB%84.md) |
 | [672. 灯泡开关2](https://leetcode.cn/problems/bulb-switcher-ii/) | [灯泡开关2](https://github.com/liver0377/algorithm/blob/main/leetcode/672.%20%E7%81%AF%E6%B3%A1%E5%BC%80%E5%85%B3.md) |
-| [面试17.19 消失的两个数字](https://leetcode.cn/problems/missing-two-lcci/) |                                                              |
+| [面试17.19 消失的两个数字](https://leetcode.cn/problems/missing-two-lcci/) | [消失的两个数字](https://github.com/liver0377/algorithm/blob/main/leetcode/%E9%9D%A2%E8%AF%9517.19.%E6%B6%88%E5%A4%B1%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97.md) |
 
 
 

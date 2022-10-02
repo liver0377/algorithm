@@ -184,7 +184,7 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [713.乘积小于K的子数组](https://leetcode.cn/problems/subarray-product-less-than-k) | [乘积小于K的子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/713.%E4%B9%98%E7%A7%AF%E5%B0%8F%E4%BA%8Ek%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
-| [777. 在LR中交换相邻字符](https://leetcode.cn/problems/swap-adjacent-in-lr-string/) |                                                              |
+| [777. 在LR中交换相邻字符](https://leetcode.cn/problems/swap-adjacent-in-lr-string/) | [在LR字符串中交换相邻字符](https://github.com/liver0377/algorithm/blob/82f21c9c762f195b62b7964f4e2b834d7957b486/leetcode/777.%20%E5%9C%A8LR%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E4%BA%A4%E6%8D%A2%E7%9B%B8%E9%82%BB%E5%AD%97%E7%AC%A6.md) |
 
 
 
@@ -196,6 +196,7 @@
 | [6169.最长优雅子数组](https://leetcode.cn/problems/longest-nice-subarray/) | [最长优雅子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6169.%E6%9C%80%E9%95%BF%E4%BC%98%E9%9B%85%E5%AD%90%E6%95%B0%E7%BB%84.md) |
 | [672. 灯泡开关2](https://leetcode.cn/problems/bulb-switcher-ii/) | [灯泡开关2](https://github.com/liver0377/algorithm/blob/main/leetcode/672.%20%E7%81%AF%E6%B3%A1%E5%BC%80%E5%85%B3.md) |
 | [面试17.19 消失的两个数字](https://leetcode.cn/problems/missing-two-lcci/) | [消失的两个数字](https://github.com/liver0377/algorithm/blob/main/leetcode/%E9%9D%A2%E8%AF%9517.19.%E6%B6%88%E5%A4%B1%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97.md) |
+| [6194. 最小XOR](https://leetcode.cn/contest/weekly-contest-313/problems/minimize-xor/) |                                                              |
 
 
 

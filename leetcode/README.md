@@ -32,14 +32,15 @@
 
 ## DP
 
-| 原题链接                                                     | 题解                                                         | 类型     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
-| [300.最长增长子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | [最长增长子序列](https://github.com/liver0377/algorithm/blob/main/leetcode/300.%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%5BDP%5D.md) |          |
-| [322.零钱兑换](https://leetcode.cn/problems/coin-change/)    | [零钱兑换](https://github.com/liver0377/algorithm/blob/main/leetcode/322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%5B%E5%8A%A8%E8%A7%84%5D.md) |          |
-| [691.贴纸拼词](https://leetcode.cn/problems/stickers-to-spell-word/) | [贴纸拼词](https://github.com/liver0377/algorithm/blob/main/leetcode/691.%E8%B4%B4%E7%BA%B8%E6%8B%BC%E8%AF%8D.md) | 状态压缩 |
-| [464.我能赢吗](https://leetcode.cn/problems/can-i-win/)      | [我能赢吗](https://github.com/liver0377/algorithm/blob/main/leetcode/464.%E6%88%91%E8%83%BD%E8%B5%A2%E5%90%97.md) | 状态压缩 |
-| [871.最低加油次数](https://leetcode.cn/problems/minimum-number-of-refueling-stops) | [最低加油次数](https://github.com/liver0377/algorithm/blob/main/leetcode/871.%E6%9C%80%E4%BD%8E%E5%8A%A0%E6%B2%B9%E6%AC%A1%E6%95%B0.md) |          |
-| [6168.恰好移动K步到达某一位置](https://leetcode.cn/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) |                                                              |          |
+| 原题链接                                                     | 题解                                                         | 类型         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------ |
+| [300.最长增长子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) | [最长增长子序列](https://github.com/liver0377/algorithm/blob/main/leetcode/300.%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%5BDP%5D.md) |              |
+| [322.零钱兑换](https://leetcode.cn/problems/coin-change/)    | [零钱兑换](https://github.com/liver0377/algorithm/blob/main/leetcode/322.%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%5B%E5%8A%A8%E8%A7%84%5D.md) |              |
+| [691.贴纸拼词](https://leetcode.cn/problems/stickers-to-spell-word/) | [贴纸拼词](https://github.com/liver0377/algorithm/blob/main/leetcode/691.%E8%B4%B4%E7%BA%B8%E6%8B%BC%E8%AF%8D.md) | 状态压缩     |
+| [464.我能赢吗](https://leetcode.cn/problems/can-i-win/)      | [我能赢吗](https://github.com/liver0377/algorithm/blob/main/leetcode/464.%E6%88%91%E8%83%BD%E8%B5%A2%E5%90%97.md) | 状态压缩     |
+| [871.最低加油次数](https://leetcode.cn/problems/minimum-number-of-refueling-stops) | [最低加油次数](https://github.com/liver0377/algorithm/blob/main/leetcode/871.%E6%9C%80%E4%BD%8E%E5%8A%A0%E6%B2%B9%E6%AC%A1%E6%95%B0.md) |              |
+| [6168.恰好移动K步到达某一位置](https://leetcode.cn/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) | [恰好移动K步到达某一位置](https://github.com/liver0377/algorithm/blob/main/leetcode/6168.%E6%81%B0%E5%A5%BD%E7%A7%BB%E5%8A%A8K%E6%AD%A5%E5%88%B0%E8%BE%BE%E6%9F%90%E4%B8%80%E4%BD%8D%E7%BD%AE.md) |              |
+| [6195. 对字符串可执行的最大删除数](https://leetcode.cn/problems/maximum-deletions-on-a-string/) |                                                              | 普通动态规划 |
 
 
 
@@ -196,7 +197,7 @@
 | [6169.最长优雅子数组](https://leetcode.cn/problems/longest-nice-subarray/) | [最长优雅子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6169.%E6%9C%80%E9%95%BF%E4%BC%98%E9%9B%85%E5%AD%90%E6%95%B0%E7%BB%84.md) |
 | [672. 灯泡开关2](https://leetcode.cn/problems/bulb-switcher-ii/) | [灯泡开关2](https://github.com/liver0377/algorithm/blob/main/leetcode/672.%20%E7%81%AF%E6%B3%A1%E5%BC%80%E5%85%B3.md) |
 | [面试17.19 消失的两个数字](https://leetcode.cn/problems/missing-two-lcci/) | [消失的两个数字](https://github.com/liver0377/algorithm/blob/main/leetcode/%E9%9D%A2%E8%AF%9517.19.%E6%B6%88%E5%A4%B1%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97.md) |
-| [6194. 最小XOR](https://leetcode.cn/contest/weekly-contest-313/problems/minimize-xor/) |                                                              |
+| [6194. 最小XOR](https://leetcode.cn/contest/weekly-contest-313/problems/minimize-xor/) | [最小XOR](https://github.com/liver0377/algorithm/blob/main/leetcode/6194.%20%E6%9C%80%E5%B0%8F%E5%BC%82%E6%88%96.md) |
 
 
 

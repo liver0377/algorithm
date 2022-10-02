@@ -40,11 +40,7 @@
 | [464.我能赢吗](https://leetcode.cn/problems/can-i-win/)      | [我能赢吗](https://github.com/liver0377/algorithm/blob/main/leetcode/464.%E6%88%91%E8%83%BD%E8%B5%A2%E5%90%97.md) | 状态压缩     |
 | [871.最低加油次数](https://leetcode.cn/problems/minimum-number-of-refueling-stops) | [最低加油次数](https://github.com/liver0377/algorithm/blob/main/leetcode/871.%E6%9C%80%E4%BD%8E%E5%8A%A0%E6%B2%B9%E6%AC%A1%E6%95%B0.md) |              |
 | [6168.恰好移动K步到达某一位置](https://leetcode.cn/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) | [恰好移动K步到达某一位置](https://github.com/liver0377/algorithm/blob/main/leetcode/6168.%E6%81%B0%E5%A5%BD%E7%A7%BB%E5%8A%A8K%E6%AD%A5%E5%88%B0%E8%BE%BE%E6%9F%90%E4%B8%80%E4%BD%8D%E7%BD%AE.md) |              |
-| [6195. 对字符串可执行的最大删除数](https://leetcode.cn/problems/maximum-deletions-on-a-string/) |                                                              | 普通动态规划 |
-
-
-
-
+| [6195. 对字符串可执行的最大删除数](https://leetcode.cn/problems/maximum-deletions-on-a-string/) | [对字符串可执行的最大删除数目](https://github.com/liver0377/algorithm/blob/main/leetcode/6195.%20%E5%AF%B9%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8F%AF%E6%89%A7%E8%A1%8C%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A0%E9%99%A4%E6%95%B0%E7%9B%AE.md) | 普通动态规划 |
 
 
 

@@ -66,7 +66,7 @@
 
       因为这里是想要找到最长的上升子序列，因此nums[i]肯定接在越长的子序列后面越好，而长度越长，末尾值肯定也就越大
 
-    - 当nums[i] == q[k + 1]时，nums[i]会直接更新原来的q[k + 1]
+    - 因为`nums[i] <= q[k + 1]`, 所以可以直接用$nums[i]$更新$q[k + 1]$
 
   ```cpp
   int lengthOfLIS(vector<int>& nums) {

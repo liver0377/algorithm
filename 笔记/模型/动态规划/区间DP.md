@@ -1,3 +1,64 @@
+### 石子合并
+
+![image-20221004143959853](http://www.cdn.liver0377.xyz/typora/202210041439921.png)
+
+
+
+
+
+**解题思路**
+
+- 区间DP
+
+  ![image-20221004144454292](http://www.cdn.liver0377.xyz/typora/202210041444352.png)
+
+  
+
+**代码实现**
+
+- 时间复杂度: $O(N^ 3)$
+
+
+
+```cc
+#include <iostream>
+#include <algorithm>
+#include <cstring>
+
+using namespace std;
+
+const int N = 310;
+
+int a[N];
+int s[N];
+int f[N][N];
+int n;
+
+int main() {
+    cin >>  n;
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+        s[i] = a[i] + s[i - 1];
+    }
+    
+    memset(f, 0x3f, sizeof f);
+    for (int i = 0; i <= n; i++) f[i][i] = 0;
+    for (int len = 2; len <= n; len ++) {
+        for (int i = 1; i + len - 1 <= n; i ++) {
+            int j = i + len - 1;
+            for (int k = i; k <= j - 1; k ++) {
+                f[i][j] = min(f[i][j], f[i][k] + f[k + 1][j] + s[j] - s[i - 1]);
+            }
+        }
+    }
+    
+    cout << f[1][n] << endl;
+    return 0;
+}
+```
+
+
+
 ### 环型石子合并
 
 ![image-20220620164542366](http://www.cdn.liver0377.xyz/typora/202206201646812.png)

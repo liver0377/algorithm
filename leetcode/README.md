@@ -208,4 +208,5 @@
 | [6155.找出数组的第K大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) | 归并排序 | [找出数组的第K大和](https://github.com/liver0377/algorithm/blob/main/leetcode/6155.%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%92%8C.md) |
 | [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/) | 哈希     | [能否连接形成数组](https://github.com/liver0377/algorithm/blob/main/leetcode/1640.%20%E8%83%BD%E5%90%A6%E8%BF%9E%E6%8E%A5%E5%BD%A2%E6%88%90%E6%95%B0%E7%BB%84.md) |
 | [6189. 按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) | 位运算   | [按位与最大的最长子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6189.%20%E6%8C%89%E4%BD%8D%E4%B8%8E%E6%9C%80%E5%A4%A7%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
+| [927. 三等分](https://leetcode.cn/problems/three-equal-parts/) | 数学     |                                                              |
 

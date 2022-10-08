@@ -55,6 +55,7 @@
 | [6150.根据模式串构造最小数字](https://leetcode.cn/problems/construct-smallest-number-from-di-string/) | [根据模式串构造最小数字](https://github.com/liver0377/algorithm/blob/7dcb6211d2f42c58971c5c51f3bd6c9d09566da3/leetcode/6150.%E6%A0%B9%E6%8D%AE%E6%A8%A1%E5%BC%8F%E4%B8%B2%E6%9E%84%E9%80%A0%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97.md) |
 | [6166.最大回文数字](https://leetcode.cn/problems/largest-palindromic-number/) | [最大回文数字](https://github.com/liver0377/algorithm/blob/main/leetcode/6166.%E6%9C%80%E5%A4%A7%E5%9B%9E%E6%96%87%E6%95%B0%E5%AD%97.md) |
 | [646.最长数对链](https://leetcode.cn/problems/maximum-length-of-pair-chain/) | [最长数对链](https://github.com/liver0377/algorithm/blob/main/leetcode/646.%E6%9C%80%E9%95%BF%E6%95%B0%E5%AF%B9%E9%93%BE.md) |
+| [870. 优势洗牌](https://leetcode.cn/problems/advantage-shuffle/) |                                                              |
 
 
 
@@ -208,5 +209,5 @@
 | [6155.找出数组的第K大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) | 归并排序 | [找出数组的第K大和](https://github.com/liver0377/algorithm/blob/main/leetcode/6155.%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%92%8C.md) |
 | [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/) | 哈希     | [能否连接形成数组](https://github.com/liver0377/algorithm/blob/main/leetcode/1640.%20%E8%83%BD%E5%90%A6%E8%BF%9E%E6%8E%A5%E5%BD%A2%E6%88%90%E6%95%B0%E7%BB%84.md) |
 | [6189. 按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) | 位运算   | [按位与最大的最长子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6189.%20%E6%8C%89%E4%BD%8D%E4%B8%8E%E6%9C%80%E5%A4%A7%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
-| [927. 三等分](https://leetcode.cn/problems/three-equal-parts/) | 数学     |                                                              |
+| [927. 三等分](https://leetcode.cn/problems/three-equal-parts/) | 数学     | [三等分](https://github.com/liver0377/algorithm/blob/main/leetcode/927.%20%E4%B8%89%E7%AD%89%E5%88%86.md) |
 

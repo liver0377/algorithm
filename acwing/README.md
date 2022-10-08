@@ -41,7 +41,8 @@
 | [1074. 二叉苹果树](https://www.acwing.com/problem/content/1076/) | [二叉苹果树](https://github.com/liver0377/algorithm/blob/main/acwing/1074.%20%E4%BA%8C%E5%8F%89%E8%8B%B9%E6%9E%9C%E6%A0%91.md) | 树形DP                     |
 | [323. 战略游戏](https://www.acwing.com/problem/content/325/) | [战略游戏](https://github.com/liver0377/algorithm/blob/main/acwing/323.%20%E6%88%98%E7%95%A5%E6%B8%B8%E6%88%8F.md) | 树形DP                     |
 | [1077. 皇宫看守](https://www.acwing.com/problem/content/1079/) | [皇宫看守](https://github.com/liver0377/algorithm/blob/main/acwing/1077.%20%E7%9A%87%E5%AE%AB%E7%9C%8B%E5%AE%88.md) | 树形DP                     |
-| [4620. 旅行](https://www.acwing.com/problem/content/description/4623/) | [4620](https://github.com/liver0377/algorithm/blob/main/acwing/4620.%20%E6%97%85%E8%A1%8C.md) | 树形DP                     |
+| [4620. 旅行](https://www.acwing.com/problem/content/description/4623/) | [旅行](https://github.com/liver0377/algorithm/blob/main/acwing/4620.%20%E6%97%85%E8%A1%8C.md) | 树形DP                     |
+| [1948. 没有零钱](https://www.acwing.com/problem/content/description/1950/) |                                                              | 状态压缩                   |
 
 
 

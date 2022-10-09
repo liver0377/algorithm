@@ -93,6 +93,7 @@
 | [238.银河英雄传说](https://www.acwing.com/problem/content/240/) | [银河英雄传说](https://github.com/liver0377/algorithm/blob/main/acwing/238.%20%E9%93%B6%E6%B2%B3%E8%8B%B1%E9%9B%84%E4%BC%A0%E8%AF%B4.md) |
 | [239.奇偶游戏](https://www.acwing.com/problem/content/241/)  | [奇偶游戏](https://github.com/liver0377/algorithm/blob/main/acwing/239.%E5%A5%87%E5%81%B6%E6%B8%B8%E6%88%8F.md) |
 | [6191. 好路径的数目](https://leetcode.cn/contest/weekly-contest-312/problems/number-of-good-paths/) | [好路径的数目](https://github.com/liver0377/algorithm/blob/main/acwing/6191.%20%E5%A5%BD%E8%B7%AF%E5%BE%84%E7%9A%84%E6%95%B0%E7%9B%AE.md) |
+| [4626. 最小移动距离](https://www.acwing.com/problem/content/4629/) |                                                              |
 
 
 

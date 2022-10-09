@@ -140,6 +140,14 @@
 
 
 
+### 数学
+
+| 原题链接                                                     | 题解 | 模型     |
+| ------------------------------------------------------------ | ---- | -------- |
+| [343.整数拆分](https://leetcode.cn/problems/integer-break/description/) |      | 整数拆分 |
+
+
+
 ## 其它
 
 ### 二分
@@ -185,6 +193,7 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [713.乘积小于K的子数组](https://leetcode.cn/problems/subarray-product-less-than-k) | [乘积小于K的子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/713.%E4%B9%98%E7%A7%AF%E5%B0%8F%E4%BA%8Ek%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
 | [777. 在LR中交换相邻字符](https://leetcode.cn/problems/swap-adjacent-in-lr-string/) | [在LR字符串中交换相邻字符](https://github.com/liver0377/algorithm/blob/82f21c9c762f195b62b7964f4e2b834d7957b486/leetcode/777.%20%E5%9C%A8LR%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E4%BA%A4%E6%8D%A2%E7%9B%B8%E9%82%BB%E5%AD%97%E7%AC%A6.md) |
+| [LCP68. 美观的花束](https://leetcode.cn/problems/1GxJYY/)    | [美观的花束](https://github.com/liver0377/algorithm/blob/main/leetcode/LCP68.%20%E7%BE%8E%E8%A7%82%E7%9A%84%E8%8A%B1%E6%9D%9F.md) |
 
 
 

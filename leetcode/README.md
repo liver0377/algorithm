@@ -58,6 +58,8 @@
 | [646.最长数对链](https://leetcode.cn/problems/maximum-length-of-pair-chain/) | [最长数对链](https://github.com/liver0377/algorithm/blob/main/leetcode/646.%E6%9C%80%E9%95%BF%E6%95%B0%E5%AF%B9%E9%93%BE.md) |
 | [870. 优势洗牌](https://leetcode.cn/problems/advantage-shuffle/) | [优势洗牌](https://github.com/liver0377/algorithm/blob/main/leetcode/870.%20%E4%BC%98%E5%8A%BF%E6%B4%97%E7%89%8C.md) |
 | [6202. 使用机器人打印字典序最小的字符串](https://leetcode.cn/problems/using-a-robot-to-print-the-lexicographically-smallest-string/) | [使用机器人打印字典序最小的字符串](https://github.com/liver0377/algorithm/blob/main/leetcode/6202.%20%E4%BD%BF%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%89%93%E5%8D%B0%E5%AD%97%E5%85%B8%E5%BA%8F%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2.md) |
+| [135. 分发糖果](https://leetcode.cn/problems/candy/)         |                                                              |
+| [605. 种花问题](https://leetcode.cn/problems/can-place-flowers/) |                                                              |
 
 
 

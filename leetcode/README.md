@@ -42,7 +42,7 @@
 | [6168.恰好移动K步到达某一位置](https://leetcode.cn/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/) | [恰好移动K步到达某一位置](https://github.com/liver0377/algorithm/blob/main/leetcode/6168.%E6%81%B0%E5%A5%BD%E7%A7%BB%E5%8A%A8K%E6%AD%A5%E5%88%B0%E8%BE%BE%E6%9F%90%E4%B8%80%E4%BD%8D%E7%BD%AE.md) |              |
 | [6195. 对字符串可执行的最大删除数](https://leetcode.cn/problems/maximum-deletions-on-a-string/) | [对字符串可执行的最大删除数目](https://github.com/liver0377/algorithm/blob/main/leetcode/6195.%20%E5%AF%B9%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8F%AF%E6%89%A7%E8%A1%8C%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A0%E9%99%A4%E6%95%B0%E7%9B%AE.md) | 普通动态规划 |
 | [6203. 矩阵中和能够被K整除的路径](https://leetcode.cn/contest/weekly-contest-314/problems/paths-in-matrix-whose-sum-is-divisible-by-k/) | [矩阵中和能够被K整除的路径](https://github.com/liver0377/algorithm/blob/main/leetcode/6203.%20%E7%9F%A9%E9%98%B5%E4%B8%AD%E8%83%BD%E5%A4%9F%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E8%B7%AF%E5%BE%84.md) | 二维线性DP   |
-| [940. 不同的子序列II](https://leetcode.cn/problems/distinct-subsequences-ii/) |                                                              | 线性DP       |
+| [940. 不同的子序列II](https://leetcode.cn/problems/distinct-subsequences-ii/) | [不同的子序列II](https://github.com/liver0377/algorithm/blob/main/leetcode/940.%20%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97.md) | 线性DP       |
 
 
 
@@ -63,8 +63,8 @@
 | [605. 种花问题](https://leetcode.cn/problems/can-place-flowers/) | [种花问题](https://github.com/liver0377/algorithm/blob/main/leetcode/605.%20%E7%A7%8D%E8%8A%B1%E9%97%AE%E9%A2%98.md) |
 | [452. 用最少数量的箭射爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) | [用最少数量的箭射爆气球](https://github.com/liver0377/algorithm/blob/main/leetcode/452.%20%E7%94%A8%E6%9C%80%E5%B0%91%E6%95%B0%E9%87%8F%E7%9A%84%E7%AE%AD%E5%B0%84%E7%88%86%E6%B0%94%E7%90%83.md) |
 | [763. 划分字母区间](https://leetcode.cn/problems/partition-labels/) | [划分字母区间](https://github.com/liver0377/algorithm/blob/main/leetcode/763.%20%E5%88%92%E5%88%86%E5%AD%97%E6%AF%8D%E5%8C%BA%E9%97%B4.md) |
-| [112. 买卖股票的最佳时机II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) |                                                              |
-| [665. 非递减序列](https://leetcode.cn/problems/non-decreasing-array/) |                                                              |
+| [112. 买卖股票的最佳时机II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) | [买卖股票的最佳时机](https://github.com/liver0377/algorithm/blob/main/leetcode/112.%20%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BAII.md) |
+| [665. 非递减序列](https://leetcode.cn/problems/non-decreasing-array/) | [非递减序列](https://github.com/liver0377/algorithm/blob/main/leetcode/665.%20%E9%9D%9E%E9%80%92%E5%87%8F%E5%BA%8F%E5%88%97.md) |
 
 
 
@@ -201,7 +201,9 @@
 | [713.乘积小于K的子数组](https://leetcode.cn/problems/subarray-product-less-than-k) | [乘积小于K的子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/713.%E4%B9%98%E7%A7%AF%E5%B0%8F%E4%BA%8Ek%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
 | [777. 在LR中交换相邻字符](https://leetcode.cn/problems/swap-adjacent-in-lr-string/) | [在LR字符串中交换相邻字符](https://github.com/liver0377/algorithm/blob/82f21c9c762f195b62b7964f4e2b834d7957b486/leetcode/777.%20%E5%9C%A8LR%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E4%BA%A4%E6%8D%A2%E7%9B%B8%E9%82%BB%E5%AD%97%E7%AC%A6.md) |
 | [LCP68. 美观的花束](https://leetcode.cn/problems/1GxJYY/)    | [美观的花束](https://github.com/liver0377/algorithm/blob/main/leetcode/LCP68.%20%E7%BE%8E%E8%A7%82%E7%9A%84%E8%8A%B1%E6%9D%9F.md) |
-| [167. 两数之和II-输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) |                                                              |
+| [167. 两数之和II-输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/) | [两数之和II](https://github.com/liver0377/algorithm/blob/main/leetcode/167.%20%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8CII-%E8%BE%93%E5%85%A5%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.md) |
+| [88. 合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) |                                                              |
+| [142. 环型链表II](https://leetcode.cn/problems/linked-list-cycle-ii/) |                                                              |
 
 
 

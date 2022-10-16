@@ -20,7 +20,7 @@
   在`vector<int>`中查找小于等于`x`的最大整数
 
   ```cc
-  int i = *--lower_bound(a.begin(), a.end(), x);
+  int i = *--upper_bound(a.begin(), a.end(), x);
   ```
 
   

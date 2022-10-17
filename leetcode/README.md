@@ -205,7 +205,7 @@
 | [88. 合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) | [合并两个有序数组](https://github.com/liver0377/algorithm/blob/main/leetcode/88.%20%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.md) |
 | [142. 环型链表II](https://leetcode.cn/problems/linked-list-cycle-ii/) | [环型链表II](https://github.com/liver0377/algorithm/blob/main/leetcode/142.%20%E7%8E%AF%E5%9E%8B%E9%93%BE%E8%A1%A8II.md) |
 | [76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/) | [最小覆盖子串](https://github.com/liver0377/algorithm/blob/main/leetcode/76.%20%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2.md) |
-| [6207. 最小界定子数组](https://leetcode.cn/contest/weekly-contest-315/problems/count-subarrays-with-fixed-bounds/) |                                                              |
+| [6207. 统计界定子数组的数目](https://leetcode.cn/contest/weekly-contest-315/problems/count-subarrays-with-fixed-bounds/) | [统计界定子数组的数目](https://github.com/liver0377/algorithm/blob/main/leetcode/6207.%20%E7%BB%9F%E8%AE%A1%E7%95%8C%E5%AE%9A%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%95%B0%E7%9B%AE.md) |
 
 
 

@@ -207,8 +207,8 @@
 | [76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/) | [最小覆盖子串](https://github.com/liver0377/algorithm/blob/main/leetcode/76.%20%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2.md) |
 | [6207. 统计界定子数组的数目](https://leetcode.cn/contest/weekly-contest-315/problems/count-subarrays-with-fixed-bounds/) | [统计界定子数组的数目](https://github.com/liver0377/algorithm/blob/main/leetcode/6207.%20%E7%BB%9F%E8%AE%A1%E7%95%8C%E5%AE%9A%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%95%B0%E7%9B%AE.md) |
 | [904. 水果成篮](https://leetcode.cn/problems/fruit-into-baskets/) | [水果成篮](https://github.com/liver0377/algorithm/blob/main/leetcode/904.%20%E6%B0%B4%E6%9E%9C%E6%88%90%E7%AF%AE.md) |
-| [633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/) |                                                              |
-| [340. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/) |                                                              |
+| [633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/) | [平方数之和](https://github.com/liver0377/algorithm/blob/main/leetcode/633.%20%E5%B9%B3%E6%96%B9%E6%95%B0%E4%B9%8B%E5%92%8C.md) |
+| [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/) | [通过删除字母匹配到字典里最长单词](https://github.com/liver0377/algorithm/blob/main/leetcode/524.%20%E9%80%9A%E8%BF%87%E5%88%A0%E9%99%A4%E5%AD%97%E6%AF%8D%E5%8C%B9%E9%85%8D%E5%88%B0%E5%AD%97%E5%85%B8%E9%87%8C%E6%9C%80%E9%95%BF%E5%8D%95%E8%AF%8D.md) |
 
 
 

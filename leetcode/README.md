@@ -206,6 +206,7 @@
 | [142. 环型链表II](https://leetcode.cn/problems/linked-list-cycle-ii/) | [环型链表II](https://github.com/liver0377/algorithm/blob/main/leetcode/142.%20%E7%8E%AF%E5%9E%8B%E9%93%BE%E8%A1%A8II.md) |
 | [76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/) | [最小覆盖子串](https://github.com/liver0377/algorithm/blob/main/leetcode/76.%20%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2.md) |
 | [6207. 统计界定子数组的数目](https://leetcode.cn/contest/weekly-contest-315/problems/count-subarrays-with-fixed-bounds/) | [统计界定子数组的数目](https://github.com/liver0377/algorithm/blob/main/leetcode/6207.%20%E7%BB%9F%E8%AE%A1%E7%95%8C%E5%AE%9A%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%95%B0%E7%9B%AE.md) |
+| [904. 水果成篮](https://leetcode.cn/problems/fruit-into-baskets/) | [水果成篮](https://github.com/liver0377/algorithm/blob/main/leetcode/904.%20%E6%B0%B4%E6%9E%9C%E6%88%90%E7%AF%AE.md) |
 
 
 
@@ -225,13 +226,15 @@
 
 ### Tricks
 
-| 原题链接                                                     | Trick    | 题解                                                         |
-| ------------------------------------------------------------ | -------- | ------------------------------------------------------------ |
-| [剑指Offer 04. 二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 矩阵性质 | [二维数组中的查找](https://github.com/liver0377/algorithm/blob/main/leetcode/%E5%89%91%E6%8C%87offer04.%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9F%A5%E6%89%BE%5B%E6%8A%80%E5%B7%A7%5D.md) |
-| [442.数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) | 原地哈希 | [数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) |
-| [6155.找出数组的第K大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) | 归并排序 | [找出数组的第K大和](https://github.com/liver0377/algorithm/blob/main/leetcode/6155.%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%92%8C.md) |
-| [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/) | 哈希     | [能否连接形成数组](https://github.com/liver0377/algorithm/blob/main/leetcode/1640.%20%E8%83%BD%E5%90%A6%E8%BF%9E%E6%8E%A5%E5%BD%A2%E6%88%90%E6%95%B0%E7%BB%84.md) |
-| [6189. 按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) | 位运算   | [按位与最大的最长子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6189.%20%E6%8C%89%E4%BD%8D%E4%B8%8E%E6%9C%80%E5%A4%A7%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
-| [927. 三等分](https://leetcode.cn/problems/three-equal-parts/) | 数学     | [三等分](https://github.com/liver0377/algorithm/blob/main/leetcode/927.%20%E4%B8%89%E7%AD%89%E5%88%86.md) |
-| [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) | 相对关系 | [根据身高重建队列](https://github.com/liver0377/algorithm/blob/main/leetcode/406.%20%E6%A0%B9%E6%8D%AE%E8%BA%AB%E9%AB%98%E9%87%8D%E5%BB%BA%E9%98%9F%E5%88%97.md) |
+| 原题链接                                                     | Trick      | 题解                                                         |
+| ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ |
+| [剑指Offer 04. 二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 矩阵性质   | [二维数组中的查找](https://github.com/liver0377/algorithm/blob/main/leetcode/%E5%89%91%E6%8C%87offer04.%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9F%A5%E6%89%BE%5B%E6%8A%80%E5%B7%A7%5D.md) |
+| [442.数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) | 原地哈希   | [数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) |
+| [6155.找出数组的第K大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) | 归并排序   | [找出数组的第K大和](https://github.com/liver0377/algorithm/blob/main/leetcode/6155.%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%92%8C.md) |
+| [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/) | 哈希       | [能否连接形成数组](https://github.com/liver0377/algorithm/blob/main/leetcode/1640.%20%E8%83%BD%E5%90%A6%E8%BF%9E%E6%8E%A5%E5%BD%A2%E6%88%90%E6%95%B0%E7%BB%84.md) |
+| [6189. 按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) | 位运算     | [按位与最大的最长子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6189.%20%E6%8C%89%E4%BD%8D%E4%B8%8E%E6%9C%80%E5%A4%A7%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
+| [927. 三等分](https://leetcode.cn/problems/three-equal-parts/) | 数学       | [三等分](https://github.com/liver0377/algorithm/blob/main/leetcode/927.%20%E4%B8%89%E7%AD%89%E5%88%86.md) |
+| [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) | 相对关系   | [根据身高重建队列](https://github.com/liver0377/algorithm/blob/main/leetcode/406.%20%E6%A0%B9%E6%8D%AE%E8%BA%AB%E9%AB%98%E9%87%8D%E5%BB%BA%E9%98%9F%E5%88%97.md) |
+| [31. 下一个排列](https://leetcode.cn/problems/next-permutation/) | 数学       |                                                              |
+| [189. 轮转数组](https://leetcode.cn/problems/rotate-array/)  | 脑筋急转弯 |                                                              |
 

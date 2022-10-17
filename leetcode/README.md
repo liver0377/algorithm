@@ -207,6 +207,8 @@
 | [76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/) | [最小覆盖子串](https://github.com/liver0377/algorithm/blob/main/leetcode/76.%20%E6%9C%80%E5%B0%8F%E8%A6%86%E7%9B%96%E5%AD%90%E4%B8%B2.md) |
 | [6207. 统计界定子数组的数目](https://leetcode.cn/contest/weekly-contest-315/problems/count-subarrays-with-fixed-bounds/) | [统计界定子数组的数目](https://github.com/liver0377/algorithm/blob/main/leetcode/6207.%20%E7%BB%9F%E8%AE%A1%E7%95%8C%E5%AE%9A%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%95%B0%E7%9B%AE.md) |
 | [904. 水果成篮](https://leetcode.cn/problems/fruit-into-baskets/) | [水果成篮](https://github.com/liver0377/algorithm/blob/main/leetcode/904.%20%E6%B0%B4%E6%9E%9C%E6%88%90%E7%AF%AE.md) |
+| [633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/) |                                                              |
+| [340. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/) |                                                              |
 
 
 
@@ -235,6 +237,6 @@
 | [6189. 按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) | 位运算     | [按位与最大的最长子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6189.%20%E6%8C%89%E4%BD%8D%E4%B8%8E%E6%9C%80%E5%A4%A7%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
 | [927. 三等分](https://leetcode.cn/problems/three-equal-parts/) | 数学       | [三等分](https://github.com/liver0377/algorithm/blob/main/leetcode/927.%20%E4%B8%89%E7%AD%89%E5%88%86.md) |
 | [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) | 相对关系   | [根据身高重建队列](https://github.com/liver0377/algorithm/blob/main/leetcode/406.%20%E6%A0%B9%E6%8D%AE%E8%BA%AB%E9%AB%98%E9%87%8D%E5%BB%BA%E9%98%9F%E5%88%97.md) |
-| [31. 下一个排列](https://leetcode.cn/problems/next-permutation/) | 数学       |                                                              |
-| [189. 轮转数组](https://leetcode.cn/problems/rotate-array/)  | 脑筋急转弯 |                                                              |
+| [31. 下一个排列](https://leetcode.cn/problems/next-permutation/) | 数学       | [下一个排列](https://github.com/liver0377/algorithm/blob/main/leetcode/31.%20%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.md) |
+| [189. 轮转数组](https://leetcode.cn/problems/rotate-array/)  | 脑筋急转弯 | [轮转数组](https://github.com/liver0377/algorithm/blob/main/leetcode/189.%20%E8%BD%AE%E8%BD%AC%E6%95%B0%E7%BB%84.md) |
 

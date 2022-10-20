@@ -226,7 +226,7 @@
 
 
 
-### Tricks
+### 思维题
 
 | 原题链接                                                     | Trick      | 题解                                                         |
 | ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ |
@@ -239,4 +239,5 @@
 | [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) | 相对关系   | [根据身高重建队列](https://github.com/liver0377/algorithm/blob/main/leetcode/406.%20%E6%A0%B9%E6%8D%AE%E8%BA%AB%E9%AB%98%E9%87%8D%E5%BB%BA%E9%98%9F%E5%88%97.md) |
 | [31. 下一个排列](https://leetcode.cn/problems/next-permutation/) | 数学       | [下一个排列](https://github.com/liver0377/algorithm/blob/main/leetcode/31.%20%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.md) |
 | [189. 轮转数组](https://leetcode.cn/problems/rotate-array/)  | 脑筋急转弯 | [轮转数组](https://github.com/liver0377/algorithm/blob/main/leetcode/189.%20%E8%BD%AE%E8%BD%AC%E6%95%B0%E7%BB%84.md) |
+| [779. 第K个语法符号](https://leetcode.cn/problems/k-th-symbol-in-grammar/) | 找规律     |                                                              |
 

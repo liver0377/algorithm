@@ -166,8 +166,8 @@
 | [0406.后继者](https://leetcode.cn/problems/successor-lcci/submissions/) | [后继者](https://github.com/liver0377/algorithm/blob/main/leetcode/04.06%E5%90%8E%E7%BB%A7%E8%80%85.md) |
 | [668.乘法表中第k小的数](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/) | [乘法表中第K小的数](https://github.com/liver0377/algorithm/blob/main/leetcode/668.%E4%B9%98%E6%B3%95%E8%A1%A8%E4%B8%AD%E7%AC%ACK%E5%B0%8F%E7%9A%84%E6%95%B0.md) |
 | [436.寻找右区间](https://leetcode.cn/problems/find-right-interval) | [寻找右区间](https://github.com/liver0377/algorithm/blob/main/leetcode/436.%E5%AF%BB%E6%89%BE%E5%8F%B3%E5%8C%BA%E9%97%B4.md) |
-| [81.搜索旋转排序数组II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) |                                                              |
-| [154. 寻找旋转排序数组中的最小值II]()                        |                                                              |
+| [81.搜索旋转排序数组II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) | [搜索旋转排序数组](https://github.com/liver0377/algorithm/blob/main/leetcode/81.%20%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84II.md) |
+| [154. 寻找旋转排序数组中的最小值II]()                        | [搜索旋转排序数组中的最小值](https://github.com/liver0377/algorithm/blob/main/leetcode/154.%20%E5%AF%BB%E6%89%BE%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9C%80%E5%B0%8F%E5%80%BCII.md) |
 
 
 

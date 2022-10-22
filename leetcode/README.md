@@ -43,6 +43,7 @@
 | [6195. 对字符串可执行的最大删除数](https://leetcode.cn/problems/maximum-deletions-on-a-string/) | [对字符串可执行的最大删除数目](https://github.com/liver0377/algorithm/blob/main/leetcode/6195.%20%E5%AF%B9%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8F%AF%E6%89%A7%E8%A1%8C%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A0%E9%99%A4%E6%95%B0%E7%9B%AE.md) | 普通动态规划 |
 | [6203. 矩阵中和能够被K整除的路径](https://leetcode.cn/contest/weekly-contest-314/problems/paths-in-matrix-whose-sum-is-divisible-by-k/) | [矩阵中和能够被K整除的路径](https://github.com/liver0377/algorithm/blob/main/leetcode/6203.%20%E7%9F%A9%E9%98%B5%E4%B8%AD%E8%83%BD%E5%A4%9F%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E8%B7%AF%E5%BE%84.md) | 二维线性DP   |
 | [940. 不同的子序列II](https://leetcode.cn/problems/distinct-subsequences-ii/) | [不同的子序列II](https://github.com/liver0377/algorithm/blob/main/leetcode/940.%20%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97.md) | 线性DP       |
+| [1235. 规划兼职工作](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) |                                                              |              |
 
 
 

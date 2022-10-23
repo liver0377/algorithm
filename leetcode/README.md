@@ -43,7 +43,7 @@
 | [6195. 对字符串可执行的最大删除数](https://leetcode.cn/problems/maximum-deletions-on-a-string/) | [对字符串可执行的最大删除数目](https://github.com/liver0377/algorithm/blob/main/leetcode/6195.%20%E5%AF%B9%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8F%AF%E6%89%A7%E8%A1%8C%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A0%E9%99%A4%E6%95%B0%E7%9B%AE.md) | 普通动态规划 |
 | [6203. 矩阵中和能够被K整除的路径](https://leetcode.cn/contest/weekly-contest-314/problems/paths-in-matrix-whose-sum-is-divisible-by-k/) | [矩阵中和能够被K整除的路径](https://github.com/liver0377/algorithm/blob/main/leetcode/6203.%20%E7%9F%A9%E9%98%B5%E4%B8%AD%E8%83%BD%E5%A4%9F%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E8%B7%AF%E5%BE%84.md) | 二维线性DP   |
 | [940. 不同的子序列II](https://leetcode.cn/problems/distinct-subsequences-ii/) | [不同的子序列II](https://github.com/liver0377/algorithm/blob/main/leetcode/940.%20%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97.md) | 线性DP       |
-| [1235. 规划兼职工作](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) |                                                              |              |
+| [1235. 规划兼职工作](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) | [规划兼职工作](https://github.com/liver0377/algorithm/blob/main/leetcode/1235.%20%E8%A7%84%E5%88%92%E5%85%BC%E8%81%8C%E5%B7%A5%E4%BD%9C.md) | 线性DP       |
 
 
 
@@ -231,6 +231,12 @@
 
 
 
+#### 桶排序
+
+| 原题链接                                                     | 题解 |
+| ------------------------------------------------------------ | ---- |
+| [347. 前K个高频元素](https://leetcode.cn/problems/top-k-frequent-elements/) |      |
+
 
 
 ### 思维题
@@ -247,4 +253,6 @@
 | [31. 下一个排列](https://leetcode.cn/problems/next-permutation/) | 数学       | [下一个排列](https://github.com/liver0377/algorithm/blob/main/leetcode/31.%20%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.md) |
 | [189. 轮转数组](https://leetcode.cn/problems/rotate-array/)  | 脑筋急转弯 | [轮转数组](https://github.com/liver0377/algorithm/blob/main/leetcode/189.%20%E8%BD%AE%E8%BD%AC%E6%95%B0%E7%BB%84.md) |
 | [779. 第K个语法符号](https://leetcode.cn/problems/k-th-symbol-in-grammar/) | 找规律     | [第K个语法符号](https://github.com/liver0377/algorithm/blob/main/leetcode/779.%20%E7%AC%ACK%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7.md) |
+
+
 

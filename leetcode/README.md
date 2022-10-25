@@ -17,6 +17,7 @@
 | [433.最小基因变换](https://leetcode.cn/problems/tag-validator/) | [最小基因变换](https://github.com/liver0377/algorithm/blob/main/leetcode/433.%E6%9C%80%E5%B0%8F%E5%9F%BA%E5%9B%A0%E5%8F%98%E6%8D%A2.md) |
 | [675.为高尔夫比赛砍树](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) | [为高尔夫比赛看砍树](https://github.com/liver0377/algorithm/blob/main/leetcode/675.%E4%B8%BA%E9%AB%98%E5%B0%94%E5%A4%AB%E6%AF%94%E8%B5%9B%E7%A0%8D%E6%A0%91.md) |
 | [827. 最大人工岛](![](http://www.cdn.liver0377.xyz/typora/202209180836909.png)) | [最大人工岛](https://github.com/liver0377/algorithm/blob/main/leetcode/827.%20%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B.md) |
+| [934. 最短的桥](https://leetcode.cn/problems/shortest-bridge/) |                                                              |
 
 
 
@@ -216,6 +217,7 @@
 | [904. 水果成篮](https://leetcode.cn/problems/fruit-into-baskets/) | [水果成篮](https://github.com/liver0377/algorithm/blob/main/leetcode/904.%20%E6%B0%B4%E6%9E%9C%E6%88%90%E7%AF%AE.md) |
 | [633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/) | [平方数之和](https://github.com/liver0377/algorithm/blob/main/leetcode/633.%20%E5%B9%B3%E6%96%B9%E6%95%B0%E4%B9%8B%E5%92%8C.md) |
 | [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/) | [通过删除字母匹配到字典里最长单词](https://github.com/liver0377/algorithm/blob/main/leetcode/524.%20%E9%80%9A%E8%BF%87%E5%88%A0%E9%99%A4%E5%AD%97%E6%AF%8D%E5%8C%B9%E9%85%8D%E5%88%B0%E5%AD%97%E5%85%B8%E9%87%8C%E6%9C%80%E9%95%BF%E5%8D%95%E8%AF%8D.md) |
+| [915. 分割数组](https://leetcode.cn/problems/partition-array-into-disjoint-intervals/) | [分割数组](https://github.com/liver0377/algorithm/blob/main/leetcode/915.%20%E5%88%86%E5%89%B2%E6%95%B0%E7%BB%84.md) |
 
 
 

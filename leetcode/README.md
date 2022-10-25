@@ -17,7 +17,7 @@
 | [433.最小基因变换](https://leetcode.cn/problems/tag-validator/) | [最小基因变换](https://github.com/liver0377/algorithm/blob/main/leetcode/433.%E6%9C%80%E5%B0%8F%E5%9F%BA%E5%9B%A0%E5%8F%98%E6%8D%A2.md) |
 | [675.为高尔夫比赛砍树](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) | [为高尔夫比赛看砍树](https://github.com/liver0377/algorithm/blob/main/leetcode/675.%E4%B8%BA%E9%AB%98%E5%B0%94%E5%A4%AB%E6%AF%94%E8%B5%9B%E7%A0%8D%E6%A0%91.md) |
 | [827. 最大人工岛](![](http://www.cdn.liver0377.xyz/typora/202209180836909.png)) | [最大人工岛](https://github.com/liver0377/algorithm/blob/main/leetcode/827.%20%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B.md) |
-| [934. 最短的桥](https://leetcode.cn/problems/shortest-bridge/) |                                                              |
+| [934. 最短的桥](https://leetcode.cn/problems/shortest-bridge/) | [最短的桥](https://github.com/liver0377/algorithm/blob/main/leetcode/934.%20%E6%9C%80%E7%9F%AD%E7%9A%84%E6%A1%A5.md) |
 
 
 
@@ -243,18 +243,19 @@
 
 ### 思维题
 
-| 原题链接                                                     | Trick      | 题解                                                         |
-| ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ |
-| [剑指Offer 04. 二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 矩阵性质   | [二维数组中的查找](https://github.com/liver0377/algorithm/blob/main/leetcode/%E5%89%91%E6%8C%87offer04.%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9F%A5%E6%89%BE%5B%E6%8A%80%E5%B7%A7%5D.md) |
-| [442.数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) | 原地哈希   | [数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) |
-| [6155.找出数组的第K大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) | 归并排序   | [找出数组的第K大和](https://github.com/liver0377/algorithm/blob/main/leetcode/6155.%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%92%8C.md) |
-| [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/) | 哈希       | [能否连接形成数组](https://github.com/liver0377/algorithm/blob/main/leetcode/1640.%20%E8%83%BD%E5%90%A6%E8%BF%9E%E6%8E%A5%E5%BD%A2%E6%88%90%E6%95%B0%E7%BB%84.md) |
-| [6189. 按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) | 位运算     | [按位与最大的最长子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6189.%20%E6%8C%89%E4%BD%8D%E4%B8%8E%E6%9C%80%E5%A4%A7%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
-| [927. 三等分](https://leetcode.cn/problems/three-equal-parts/) | 数学       | [三等分](https://github.com/liver0377/algorithm/blob/main/leetcode/927.%20%E4%B8%89%E7%AD%89%E5%88%86.md) |
-| [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) | 相对关系   | [根据身高重建队列](https://github.com/liver0377/algorithm/blob/main/leetcode/406.%20%E6%A0%B9%E6%8D%AE%E8%BA%AB%E9%AB%98%E9%87%8D%E5%BB%BA%E9%98%9F%E5%88%97.md) |
-| [31. 下一个排列](https://leetcode.cn/problems/next-permutation/) | 数学       | [下一个排列](https://github.com/liver0377/algorithm/blob/main/leetcode/31.%20%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.md) |
-| [189. 轮转数组](https://leetcode.cn/problems/rotate-array/)  | 脑筋急转弯 | [轮转数组](https://github.com/liver0377/algorithm/blob/main/leetcode/189.%20%E8%BD%AE%E8%BD%AC%E6%95%B0%E7%BB%84.md) |
-| [779. 第K个语法符号](https://leetcode.cn/problems/k-th-symbol-in-grammar/) | 找规律     | [第K个语法符号](https://github.com/liver0377/algorithm/blob/main/leetcode/779.%20%E7%AC%ACK%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7.md) |
+| 原题链接                                                     | Trick        | 题解                                                         |
+| ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ |
+| [剑指Offer 04. 二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | 矩阵性质     | [二维数组中的查找](https://github.com/liver0377/algorithm/blob/main/leetcode/%E5%89%91%E6%8C%87offer04.%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9F%A5%E6%89%BE%5B%E6%8A%80%E5%B7%A7%5D.md) |
+| [442.数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) | 原地哈希     | [数组中重复的数据](https://leetcode.cn/problems/find-all-duplicates-in-an-array) |
+| [6155.找出数组的第K大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) | 归并排序     | [找出数组的第K大和](https://github.com/liver0377/algorithm/blob/main/leetcode/6155.%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%92%8C.md) |
+| [1640. 能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation/) | 哈希         | [能否连接形成数组](https://github.com/liver0377/algorithm/blob/main/leetcode/1640.%20%E8%83%BD%E5%90%A6%E8%BF%9E%E6%8E%A5%E5%BD%A2%E6%88%90%E6%95%B0%E7%BB%84.md) |
+| [6189. 按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) | 位运算       | [按位与最大的最长子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/6189.%20%E6%8C%89%E4%BD%8D%E4%B8%8E%E6%9C%80%E5%A4%A7%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
+| [927. 三等分](https://leetcode.cn/problems/three-equal-parts/) | 数学         | [三等分](https://github.com/liver0377/algorithm/blob/main/leetcode/927.%20%E4%B8%89%E7%AD%89%E5%88%86.md) |
+| [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) | 相对关系     | [根据身高重建队列](https://github.com/liver0377/algorithm/blob/main/leetcode/406.%20%E6%A0%B9%E6%8D%AE%E8%BA%AB%E9%AB%98%E9%87%8D%E5%BB%BA%E9%98%9F%E5%88%97.md) |
+| [31. 下一个排列](https://leetcode.cn/problems/next-permutation/) | 数学         | [下一个排列](https://github.com/liver0377/algorithm/blob/main/leetcode/31.%20%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97.md) |
+| [189. 轮转数组](https://leetcode.cn/problems/rotate-array/)  | 脑筋急转弯   | [轮转数组](https://github.com/liver0377/algorithm/blob/main/leetcode/189.%20%E8%BD%AE%E8%BD%AC%E6%95%B0%E7%BB%84.md) |
+| [779. 第K个语法符号](https://leetcode.cn/problems/k-th-symbol-in-grammar/) | 找规律       | [第K个语法符号](https://github.com/liver0377/algorithm/blob/main/leetcode/779.%20%E7%AC%ACK%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7.md) |
+| [75.颜色分类](https://leetcode.cn/problems/sort-colors/)     | 荷兰国旗问题 |                                                              |
 
 
 

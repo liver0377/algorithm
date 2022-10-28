@@ -7,6 +7,7 @@
 | [417.太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow/) | [太平洋大西洋水流问题](https://github.com/liver0377/algorithm/blob/main/leetcode/417.%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%A4%A7%E8%A5%BF%E6%B4%8B%E6%B0%B4%E6%B5%81%E9%97%AE%E9%A2%98%5BDFS%5D.md) |
 | [2257.统计表格中没有被保卫的格子数](https://leetcode.cn/problems/count-unguarded-cells-in-the-grid) | [统计表格中没有被保卫的格子数](https://github.com/liver0377/algorithm/blob/main/leetcode/6053.%E7%BB%9F%E8%AE%A1%E7%BD%91%E6%A0%BC%E4%B8%AD%E6%B2%A1%E6%9C%89%E8%A2%AB%E4%BF%9D%E5%8D%AB%E7%9A%84%E6%A0%BC%E5%AD%90%E6%A0%91%5BDFS%5D.md) |
 | [698. 划分为K个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/) | [划分为K个相等的子集](https://github.com/liver0377/algorithm/blob/main/leetcode/698.%E5%88%92%E5%88%86%E4%B8%BAK%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86.md) |
+| [77. 组合](https://leetcode.cn/problems/combinations/)       |                                                              |
 
 
 
@@ -108,7 +109,7 @@
 | [769.最多能完成排序的块](https://leetcode.cn/problems/max-chunks-to-make-sorted/) | [最多能完成排序的块](https://github.com/liver0377/algorithm/blob/main/leetcode/731.%E6%9C%80%E5%A4%9A%E8%83%BD%E5%AE%8C%E6%88%90%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9D%97%5B%E5%8D%95%E8%B0%83%E6%A0%88%5D.md) |
 | [901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) | [股票价格跨度](https://github.com/liver0377/algorithm/blob/main/leetcode/901.%20%E8%82%A1%E7%A5%A8%E4%BB%B7%E6%A0%BC%E8%B7%A8%E5%BA%A6.md) |
 | [862. 和至少为K的子数组](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/s) | [和至少为K的子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/862.%20%E5%92%8C%E8%87%B3%E5%B0%91%E4%B8%BAK%E7%9A%84%E6%9C%80%E7%9F%AD%E5%AD%90%E6%95%B0%E7%BB%84.md) |
-| [907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/) |                                                              |
+| [907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/) | [907.子数组的最小值之和](https://github.com/liver0377/algorithm/blob/main/leetcode/907.%20%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%B0%8F%E5%80%BC.md) |
 |                                                              |                                                              |
 
 

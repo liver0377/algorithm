@@ -101,13 +101,17 @@
 
 
 
-### 单调栈
+### 单调栈/队列
 
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [769.最多能完成排序的块](https://leetcode.cn/problems/max-chunks-to-make-sorted/) | [最多能完成排序的块](https://github.com/liver0377/algorithm/blob/main/leetcode/731.%E6%9C%80%E5%A4%9A%E8%83%BD%E5%AE%8C%E6%88%90%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9D%97%5B%E5%8D%95%E8%B0%83%E6%A0%88%5D.md) |
 | [901. 股票价格跨度](https://leetcode.cn/problems/online-stock-span/) | [股票价格跨度](https://github.com/liver0377/algorithm/blob/main/leetcode/901.%20%E8%82%A1%E7%A5%A8%E4%BB%B7%E6%A0%BC%E8%B7%A8%E5%BA%A6.md) |
+| [862. 和至少为K的子数组](https://leetcode.cn/problems/shortest-subarray-with-sum-at-least-k/s) | [和至少为K的子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/862.%20%E5%92%8C%E8%87%B3%E5%B0%91%E4%B8%BAK%E7%9A%84%E6%9C%80%E7%9F%AD%E5%AD%90%E6%95%B0%E7%BB%84.md) |
+| [907. 子数组的最小值之和](https://leetcode.cn/problems/sum-of-subarray-minimums/) |                                                              |
 |                                                              |                                                              |
+
+
 
 
 

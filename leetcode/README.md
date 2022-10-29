@@ -8,7 +8,7 @@
 | [2257.统计表格中没有被保卫的格子数](https://leetcode.cn/problems/count-unguarded-cells-in-the-grid) | [统计表格中没有被保卫的格子数](https://github.com/liver0377/algorithm/blob/main/leetcode/6053.%E7%BB%9F%E8%AE%A1%E7%BD%91%E6%A0%BC%E4%B8%AD%E6%B2%A1%E6%9C%89%E8%A2%AB%E4%BF%9D%E5%8D%AB%E7%9A%84%E6%A0%BC%E5%AD%90%E6%A0%91%5BDFS%5D.md) |
 | [698. 划分为K个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/) | [划分为K个相等的子集](https://github.com/liver0377/algorithm/blob/main/leetcode/698.%E5%88%92%E5%88%86%E4%B8%BAK%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86.md) |
 | [77. 组合](https://leetcode.cn/problems/combinations/)       | [组合](https://github.com/liver0377/algorithm/blob/main/leetcode/77.%20%E7%BB%84%E5%90%88.md) |
-| [51. N皇后](https://leetcode.cn/problems/n-queens/)          |                                                              |
+| [51. N皇后](https://leetcode.cn/problems/n-queens/)          | [N皇后](https://github.com/liver0377/algorithm/blob/main/leetcode/51.%20N%E7%9A%87%E5%90%8E.md) |
 
 
 

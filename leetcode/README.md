@@ -162,7 +162,7 @@
 | 原题链接                                                     | 题解                                                         | 模型     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
 | [343.整数拆分](https://leetcode.cn/problems/integer-break/description/) | [整数拆分](https://github.com/liver0377/algorithm/blob/main/leetcode/343.%20%E6%95%B4%E6%95%B0%E6%8B%86%E5%88%86.md) | 整数拆分 |
-| [6222. 美丽整数的最小增量](https://leetcode.cn/problems/minimum-addition-to-make-integer-beautiful/) |                                                              |          |
+| [6222. 美丽整数的最小增量](https://leetcode.cn/problems/minimum-addition-to-make-integer-beautiful/) | [美丽整数的最小增量](https://github.com/liver0377/algorithm/blob/main/leetcode/6222.%20%E7%BE%8E%E4%B8%BD%E6%95%B4%E6%95%B0%E7%9A%84%E6%9C%80%E5%B0%8F%E5%A2%9E%E9%87%8F.md) |          |
 
 
 

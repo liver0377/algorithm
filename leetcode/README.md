@@ -162,6 +162,7 @@
 | 原题链接                                                     | 题解                                                         | 模型     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
 | [343.整数拆分](https://leetcode.cn/problems/integer-break/description/) | [整数拆分](https://github.com/liver0377/algorithm/blob/main/leetcode/343.%20%E6%95%B4%E6%95%B0%E6%8B%86%E5%88%86.md) | 整数拆分 |
+| [6222. 美丽整数的最小增量](https://leetcode.cn/problems/minimum-addition-to-make-integer-beautiful/) |                                                              |          |
 
 
 
@@ -262,6 +263,7 @@
 | [189. 轮转数组](https://leetcode.cn/problems/rotate-array/)  | 脑筋急转弯   | [轮转数组](https://github.com/liver0377/algorithm/blob/main/leetcode/189.%20%E8%BD%AE%E8%BD%AC%E6%95%B0%E7%BB%84.md) |
 | [779. 第K个语法符号](https://leetcode.cn/problems/k-th-symbol-in-grammar/) | 找规律       | [第K个语法符号](https://github.com/liver0377/algorithm/blob/main/leetcode/779.%20%E7%AC%ACK%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7.md) |
 | [75.颜色分类](https://leetcode.cn/problems/sort-colors/)     | 荷兰国旗问题 | [颜色分类](https://github.com/liver0377/algorithm/blob/main/leetcode/75.%20%E9%A2%9C%E8%89%B2%E5%88%86%E7%B1%BB.md) |
+|                                                              |              |                                                              |
 
 
 

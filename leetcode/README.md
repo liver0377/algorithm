@@ -145,19 +145,16 @@
 
 
 
-
-
-
-
 ## 图论
 
 | 原题链接                                                     | 考点   | 题解                                                         |
 | ------------------------------------------------------------ | ------ | ------------------------------------------------------------ |
 | [6154.感染二叉树所需要的总时间](https://leetcode.cn/problems/amount-of-time-for-binary-tree-to-be-infected/) | 最短路 | [感染二叉树所需要的总时间](https://github.com/liver0377/algorithm/blob/main/leetcode/6154.%E6%84%9F%E6%9F%93%E4%BA%8C%E5%8F%89%E6%A0%91%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%80%BB%E6%97%B6%E9%97%B4.md) |
+| [6223. 移除子树之后的二叉树高度](https://leetcode.cn/problems/height-of-binary-tree-after-subtree-removal-queries/) | dfs    | [移除子树之后的二叉树高度](https://leetcode.cn/problems/height-of-binary-tree-after-subtree-removal-queries/) |
 
 
 
-### 数学
+## 数学
 
 | 原题链接                                                     | 题解                                                         | 模型     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |

@@ -20,6 +20,7 @@
 | [675.为高尔夫比赛砍树](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) | [为高尔夫比赛看砍树](https://github.com/liver0377/algorithm/blob/main/leetcode/675.%E4%B8%BA%E9%AB%98%E5%B0%94%E5%A4%AB%E6%AF%94%E8%B5%9B%E7%A0%8D%E6%A0%91.md) |
 | [827. 最大人工岛](![](http://www.cdn.liver0377.xyz/typora/202209180836909.png)) | [最大人工岛](https://github.com/liver0377/algorithm/blob/main/leetcode/827.%20%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B.md) |
 | [934. 最短的桥](https://leetcode.cn/problems/shortest-bridge/) | [最短的桥](https://github.com/liver0377/algorithm/blob/main/leetcode/934.%20%E6%9C%80%E7%9F%AD%E7%9A%84%E6%A1%A5.md) |
+| [126. 单词接龙](https://leetcode.cn/problems/word-ladder-ii/) |                                                              |
 
 
 
@@ -260,7 +261,7 @@
 | [189. 轮转数组](https://leetcode.cn/problems/rotate-array/)  | 脑筋急转弯   | [轮转数组](https://github.com/liver0377/algorithm/blob/main/leetcode/189.%20%E8%BD%AE%E8%BD%AC%E6%95%B0%E7%BB%84.md) |
 | [779. 第K个语法符号](https://leetcode.cn/problems/k-th-symbol-in-grammar/) | 找规律       | [第K个语法符号](https://github.com/liver0377/algorithm/blob/main/leetcode/779.%20%E7%AC%ACK%E4%B8%AA%E8%AF%AD%E6%B3%95%E7%AC%A6%E5%8F%B7.md) |
 | [75.颜色分类](https://leetcode.cn/problems/sort-colors/)     | 荷兰国旗问题 | [颜色分类](https://github.com/liver0377/algorithm/blob/main/leetcode/75.%20%E9%A2%9C%E8%89%B2%E5%88%86%E7%B1%BB.md) |
-|                                                              |              |                                                              |
+| [481. 神奇字符串](https://leetcode.cn/problems/magical-string/) |              | [神奇字符串](https://github.com/liver0377/algorithm/blob/main/leetcode/481.%20%E7%A5%9E%E5%A5%87%E5%AD%97%E7%AC%A6%E4%B8%B2.md) |
 
 
 

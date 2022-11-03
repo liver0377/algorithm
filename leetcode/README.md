@@ -20,7 +20,7 @@
 | [675.为高尔夫比赛砍树](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) | [为高尔夫比赛看砍树](https://github.com/liver0377/algorithm/blob/main/leetcode/675.%E4%B8%BA%E9%AB%98%E5%B0%94%E5%A4%AB%E6%AF%94%E8%B5%9B%E7%A0%8D%E6%A0%91.md) |
 | [827. 最大人工岛](![](http://www.cdn.liver0377.xyz/typora/202209180836909.png)) | [最大人工岛](https://github.com/liver0377/algorithm/blob/main/leetcode/827.%20%E6%9C%80%E5%A4%A7%E4%BA%BA%E5%B7%A5%E5%B2%9B.md) |
 | [934. 最短的桥](https://leetcode.cn/problems/shortest-bridge/) | [最短的桥](https://github.com/liver0377/algorithm/blob/main/leetcode/934.%20%E6%9C%80%E7%9F%AD%E7%9A%84%E6%A1%A5.md) |
-| [126. 单词接龙](https://leetcode.cn/problems/word-ladder-ii/) |                                                              |
+| [126. 单词接龙](https://leetcode.cn/problems/word-ladder-ii/) | [单词接龙](https://github.com/liver0377/algorithm/blob/main/leetcode/126.%20%E5%8D%95%E8%AF%8D%E6%8E%A5%E9%BE%99II.md) |
 
 
 
@@ -243,6 +243,16 @@
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [347. 前K个高频元素](https://leetcode.cn/problems/top-k-frequent-elements/) | [前K个高频元素](https://github.com/liver0377/algorithm/blob/main/leetcode/347.%20%E5%89%8DK%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0.md) |
+
+
+
+### 字符串
+
+| 原题链接                                                     | 算法       | 题解 |
+| ------------------------------------------------------------ | ---------- | ---- |
+| [1688.最大重复子字符串](https://leetcode.cn/problems/maximum-repeating-substring/) | 字符串哈希 |      |
+|                                                              |            |      |
+|                                                              |            |      |
 
 
 

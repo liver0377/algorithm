@@ -9,7 +9,8 @@
 | [698. 划分为K个相等的子集](https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/) | [划分为K个相等的子集](https://github.com/liver0377/algorithm/blob/main/leetcode/698.%E5%88%92%E5%88%86%E4%B8%BAK%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86.md) |
 | [77. 组合](https://leetcode.cn/problems/combinations/)       | [组合](https://github.com/liver0377/algorithm/blob/main/leetcode/77.%20%E7%BB%84%E5%90%88.md) |
 | [51. N皇后](https://leetcode.cn/problems/n-queens/)          | [N皇后](https://github.com/liver0377/algorithm/blob/main/leetcode/51.%20N%E7%9A%87%E5%90%8E.md) |
-| [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/) |                                                              |
+| [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/) | [被围绕的区域](https://github.com/liver0377/algorithm/blob/main/leetcode/130.%20%E8%A2%AB%E5%9B%B4%E7%BB%95%E7%9A%84%E5%8C%BA%E5%9F%9F.md) |
+|                                                              |                                                              |
 
 
 
@@ -252,7 +253,7 @@
 | 原题链接                                                     | 算法       | 题解 |
 | ------------------------------------------------------------ | ---------- | ---- |
 | [1688.最大重复子字符串](https://leetcode.cn/problems/maximum-repeating-substring/) | 字符串哈希 |      |
-|                                                              |            |      |
+| [1106. 解析bool表达式]()                                     | 栈/递归    |      |
 |                                                              |            |      |
 
 

@@ -250,11 +250,11 @@
 
 ### 字符串
 
-| 原题链接                                                     | 算法       | 题解 |
-| ------------------------------------------------------------ | ---------- | ---- |
-| [1688.最大重复子字符串](https://leetcode.cn/problems/maximum-repeating-substring/) | 字符串哈希 |      |
-| [1106. 解析bool表达式]()                                     | 栈/递归    |      |
-|                                                              |            |      |
+| 原题链接                                                     | 算法       | 题解                                                         |
+| ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ |
+| [1688.最大重复子字符串](https://leetcode.cn/problems/maximum-repeating-substring/) | 字符串哈希 |                                                              |
+| [1106. 解析布尔表达式](https://leetcode.cn/problems/parsing-a-boolean-expression/) | 栈/递归    | [解析布尔表达式](https://github.com/liver0377/algorithm/blob/main/leetcode/1106.%20%E8%A7%A3%E6%9E%90bool%E8%A1%A8%E8%BE%BE%E5%BC%8F.md) |
+|                                                              |            |                                                              |
 
 
 

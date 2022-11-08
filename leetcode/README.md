@@ -97,12 +97,22 @@
 
 
 
-### 栈/堆
+### 栈
 
 | 原题链接                                                     | 题解                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [591.标签验证器](https://leetcode.cn/problems/tag-validator/) | [标签验证器](https://github.com/liver0377/algorithm/blob/main/leetcode/591.%E6%A0%87%E7%AD%BE%E9%AA%8C%E8%AF%81%E5%99%A8%5B%E6%A0%88%5D.md) |
 | [面试17.09 第K个数](https://leetcode.cn/problems/get-kth-magic-number-lcci/) | [第K个数](https://github.com/liver0377/algorithm/blob/main/leetcode/%E9%9D%A2%E8%AF%9517.09.%20%E7%AC%ACK%E4%B8%AA%E6%95%B0.md) |
+
+
+
+#### 堆
+
+| 原题链接                                                     | 题解 |
+| ------------------------------------------------------------ | ---- |
+| [2462. 雇佣k位工人的总代价](https://leetcode.cn/problems/total-cost-to-hire-k-workers/) |      |
+|                                                              |      |
+|                                                              |      |
 
 
 

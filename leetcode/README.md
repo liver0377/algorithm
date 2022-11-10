@@ -50,6 +50,7 @@
 | [6203. 矩阵中和能够被K整除的路径](https://leetcode.cn/contest/weekly-contest-314/problems/paths-in-matrix-whose-sum-is-divisible-by-k/) | [矩阵中和能够被K整除的路径](https://github.com/liver0377/algorithm/blob/main/leetcode/6203.%20%E7%9F%A9%E9%98%B5%E4%B8%AD%E8%83%BD%E5%A4%9F%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E8%B7%AF%E5%BE%84.md) | 二维线性DP   |
 | [940. 不同的子序列II](https://leetcode.cn/problems/distinct-subsequences-ii/) | [不同的子序列II](https://github.com/liver0377/algorithm/blob/main/leetcode/940.%20%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97.md) | 线性DP       |
 | [1235. 规划兼职工作](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) | [规划兼职工作](https://github.com/liver0377/algorithm/blob/main/leetcode/1235.%20%E8%A7%84%E5%88%92%E5%85%BC%E8%81%8C%E5%B7%A5%E4%BD%9C.md) | 线性DP       |
+| [764. 最大加号标志](https://leetcode.cn/problems/largest-plus-sign/) | [最大加号标志](https://github.com/liver0377/algorithm/blob/main/leetcode/764.%20%E6%9C%80%E5%A4%A7%E5%8A%A0%E5%8F%B7%E6%A0%87%E5%BF%97.md) |              |
 
 
 

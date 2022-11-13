@@ -51,6 +51,7 @@
 | [940. 不同的子序列II](https://leetcode.cn/problems/distinct-subsequences-ii/) | [不同的子序列II](https://github.com/liver0377/algorithm/blob/main/leetcode/940.%20%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97.md) | 线性DP       |
 | [1235. 规划兼职工作](https://leetcode.cn/problems/maximum-profit-in-job-scheduling/) | [规划兼职工作](https://github.com/liver0377/algorithm/blob/main/leetcode/1235.%20%E8%A7%84%E5%88%92%E5%85%BC%E8%81%8C%E5%B7%A5%E4%BD%9C.md) | 线性DP       |
 | [764. 最大加号标志](https://leetcode.cn/problems/largest-plus-sign/) | [最大加号标志](https://github.com/liver0377/algorithm/blob/main/leetcode/764.%20%E6%9C%80%E5%A4%A7%E5%8A%A0%E5%8F%B7%E6%A0%87%E5%BF%97.md) |              |
+| [6236. 不重叠回文子字符串的最大数目](https://leetcode.cn/contest/weekly-contest-319/problems/maximum-number-of-non-overlapping-palindrome-substrings/) |                                                              |              |
 
 
 
@@ -84,7 +85,7 @@
 | [318.最大单词长度乘积](https://leetcode.cn/problems/maximum-product-of-word-lengths/) | [最大单词长度乘积](https://github.com/liver0377/algorithm/blob/main/leetcode/318.%E6%9C%80%E5%A4%A7%E5%8D%95%E8%AF%8D%E9%95%BF%E5%BA%A6%E4%B9%98%E7%A7%AF.md) |
 | [面试题0104. 一次编辑](https://leetcode.cn/problems/one-away-lcci/) | [一次编辑](https://github.com/liver0377/algorithm/blob/main/leetcode/%E9%9D%A2%E8%AF%9501.05.%E4%B8%80%E6%AC%A1%E7%BC%96%E8%BE%91.md) |
 | [467.环绕字符串中的最长子串](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [环绕子串中的最长子串](https://github.com/liver0377/algorithm/blob/main/leetcode/467.%E7%8E%AF%E7%BB%95%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%94%AF%E4%B8%80%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.md) |
-| [647. 回文子串](https://leetcode.cn/problems/palindromic-substrings/) |                                                              |
+| [647. 回文子串](https://leetcode.cn/problems/palindromic-substrings/) | [回文子串](https://github.com/liver0377/algorithm/blob/main/leetcode/647.%20%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.md) |
 
 
 

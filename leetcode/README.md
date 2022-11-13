@@ -84,6 +84,7 @@
 | [318.最大单词长度乘积](https://leetcode.cn/problems/maximum-product-of-word-lengths/) | [最大单词长度乘积](https://github.com/liver0377/algorithm/blob/main/leetcode/318.%E6%9C%80%E5%A4%A7%E5%8D%95%E8%AF%8D%E9%95%BF%E5%BA%A6%E4%B9%98%E7%A7%AF.md) |
 | [面试题0104. 一次编辑](https://leetcode.cn/problems/one-away-lcci/) | [一次编辑](https://github.com/liver0377/algorithm/blob/main/leetcode/%E9%9D%A2%E8%AF%9501.05.%E4%B8%80%E6%AC%A1%E7%BC%96%E8%BE%91.md) |
 | [467.环绕字符串中的最长子串](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/) | [环绕子串中的最长子串](https://github.com/liver0377/algorithm/blob/main/leetcode/467.%E7%8E%AF%E7%BB%95%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%94%AF%E4%B8%80%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.md) |
+| [647. 回文子串](https://leetcode.cn/problems/palindromic-substrings/) |                                                              |
 
 
 
@@ -165,7 +166,7 @@
 | ------------------------------------------------------------ | --------------------- | ------------------------------------------------------------ |
 | [6154.感染二叉树所需要的总时间](https://leetcode.cn/problems/amount-of-time-for-binary-tree-to-be-infected/) | 最短路                | [感染二叉树所需要的总时间](https://github.com/liver0377/algorithm/blob/main/leetcode/6154.%E6%84%9F%E6%9F%93%E4%BA%8C%E5%8F%89%E6%A0%91%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%80%BB%E6%97%B6%E9%97%B4.md) |
 | [6223. 移除子树之后的二叉树高度](https://leetcode.cn/problems/height-of-binary-tree-after-subtree-removal-queries/) | dfs                   | [移除子树之后的二叉树高度](https://leetcode.cn/problems/height-of-binary-tree-after-subtree-removal-queries/) |
-| [864. 获取所有钥匙的最短路径](https://leetcode.cn/problems/shortest-path-to-get-all-keys/) | bfs + 状压 + 双端队列 |                                                              |
+| [864. 获取所有钥匙的最短路径](https://leetcode.cn/problems/shortest-path-to-get-all-keys/) | bfs + 状压 + 双端队列 | [获取所有钥匙的最短路径](https://github.com/liver0377/algorithm/blob/main/leetcode/864.%20%E8%8E%B7%E5%8F%96%E6%89%80%E6%9C%89%E9%92%A5%E5%8C%99%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84.md) |
 
 
 

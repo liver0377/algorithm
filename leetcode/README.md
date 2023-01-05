@@ -249,8 +249,10 @@
 | [633. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/) | [平方数之和](https://github.com/liver0377/algorithm/blob/main/leetcode/633.%20%E5%B9%B3%E6%96%B9%E6%95%B0%E4%B9%8B%E5%92%8C.md) |
 | [524. 通过删除字母匹配到字典里最长单词](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting/) | [通过删除字母匹配到字典里最长单词](https://github.com/liver0377/algorithm/blob/main/leetcode/524.%20%E9%80%9A%E8%BF%87%E5%88%A0%E9%99%A4%E5%AD%97%E6%AF%8D%E5%8C%B9%E9%85%8D%E5%88%B0%E5%AD%97%E5%85%B8%E9%87%8C%E6%9C%80%E9%95%BF%E5%8D%95%E8%AF%8D.md) |
 | [915. 分割数组](https://leetcode.cn/problems/partition-array-into-disjoint-intervals/) | [分割数组](https://github.com/liver0377/algorithm/blob/main/leetcode/915.%20%E5%88%86%E5%89%B2%E6%95%B0%E7%BB%84.md) |
-| [209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/) |                                                              |
-| [15. 三数之和](https://leetcode.cn/problems/3sum/)           |                                                              |
+| [209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/) | [长度最小的子数组](https://github.com/liver0377/algorithm/blob/main/leetcode/209.%20%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md) |
+| [15. 三数之和](https://leetcode.cn/problems/3sum/)           | [三数之和](https://github.com/liver0377/algorithm/blob/main/leetcode/15.%20%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md) |
+| [11. 盛水最多的容器](https://leetcode.cn/problems/container-with-most-water/) |                                                              |
+| [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/) |                                                              |
 
 
 

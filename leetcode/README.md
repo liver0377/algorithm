@@ -149,6 +149,7 @@
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [449.序列化和反序列化二叉搜索树](https://leetcode.cn/problems/serialize-and-deserialize-bst/) | [序列化以及反序列化二叉搜索树](https://github.com/liver0377/algorithm/blob/main/leetcode/449.%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.md) |
 | [101. 对称二叉树](https://leetcode.cn/problems/symmetric-tree/) |                                                              |
+| [110. 平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/) |                                                              |
 
 
 

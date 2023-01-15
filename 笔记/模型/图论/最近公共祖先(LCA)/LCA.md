@@ -22,7 +22,7 @@
 
 using namespace std;
 
-const int N = 4e4 + 10;
+const int N = 4e4 + 10;  // log(4e4 + 10) 
 const int M = N * 2;
 
 int h[N], e[M], ne[M], idx;

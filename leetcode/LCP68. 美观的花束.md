@@ -32,21 +32,25 @@ public:
     static const int mod = 1e9 + 7;
 
     int beautifulBouquet(vector<int>& flowers, int cnt) {
-        int n = flowers.size();
-        int res = 0;
         unordered_map<int, int> mp;
-        int boom = 0; // 当前区间中非法的那种花朵的超出数目
-        for (int i = 0, j = 0; j < n; j ++) {
-            int old = mp[flowers[j]] ++;
-            if (old <= cnt && old + 1 > cnt) boom ++;
-            while (i <= j && boom > 0) {
-                int old = mp[flowers[i]] --;
-                if (old > cnt && old - 1 <= cnt) boom --;
-                i ++;
+        int left = 0;
+        int right = 0;
+        int n = flowers.size();
+        int ans = 0;
+
+        for (; right < n;) {
+            int& t = ++ mp[flowers[right]] ;
+            right ++;
+
+            while (t > cnt) {
+                mp[flowers[left]] --;
+                left ++;
             }
-            res = (res + j - i + 1) % mod;
+
+            ans = (ans + (right - left) % mod) % mod;
         }
-        return res;
+
+        return ans;
     }
 };
 ```
